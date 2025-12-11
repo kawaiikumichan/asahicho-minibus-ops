@@ -11,14 +11,12 @@ theme:
     - navigation.sections
     - search.suggest
 
-# ▼▼▼ ここから下が「図形を変身させる」ための追加設定です ▼▼▼
 markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-# ▲▲▲ ここまで ▲▲▲
 
 nav:
   - Home: index.md
