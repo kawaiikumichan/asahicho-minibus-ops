@@ -1,0 +1,17 @@
+site_name: 旭町ミニバス運営ガイド
+site_url: https://kawaiikumichan.github.io/asahicho-minibus-ops/
+theme:
+  name: material
+  language: ja
+  palette: 
+    primary: orange
+    accent: deep orange
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - search.suggest
+
+nav:
+  - Home: index.md
+  - 理念 (Philosophy):
+    - FUN & GUN: 00_Philosophy/fun_and_gun.md
