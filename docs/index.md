@@ -3,16 +3,18 @@
 **「FUN & GUN」で未来をつくる。**
 ここは、旭町ミニバスのコーチ・スタッフ向け運営マニュアル（ナレッジベース）です。
 
----
-
-## 🏆 Team Philosophy (チーム理念)
-
-### FUN（育成のスタンス）
-「楽（ラク）」ではなく、上達しようともがき、壁を越える瞬間の喜びを共有すること。
-コーチは「答え」を教えるのではなく、選手が「気づく」のを待ちます。
-
-### GUN（戦術のスタンス）
-全員攻撃。特定のスター選手に頼らず、全員が1on1を仕掛け、全員で走るバスケット（5Out）。
+<div style="background-color: #082A70; color: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+    <h2 style="color: white; margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 10px;">🏆 Team Philosophy</h2>
+    <div style="margin-top: 15px;">
+        <strong style="font-size: 1.2em; color: #FF9800;">FUN (育成)</strong><br>
+        「楽（ラク）」ではなく、上達しようともがき、壁を越える瞬間の喜びを共有すること。<br>
+        コーチは「答え」を教えるのではなく、選手が「気づく」のを待ちます。
+    </div>
+    <div style="margin-top: 15px;">
+        <strong style="font-size: 1.2em; color: #FF9800;">GUN (戦術)</strong><br>
+        全員攻撃。特定のスター選手に頼らず、全員が1on1を仕掛け、全員で走るバスケット（5Out）。
+    </div>
+</div>
 
 ---
 
@@ -58,5 +60,5 @@
 ---
 
 ## 📢 お知らせ
-* **2025.12.11:** チーム運営ガイドを正式公開しました。
-* **Update:** 安全管理（EAP・女性アスリート）、メンタル理論、守備戦術を追加し、コンテンツを大幅に拡充しました。
+* **Update:** サイトデザインをチームカラー（ネイビーブルー）に一新しました。
+* **New:** ライフスキル、マインドセット、女性アスリートの健康管理を追加しました。
