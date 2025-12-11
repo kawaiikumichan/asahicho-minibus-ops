@@ -31,8 +31,11 @@
 * [4. 食育・おにぎり (Nutrition)](01_Coaching_Logics/nutrition.md)
 * [5. 戦術・5Out (Tactics)](01_Coaching_Logics/5out.md)
 
+### 03. 運営・家庭 (Operations)
+* [家庭でできるサポート (Parents Guide)](03_Operations/parents_guide.md)
+
 ---
 
 ## 📢 お知らせ
 * **2025.12.11:** チーム運営ガイドを正式公開しました。
-* **Update:** 新たに「食育」「コーチ行動指針」を追加しました。
+* **Update:** 新たに「保護者向けガイド」「コーチ行動指針」を追加しました。
