@@ -22,16 +22,24 @@
 
 ### 00. 理念 (Philosophy)
 * [FUN & GUN の定義](00_Philosophy/fun_and_gun.md)
-* [コーチ行動指針](00_Philosophy/coaching_code.md)
+* [コーチ行動指針 (Coaching Code)](00_Philosophy/coaching_code.md)
 
 ### 01. 育成論 (Logics)
+**【基礎理論】**
 * [1. 世界標準モデル (LTAD)](01_Coaching_Logics/ltad.md)
 * [2. 5つの要素 (5Cs)](01_Coaching_Logics/5cs.md)
 * [3. 心技体モデル (BPS)](01_Coaching_Logics/bps_model.md)
-* [4. 食育・おにぎり (Nutrition)](01_Coaching_Logics/nutrition.md)
-* [5. メンタル・フロー (Flow)](01_Coaching_Logics/mental_flow.md)
-* [6. 攻撃戦術・5Out (Offense)](01_Coaching_Logics/5out.md)
-* [7. 守備戦術・Basic (Defense)](01_Coaching_Logics/defense_basic.md)
+* [4. 生活・ライフスキル (Life Skills)](01_Coaching_Logics/life_skills.md)
+
+**【体と心のケア】**
+* [5. 食育・おにぎり (Nutrition)](01_Coaching_Logics/nutrition.md)
+* [6. 女性アスリートの健康 (Female Health)](01_Coaching_Logics/female_athlete.md)
+* [7. メンタル・フロー (Flow)](01_Coaching_Logics/mental_flow.md)
+* [8. 脳の成長・マインドセット (Growth)](01_Coaching_Logics/growth_mindset.md)
+
+**【戦術・テクニカル】**
+* [9. 攻撃戦術・5Out (Offense)](01_Coaching_Logics/5out.md)
+* [10. 守備戦術・Basic (Defense)](01_Coaching_Logics/defense_basic.md)
 
 ### 02. 練習メニュー (Drills)
 * [基礎ドリル (Basic Drills)](02_Training_Drills/basics.md)
@@ -44,4 +52,4 @@
 
 ## 📢 お知らせ
 * **2025.12.11:** チーム運営ガイドを正式公開しました。
-* **Update:** 「練習ドリル」「安全管理マニュアル」を追加し、コンテンツを拡充しました。
+* **Update:** 安全管理（EAP・女性アスリート）、メンタル理論、守備戦術を追加し、コンテンツを大幅に拡充しました。
