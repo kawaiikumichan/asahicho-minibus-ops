@@ -7,7 +7,6 @@
 
 LTAD（Long-Term Athlete Development）は、成長段階を7つに分け、「その年齢で最も伸びる能力」を重点的に鍛える考え方です。
 
-```mermaid
 graph TD
     A[7. 生涯スポーツ <br>Active for Life]
     B[6. 勝つためのトレーニング <br>Train to Win]
@@ -18,7 +17,6 @@ graph TD
     G[1. アクティブスタート <br>Active Start (0-6歳)]
 
     classDef highlight fill:#f96,stroke:#333,stroke-width:4px,color:white;
-```
 
 > **▲ 今ここ！ (U12世代)**
 > 私たちが担当するのは、主に**第3段階「Learn to Train（基礎を学ぶ）」**です。
