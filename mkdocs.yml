@@ -11,9 +11,21 @@ theme:
     - navigation.sections
     - search.suggest
 
+# ▼▼▼ ここから下が「図形を変身させる」ための追加設定です ▼▼▼
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+# ▲▲▲ ここまで ▲▲▲
+
 nav:
   - Home: index.md
   - 理念 (Philosophy):
     - FUN & GUN: 00_Philosophy/fun_and_gun.md
+    - コーチ行動指針: 00_Philosophy/coaching_code.md
   - 育成論 (Logics):
-    - 世界標準モデル: 01_Coaching_Logics/world_standards.md
+    - 世界標準モデル(LTAD): 01_Coaching_Logics/ltad.md
+    - 戦術(5Out): 01_Coaching_Logics/5out.md
+    - 食事・体: 01_Coaching_Logics/nutrition.md
