@@ -99,7 +99,6 @@ WBGT（暑さ指数）計を使用し、数値に基づいて活動を制限し�
 <br>
 
 ## 4. 頭部打撲への対応 (Head Injury)
-バスケで多い「頭を打った」ケースの対応です。
 
 <div style="border: 2px solid #d32f2f; background-color: #ffebee; padding: 15px; border-radius: 5px; color: #333;">
     <strong style="font-size: 1.2em; color: #b71c1c;">⛔ 脳振盪（のうしんとう）の疑い</strong>
@@ -112,3 +111,48 @@ WBGT（暑さ指数）計を使用し、数値に基づいて活動を制限し�
         <li>「大丈夫」と言っても無理をさせない</li>
     </ul>
 </div>
+
+<br>
+
+## 5. 感染症・発熱への対応 (Infectious Diseases)
+
+チーム内での感染拡大を防ぐため、**学校保健安全法** の基準に準拠します。
+
+### ① 発熱時のルール (Fever)
+<div style="background-color: #e0f7fa; border-left: 5px solid #00acc1; padding: 15px; margin-bottom: 20px;">
+    <strong>🌡️ 37.5℃以上は参加禁止</strong>
+    <p style="margin-top: 5px;">
+        選手本人に発熱（37.5℃以上、または平熱より1℃高い）がある場合は、練習・試合に参加できません。<br>
+        無理に参加させることは、本人の心筋炎リスクを高め、チームメイトへの感染リスクとなります。
+    </p>
+</div>
+
+### ② 出席停止の基準 (Suspension)
+インフルエンザ等は、熱が下がってもすぐに参加できません。以下の期間は休んでください。
+
+<table style="width: 100%; border-collapse: collapse;">
+  <tr style="background-color: #eee;">
+    <th style="padding: 10px; border: 1px solid #ccc; width: 30%;">病名</th>
+    <th style="padding: 10px; border: 1px solid #ccc;">復帰できる基準</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px; border: 1px solid #ccc; font-weight: bold;">インフルエンザ</td>
+    <td style="padding: 10px; border: 1px solid #ccc;">
+        発症した後 <span style="color:#d32f2f; font-weight:bold;">5日</span> を経過し、かつ、<br>
+        解熱した後 <span style="color:#d32f2f; font-weight:bold;">2日</span> を経過するまで
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 10px; border: 1px solid #ccc; font-weight: bold;">新型コロナ</td>
+    <td style="padding: 10px; border: 1px solid #ccc;">
+        発症した後 <span style="color:#d32f2f; font-weight:bold;">5日</span> を経過し、かつ、<br>
+        症状が軽快した後 <span style="color:#d32f2f; font-weight:bold;">1日</span> を経過するまで
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 10px; border: 1px solid #ccc; font-weight: bold;">感染性胃腸炎<br>(ノロ等)</td>
+    <td style="padding: 10px; border: 1px solid #ccc;">
+        嘔吐・下痢などの症状が治まり、普段の食事がとれるようになるまで
+    </td>
+  </tr>
+</table>
