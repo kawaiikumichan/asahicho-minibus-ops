@@ -33,4 +33,6 @@ nav:
     - 3. 心技体(BPS): 01_Coaching_Logics/bps_model.md
     - 4. 食育(おにぎり): 01_Coaching_Logics/nutrition.md
     - 5. 戦術(5Out): 01_Coaching_Logics/5out.md
-  - 保護者の方へ: 03_Operations/parents_guide.md
+  - 運営・家庭 (Operations):
+    - 家庭でできるサポート: 03_Operations/parents_guide.md
+    - 安全管理・EAP: 03_Operations/eap.md
