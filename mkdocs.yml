@@ -4,13 +4,18 @@ theme:
   name: material
   language: ja
   palette: 
-    primary: orange
+    primary: indigo    # ← CSSで上書きされるので何でもOKですが、近い色にしておきます
     accent: deep orange
   features:
     - navigation.tabs
     - navigation.sections
     - search.suggest
 
+# ▼▼▼ カスタムCSS（あのネイビー色）を読み込む設定 ▼▼▼
+extra_css:
+  - stylesheets/extra.css
+
+# ▼ 拡張機能の設定
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -20,6 +25,7 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 
+# ▼ メニュー構成
 nav:
   - Home: index.md
   - 理念 (Philosophy):
@@ -29,15 +35,15 @@ nav:
     - 1. 世界標準(LTAD): 01_Coaching_Logics/ltad.md
     - 2. 5つの要素(5Cs): 01_Coaching_Logics/5cs.md
     - 3. 心技体(BPS): 01_Coaching_Logics/bps_model.md
-    - 4. 食育(おにぎり): 01_Coaching_Logics/nutrition.md
-    - 5. 女性アスリート(Health): 01_Coaching_Logics/female_athlete.md  
-    - 6. メンタル(Flow): 01_Coaching_Logics/mental_flow.md
-    - 7. 脳の成長(Growth): 01_Coaching_Logics/growth_mindset.md
-    - 8. 生活(Life Skills): 01_Coaching_Logics/life_skills.md
+    - 4. 生活(Life Skills): 01_Coaching_Logics/life_skills.md
+    - 5. 食育(Nutrition): 01_Coaching_Logics/nutrition.md
+    - 6. 女性アスリート(Health): 01_Coaching_Logics/female_athlete.md
+    - 7. メンタル(Flow): 01_Coaching_Logics/mental_flow.md
+    - 8. 脳の成長(Growth): 01_Coaching_Logics/growth_mindset.md
     - 9. 攻撃戦術(5Out): 01_Coaching_Logics/5out.md
     - 10. 守備戦術(Basic): 01_Coaching_Logics/defense_basic.md
   - 練習メニュー (Drills):
     - 基礎ドリル: 02_Training_Drills/basics.md
   - 運営・家庭 (Operations):
     - 家庭でできるサポート: 03_Operations/parents_guide.md
-    - 安全管理・EAP: 03_Operations/eap.md
+    - 緊急時対応・安全管理: 03_Operations/eap.md
