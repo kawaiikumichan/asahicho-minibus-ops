@@ -29,7 +29,9 @@
 * [2. 5つの要素 (5Cs)](01_Coaching_Logics/5cs.md)
 * [3. 心技体モデル (BPS)](01_Coaching_Logics/bps_model.md)
 * [4. 食育・おにぎり (Nutrition)](01_Coaching_Logics/nutrition.md)
-* [5. 戦術・5Out (Tactics)](01_Coaching_Logics/5out.md)
+* [5. メンタル・フロー (Flow)](01_Coaching_Logics/mental_flow.md)
+* [6. 攻撃戦術・5Out (Offense)](01_Coaching_Logics/5out.md)
+* [7. 守備戦術・Basic (Defense)](01_Coaching_Logics/defense_basic.md)
 
 ### 02. 練習メニュー (Drills)
 * [基礎ドリル (Basic Drills)](02_Training_Drills/basics.md)
