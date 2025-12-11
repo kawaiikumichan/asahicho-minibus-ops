@@ -3,23 +3,26 @@
 **「子供は小さな大人ではない」**
 カナダで開発され、JBA（日本バスケットボール協会）も採用する世界標準の育成ロードマップです。
 
-## 📊 育成の全体像
+## 📊 育成ピラミッド（下から上へ）
 
-LTAD（Long-Term Athlete Development）は、成長段階を7つに分け、「その年齢で最も伸びる能力」を重点的に鍛える考え方です。
+成長に合わせて段階を踏むことが重要です。
 
-graph TD
-    A[7. 生涯スポーツ <br>Active for Life]
-    B[6. 勝つためのトレーニング <br>Train to Win]
-    C[5. 競技のためのトレーニング <br>Train to Compete]
-    D[4. トレーニング方法を学ぶ <br>Train to Train]
-    E[:::highlight 3. 基礎を学ぶ <br>Learn to Train (U9-U12) :::]
-    F[2. 楽しむ・動く <br>FUNdamentals (U6-U9)]
-    G[1. アクティブスタート <br>Active Start (0-6歳)]
+```mermaid
+graph BT
+    %% ノードの定義（下から順に定義）
+    G[1. アクティブスタート<br>Active Start] --> F[2. 楽しむ・動く<br>FUNdamentals]
+    F --> E[:::highlight 3. 基礎を学ぶ<br>Learn to Train]
+    E --> D[4. トレーニング方法を学ぶ<br>Train to Train]
+    D --> C[5. 競技のためのトレーニング<br>Train to Compete]
+    C --> B[6. 勝つためのトレーニング<br>Train to Win]
+    B --> A[7. 生涯スポーツ<br>Active for Life]
 
+    %% 色のデザイン設定
     classDef highlight fill:#f96,stroke:#333,stroke-width:4px,color:white;
+```
 
 > **▲ 今ここ！ (U12世代)**
-> 私たちが担当するのは、主に**第3段階「Learn to Train（基礎を学ぶ）」**です。
+> 私たちが担当するのは、下から3段目の**「Learn to Train（基礎を学ぶ）」**です。
 > この時期は**「ゴールデンエイジ（即座習得期）」**とも呼ばれ、一生のうちで最も運動神経が発達する時期です。
 
 ---
