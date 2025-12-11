@@ -9,20 +9,30 @@
 
 ```mermaid
 graph BT
-    %% ノードの定義（下から順に定義）
-    G[1. アクティブスタート<br>Active Start] --> F[2. 楽しむ・動く<br>FUNdamentals]
-    F --> E[:::highlight 3. 基礎を学ぶ<br>Learn to Train]
-    E --> D[4. トレーニング方法を学ぶ<br>Train to Train]
-    D --> C[5. 競技のためのトレーニング<br>Train to Compete]
-    C --> B[6. 勝つためのトレーニング<br>Train to Win]
-    B --> A[7. 生涯スポーツ<br>Active for Life]
+    %% ノードの定義（下から順に積み上げ）
+    G[1. アクティブスタート<br>Active Start]
+    F[2. 楽しむ・動く<br>FUNdamentals]
+    E[3. 基礎を学ぶ<br>Learn to Train]
+    D[4. トレーニング方法を学ぶ<br>Train to Train]
+    C[5. 競技のためのトレーニング<br>Train to Compete]
+    B[6. 勝つためのトレーニング<br>Train to Win]
+    A[7. 生涯スポーツ<br>Active for Life]
 
-    %% 色のデザイン設定
+    %% つながり線
+    G --> F
+    F --> E
+    E --> D
+    D --> C
+    C --> B
+    B --> A
+
+    %% 色付け（今ここ！を目立たせる）
     classDef highlight fill:#f96,stroke:#333,stroke-width:4px,color:white;
+    class E highlight
 ```
 
 > **▲ 今ここ！ (U12世代)**
-> 私たちが担当するのは、下から3段目の**「Learn to Train（基礎を学ぶ）」**です。
+> 私たちが担当するのは、下から3段目の**「3. 基礎を学ぶ」**です。
 > この時期は**「ゴールデンエイジ（即座習得期）」**とも呼ばれ、一生のうちで最も運動神経が発達する時期です。
 
 ---
