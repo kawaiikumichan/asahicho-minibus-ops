@@ -30,9 +30,12 @@ nav:
     - 2. 5つの要素(5Cs): 01_Coaching_Logics/5cs.md
     - 3. 心技体(BPS): 01_Coaching_Logics/bps_model.md
     - 4. 食育(おにぎり): 01_Coaching_Logics/nutrition.md
-    - 5. メンタル(Flow): 01_Coaching_Logics/mental_flow.md
-    - 6. 攻撃戦術(5Out): 01_Coaching_Logics/5out.md
-    - 7. 守備戦術(Basic): 01_Coaching_Logics/defense_basic.md  # ← ★ここを追加
+    - 5. 女性アスリート(Health): 01_Coaching_Logics/female_athlete.md  
+    - 6. メンタル(Flow): 01_Coaching_Logics/mental_flow.md
+    - 7. 脳の成長(Growth): 01_Coaching_Logics/growth_mindset.md
+    - 8. 生活(Life Skills): 01_Coaching_Logics/life_skills.md
+    - 9. 攻撃戦術(5Out): 01_Coaching_Logics/5out.md
+    - 10. 守備戦術(Basic): 01_Coaching_Logics/defense_basic.md
   - 練習メニュー (Drills):
     - 基礎ドリル: 02_Training_Drills/basics.md
   - 運営・家庭 (Operations):
