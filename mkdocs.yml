@@ -15,5 +15,5 @@ nav:
   - Home: index.md
   - 理念 (Philosophy):
     - FUN & GUN: 00_Philosophy/fun_and_gun.md
-　- 育成論 (Logics):                            # ← ここから追加
+  - 育成論 (Logics):
     - 世界標準モデル: 01_Coaching_Logics/world_standards.md
