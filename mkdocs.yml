@@ -34,31 +34,32 @@ nav:
     - FUN & GUN: 00_Philosophy/fun_and_gun.md
     - コーチ行動指針: 00_Philosophy/coaching_code.md
 
-  # ▼▼▼ 運営・ルール (Operations & Rules) ▼▼▼
-  # 今回PDFから抽出・整備した重要項目
-  - 運営・ルール (Operations):
-    - 選手への約束: 03_Operations/team_rules_player.md
-    - 保護者へのお願い: 03_Operations/team_rules_parent.md
-    - 運営体制・役割: 03_Operations/organization.md
-    - 家庭でのサポート: 03_Operations/parents_guide.md
-    - 緊急時対応・安全: 03_Operations/eap.md
-
   # ▼▼▼ 育成・戦術論 (Logics) ▼▼▼
-  # チームの技術的な骨格
   - 育成・戦術 (Logics):
+    - 年間計画・LTAD: 01_Coaching_Logics/annual_plan.md
     - 試合の優先順位: 01_Coaching_Logics/game_policy.md
     - シュート理論: 01_Coaching_Logics/shooting_standard.md
     - 攻撃戦術(5Out): 01_Coaching_Logics/5out.md
     - 守備戦術(Basic): 01_Coaching_Logics/defense_basic.md
+    - 生活・規律(Life Skills): 01_Coaching_Logics/life_skills.md
+    - 食育・水分(Nutrition): 01_Coaching_Logics/nutrition.md
+    - 女性アスリート(Health): 01_Coaching_Logics/female_athlete.md
     - 世界標準(LTAD): 01_Coaching_Logics/ltad.md
     - 5つの要素(5Cs): 01_Coaching_Logics/5cs.md
     - 心技体(BPS): 01_Coaching_Logics/bps_model.md
-    - 生活(Life Skills): 01_Coaching_Logics/life_skills.md
-    - 食育(Nutrition): 01_Coaching_Logics/nutrition.md
-    - 女性アスリート(Health): 01_Coaching_Logics/female_athlete.md
     - メンタル(Flow): 01_Coaching_Logics/mental_flow.md
     - 脳の成長(Growth): 01_Coaching_Logics/growth_mindset.md
 
   # ▼▼▼ 練習メニュー (Drills) ▼▼▼
   - 練習メニュー (Drills):
-    - 基礎ドリル: 02_Training_Drills/basics.md
+    - 基礎ドリル・構成: 02_Training_Drills/basics.md
+    - メニューの作り方: 02_Training_Drills/practice_planning.md
+
+  # ▼▼▼ 運営・ルール (Operations & Rules) ▼▼▼
+  - 運営・ルール (Operations):
+    - 選手への約束: 03_Operations/team_rules_player.md
+    - 保護者へのお願い: 03_Operations/team_rules_parent.md
+    - TO見守りマニュアル: 03_Operations/to_manual.md
+    - 緊急時対応(EAP): 03_Operations/eap.md
+    - 運営体制・役割: 03_Operations/organization.md
+    - 家庭でのサポート: 03_Operations/parents_guide.md
