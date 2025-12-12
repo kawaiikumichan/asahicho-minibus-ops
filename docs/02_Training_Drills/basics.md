@@ -1,82 +1,93 @@
-# 🏀 基礎ドリル (Basic Drills)
+# カテゴリ別 練習ドリル (Drills by Category)
 
-「FUN & GUN」を実現するための、動きの基礎づくりです。
-**「止まらない」「スペースを埋める」** 習慣をつけます。
+旭町MBCでは、選手の習熟度に合わせて練習メニューを使い分けます。
+同じ体育館にいても、目的によってコートや時間を分けて実施することを推奨します。
 
-## 1. サークル・ムーブメント (Circle Movement)
+| カテゴリ | 対象 | キーワード | 目的 |
+| :--- | :--- | :--- | :--- |
+| <strong>Development (育成)</strong> | 低学年・初心者 | <strong>FUN (楽しさ)</strong> | 運動神経の開発、ボールと友達になる。 |
+| <strong>Top Team (Aチーム)</strong> | 高学年・選抜 | <strong>GUN (強度)</strong> | 試合で勝つための判断力、フィジカル、戦術。 |
 
-5Outの基本である「空いたスペースを埋める（Fill）」動きを習得します。
+---
 
-<div style="background-color: #fff; border: 2px solid #333; padding: 20px; border-radius: 10px; margin-bottom: 20px; text-align: center; max-width: 400px; margin-left: auto; margin-right: auto;">
-    <strong style="display:block; margin-bottom:10px; color: #333;">動きのイメージ</strong>
-    
-    <div style="position: relative; width: 200px; height: 200px; margin: 0 auto; border: 2px dashed #ccc; border-radius: 50%;">
-        <div style="position: absolute; top: -15px; left: 85px; width: 30px; height: 30px; background: orange; border-radius: 50%; color: white; line-height: 30px; font-weight: bold;">1</div>
-        <div style="position: absolute; top: 60px; right: -15px; width: 30px; height: 30px; background: orange; border-radius: 50%; color: white; line-height: 30px; font-weight: bold;">2</div>
-        <div style="position: absolute; bottom: 20px; right: 0px; width: 30px; height: 30px; background: orange; border-radius: 50%; color: white; line-height: 30px; font-weight: bold;">3</div>
-        <div style="position: absolute; bottom: 20px; left: 0px; width: 30px; height: 30px; background: orange; border-radius: 50%; color: white; line-height: 30px; font-weight: bold;">4</div>
-        <div style="position: absolute; top: 60px; left: -15px; width: 30px; height: 30px; background: orange; border-radius: 50%; color: white; line-height: 30px; font-weight: bold;">5</div>
-        
-        <div style="position: absolute; top: 25px; right: 25px; font-size: 24px; color: #555;">↷</div>
-        <div style="position: absolute; bottom: 25px; right: 25px; font-size: 24px; color: #555;">↷</div>
-        <div style="position: absolute; bottom: 25px; left: 25px; font-size: 24px; color: #555;">↷</div>
-        <div style="position: absolute; top: 25px; left: 25px; font-size: 24px; color: #555;">↷</div>
-    </div>
+## 🐣 1. Development (育成・初心者向け)
 
-    <p style="font-size: 0.9em; margin-top: 15px; color: #333; text-align: left;">
-        誰かがゴールへ切れ込んだら（Cut）、<br>
-        隣の人は<strong>「空いた穴を埋める（Fill）」</strong>ように動く。
-    </p>
-</div>
+まずは「バスケが楽しい！」と思わせることが最優先です。
+細かいフォーム矯正よりも、**「思い通りに体を動かす（コーディネーション）」** ことに重点を置きます。
 
-* **目的:** ボールウォッチャー（棒立ち）にならない。
-* **ルール:** 1. 5人で円を作る。ボールをパスする。
-    2. パスしたら、ゴール方向へダッシュ（カット）して、逆サイドへ抜ける。
-    3. **「穴」が開くので、隣の選手がズレて埋める。** これを繰り返す。
+### 🏃‍♂️ A. 身体操作 & ハンドリング (Body & Ball)
+ゴールデンエイジ（神経系の発達期）に合わせたメニューです。
 
-<br>
+* <strong>だるまさんが転んだ（ドリブル版）:</strong>
+    * ドリブルしながら進み、コーチが振り向いたら「パワーポジション」でピタッと止まる。
+* <strong>テニスボール・キャッチ:</strong>
+    * 2人組で向かい合い、テニスボールを投げ合う。反応速度を鍛える。
+* <strong>ボディ・サークル:</strong>
+    * ボールを落とさずに、頭・腰・足の周りでぐるぐる回す。
 
-## 2. 1対1 "Attack the Gap"
+### ⛹️‍♂️ B. シュート & レイアップ (Basic Scoring)
+「シュートが入る喜び」を体験させます。
 
-ディフェンスのズレ（Gap）を見つけて攻める練習です。
+* <strong>近距離シュート (Bank Shot):</strong>
+    * バックボードの「四角」を狙って打つ練習。入ったら「ナイス！」と大げさに褒める。
+* <strong>リズム・レイアップ:</strong>
+    * ドリブルなしで、コーチから手渡しパスをもらい「1・2・シュート」のステップだけを練習。
+    * 慣れたらドリブル1回をついてステップ。
 
-<div style="background-color: #e3f2fd; padding: 15px; border-radius: 8px; border-left: 5px solid #2196f3; margin-bottom: 20px;">
-    <strong style="color: #1565c0;">練習のポイント</strong>
-    <ul style="margin-top: 5px; color: #0d47a1;">
-        <li><strong>ミート:</strong> ボールをもらう瞬間に勝負を決める（DFが遅れていたら抜き去る）。</li>
-        <li><strong>判断:</strong> 
-            <ul>
-                <li>DFが下がっている ➔ <strong>シュート</strong></li>
-                <li>DFが詰めてきた ➔ <strong>ドライブ</strong></li>
-            </ul>
-        </li>
-        <li><strong>禁止:</strong> 無駄なドリブル（その場でのダムダム）はしない。</li>
-    </ul>
-</div>
+### 🎮 C. 遊び感覚のゲーム (Fun Games)
+* <strong>しっぽ取り（鬼ごっこ）:</strong>
+    * ズボンにビブスを挟んでしっぽにする。
+    * <strong>狙い:</strong> ディフェンスのフットワーク（相手を見る、追いかける）を自然に学ぶ。
+* <strong>ナンバー・バスケ:</strong>
+    * 3対3や4対4で、ドリブルなし（パスのみ）のゲーム。
+    * 「スペースに走る」感覚を養う。
 
-### コーチの声かけ（Cue Words）
-* ❌ 「抜け！シュート行け！」（命令）
-* ⭕ **「今のDFの位置なら、何ができたかな？」**（問いかけ）
+---
 
-<br>
+## 🏆 2. Top Team (Aチーム・強化向け)
 
-## 3. 3対3 "Pass & Cut"
+ここでは「楽しさ」の意味が変わります。「ワイワイやる楽しさ」ではなく、**「激しさを乗り越えて上達する楽しさ（Growth）」** です。
+試合に直結する強度（Intensity）を求めます。
 
-3人に減らして、実戦形式で行います。
+### 🔥 A. 実戦的ハンドリング & フィジカル
+* <strong>コンタクト・ドリブル:</strong>
+    * パッドやコーチにぶつかられながら、姿勢を崩さずにボールを運ぶ。
+* <strong>2ボール・コーディネーション:</strong>
+    * 両手ドリブル＋足はラダーの動き。脳に負荷をかける。
 
-<div style="background-color: white; border: 2px solid #333; padding: 15px; border-radius: 5px; max-width: 400px; margin: 0 auto;">
-    <div style="display:flex; justify-content: space-around; align-items: center; margin-bottom: 10px;">
-        <div style="width: 30px; height: 30px; background: orange; border-radius: 50%; text-align:center; line-height:30px; color:white; font-weight:bold;">1</div>
-        <div style="font-size: 20px;">➔ パス ➔</div>
-        <div style="width: 30px; height: 30px; background: orange; border-radius: 50%; text-align:center; line-height:30px; color:white; font-weight:bold;">2</div>
-    </div>
-    <div style="text-align: center; border-top: 1px dashed #ccc; padding-top: 10px;">
-        <strong style="color: #d32f2f;">パスした 1番 はどうする？</strong><br>
-        ⬇<br>
-        <strong>即座にゴールへ走る（Cut）</strong><br>
-        ⬇<br>
-        <strong>3番 が 1番 の場所を埋める（Fill）</strong>
-    </div>
-</div>
+### ⚔️ B. 1対1 & 判断力 (Decision Making)
+* <strong>クローズアウト 1on1:</strong>
+    * ディフェンスが走って寄せてくる状況からスタート。
+    * 「シュートか？ ドライブか？」を一瞬で判断する。迷ったら負け。
+* <strong>アウトナンバー (2対1 / 3対2):</strong>
+    * 攻める人数が多い状況で、ノーマークの味方を見逃さずにパス、または自分で決める練習。
 
-* **ルール:** ドリブルなし（パスのみ）で攻める制限をつけると、動きが良くなります。
+### 🔫 C. トランジション (GUN Strategy)
+旭町の武器である「走り勝つ」ための練習です。
+
+* <strong>3メン (連続レイアップ):</strong>
+    * ボールを落とさず、スプリント（全力疾走）でパスを繋ぐ。
+    * 声が出ていなければやり直し。
+* <strong>オールコート 1on1:</strong>
+    * エンドラインからエンドラインまで、激しいプレスを突破して運ぶ。
+
+### 🧠 D. チーム戦術 (5Out Tactics)
+* <strong>パス & ラン (Give & Go):</strong>
+    * パスを出したら止まらずにリングへ切れる。
+* <strong>ギャップ・アタック:</strong>
+    * 3対3などで、ディフェンスのズレ（ギャップ）を見つけて攻める分解練習。
+
+---
+
+## 3. 指導の使い分け (Coaching Points)
+
+同じコーチでも、対象によって「演じる役割」を変えてください。
+
+| 対象 | コーチのスタンス | 声掛けの例 |
+| :--- | :--- | :--- |
+| <strong>育成 (Dev)</strong> | <strong>エンターテイナー</strong><br>とにかく盛り上げ、失敗を笑いに変える。 | 「惜しい！今の動きカッコよかったよ！」<br>「元気あるかー！？」 |
+| <strong>Aチーム (Top)</strong> | <strong>デマンディング（要求する人）</strong><br>基準を高く設定し、妥協を許さない。 | 「今のスピードで試合に出られるか？」<br>「判断が遅い。Next Play！」 |
+
+> <strong>⚠️ 共通のルール</strong>
+> どちらのカテゴリでも **「話を聞く姿勢（Look at Coach）」** と **「返事」** だけは徹底させてください。
+> これは技術ではなく、安全管理と学習効率のために必要です。
