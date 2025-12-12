@@ -1,67 +1,73 @@
 # 女性アスリートの健康管理 (Female Athlete Health)
 
-女子選手の指導において、**「痩せすぎ」や「エネルギー不足」**はパフォーマンス低下だけでなく、将来の妊娠・出産や骨の健康に関わる重大なリスクです。
+女子選手は男子とは異なる身体的特徴を持っています。
+特に <strong>「膝の怪我（ACL）」</strong> と <strong>「エネルギー不足（三主徴）」</strong> は、将来の選手生命を左右する重大な課題です。
+旭町MBCでは、これらを「個人の問題」とせず、チーム全体で予防に取り組みます。
 
-## ⚠️ 女性アスリートの三主徴 (The Triad)
+## 1. 前十字靭帯（ACL）損傷の予防
 
-以下の3つは連鎖して起こります。これを防ぐことがコーチの責任です。
+女子バスケットボール選手に最も多い大怪我です。
+骨盤が横に広いため、着地時に膝が内側に入りやすく、これが靭帯断裂の主原因となります。
 
-<div style="max-width: 500px; margin: 0 auto; font-family: sans-serif;">
-    
-    <div style="background-color: #ffebee; border: 2px solid #e57373; padding: 15px; border-radius: 8px; text-align: center;">
-        <strong style="color: #c62828;">① 利用可能エネルギー不足</strong><br>
-        <span style="font-size: 0.9em;">(Low Energy Availability)</span><br>
-        <p style="margin: 5px 0 0; font-size: 0.9em; color: #333;">
-            運動量に対して、食べる量が足りていない状態。<br>
-            <strong>「痩せたい」</strong>という心理が引き金になることも多い。
-        </p>
-    </div>
 
-    <div style="text-align: center; font-size: 20px; color: #555;">⬇ 引き起こす ⬇</div>
 
-    <div style="background-color: #fff3e0; border: 2px solid #ffb74d; padding: 15px; border-radius: 8px; text-align: center;">
-        <strong style="color: #ef6c00;">② 無月経・月経不順</strong><br>
-        <span style="font-size: 0.9em;">(Amenorrhea)</span><br>
-        <p style="margin: 5px 0 0; font-size: 0.9em; color: #333;">
-            体が「生命の危機（飢餓状態）」を感じ、生殖機能をストップさせる。<br>
-            女性ホルモン（エストロゲン）が減少する。
-        </p>
-    </div>
+[Image of ACL injury mechanism knee valgus]
 
-    <div style="text-align: center; font-size: 20px; color: #555;">⬇ 骨が脆くなる ⬇</div>
 
-    <div style="background-color: #e3f2fd; border: 2px solid #64b5f6; padding: 15px; border-radius: 8px; text-align: center;">
-        <strong style="color: #1565c0;">③ 骨粗しょう症・疲労骨折</strong><br>
-        <span style="font-size: 0.9em;">(Osteoporosis)</span><br>
-        <p style="margin: 5px 0 0; font-size: 0.9em; color: #333;">
-            エストロゲンには骨を守る作用があるため、分泌が止まると骨スカスカに。<br>
-            <strong>10代で獲得した骨量は、一生の財産です。</strong>
-        </p>
-    </div>
+### 🦵 絶対禁止動作：ニーイン・トゥーアウト (Knee-in)
+ジャンプの着地や、ストップ動作において、以下の状態になることを徹底的に矯正します。
 
-</div>
-
-<br>
-
-## 🍽️ 予防のためのアクション
-
-### 1. 「しっかり食べる」が最大の予防
-* **炭水化物（ご飯）を抜かない:** エネルギー源である糖質が不足すると、すぐに月経異常に繋がります。
-* **運動後の補食:** 練習後のおにぎりは、エネルギー不足を防ぐ最強の薬です。
-
-### 2. 月経の記録と管理
-* **アプリで記録:** 「ルナルナ」などのアプリを使い、自分の周期を知るよう指導してください。
-* **3ヶ月ルール:** 「3ヶ月以上生理が来ない」場合は、婦人科（スポーツドクター）を受診させてください。
-
-<div style="border: 2px solid #d32f2f; background-color: #ffebee; padding: 15px; border-radius: 5px; color: #b71c1c; margin-top: 20px;">
-    <h3 style="margin-top: 0; color: #b71c1c;">⛔ 絶対にやってはいけない勘違い</h3>
-    <ul style="font-weight: bold; margin-bottom: 0;">
-        <li>❌ 「生理が止まるのは、練習を頑張っている証拠だ」</li>
-        <li>❌ 「生理がない方が、試合で楽だからラッキー」</li>
-        <li>❌ 「痩せればもっと速く走れるぞ（不適切な減量指示）」</li>
-    </ul>
-    <p style="margin-top: 10px; font-size: 0.9em; color: #333;">
-        これらは選手の将来を奪う危険な考え方です。<br>
-        <strong>「生理が順調に来ている＝良いコンディション」</strong>という文化を作りましょう。
+<div style="background-color: #ffebee; border: 2px solid #d32f2f; padding: 15px; border-radius: 8px; text-align: center;">
+    <strong style="color: #b71c1c; font-size: 1.2em;">⛔ 危険な着地（Knee-in）</strong>
+    <p style="margin: 10px 0; font-weight: bold; color: #333;">
+        「つま先は外を向いているのに、膝が内側に入っている状態」
+    </p>
+    <p style="color: #555;">
+        この状態で踏ん張ると、膝の靭帯に体重の数倍のねじれ負荷がかかり、<br>
+        <strong>接触がなくても断裂します（非接触型損傷）。</strong>
     </p>
 </div>
+
+### ✅ 予防トレーニング (Prevention)
+練習前のアップや、ドリルの中で以下の意識を徹底します。
+
+1.  <strong>Knee over Toe (ニー・オーバー・トゥ):</strong>
+    * パワーポジションにおいて、常に「膝がつま先と同じ方向（または少し外側）」を向いていること。
+2.  <strong>裏ももの強化 (Hamstrings):</strong>
+    * 女子選手は前もも（大腿四頭筋）が強く、裏もも（ハムストリングス）が弱い傾向があります。この筋力差が怪我を招きます。
+    * スクワットやランジにおいて、お尻と裏ももを使う感覚を養います。
+3.  <strong>着地練習:</strong>
+    * ジャンプして「ドン！」と音が鳴る着地はNG（衝撃吸収ができていない）。
+    * 足首、膝、股関節を柔らかく使って、静かに着地する練習を行います。
+
+---
+
+## 2. 女性アスリートの三主徴 (FAT)
+
+成長期の女子選手が陥りやすい3つの障害の連鎖です。
+<strong>「痩せたい」「生理が来ないのは楽だ」</strong> という誤った認識を正す必要があります。
+
+<div style="background-color: #e3f2fd; border-left: 5px solid #2196f3; padding: 15px; margin-bottom: 20px;">
+    <h3 style="margin-top: 0; color: #0d47a1;">⚠️ 負の連鎖を断つ</h3>
+    <ol style="margin-top: 10px; color: #333;">
+        <li><strong>利用可能エネルギー不足:</strong> 運動量に対して、食事量が足りていない（無理なダイエットなど）。</li>
+        <li><strong>視床下部性無月経:</strong> エネルギー不足により、体が「生殖機能」を停止させる（生理が止まる）。</li>
+        <li><strong>骨粗鬆症（こつそしょうしょう）:</strong> ホルモンバランスが崩れ、骨がスカスカになる → <strong>疲労骨折</strong>へ。</li>
+    </ol>
+</div>
+
+### 🍙 チームとしての対策
+* <strong>補食の推奨:</strong> 練習後30分以内に「おにぎり」や「100%オレンジジュース」を摂取し、エネルギー枯渇を防ぎます。
+* <strong>保護者との連携:</strong> 「最近よく眠れているか」「食事は摂れているか」を家庭と共有します。
+
+---
+
+## 3. 貧血の予防 (Anemia)
+
+女子選手は月経による鉄分喪失に加え、発汗や足裏への衝撃（赤血球の破壊）により、貧血になりやすい環境にあります。
+
+* <strong>症状:</strong> すぐに息が切れる、疲れが取れない、集中力が続かない。
+* <strong>対策:</strong>
+    * 食事で鉄分（赤身の肉、魚、小松菜など）とビタミンCをセットで摂る。
+    * 症状が続く場合は、医療機関での血液検査（フェリチン値の確認）を推奨します。
+    * <strong>「気合が足りない」と精神論で片付けないことが重要です。</strong>
