@@ -8,13 +8,10 @@
 事故や大きな怪我が発生した際の動きです。
 
 <div style="max-width: 600px; margin: 0 auto; font-family: sans-serif;">
-    
     <div style="background-color: #d32f2f; color: white; padding: 15px; border-radius: 8px; text-align: center; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
         ⚡ 事故・怪我の発生
     </div>
-
     <div style="text-align: center; color: #555; font-size: 20px; margin: 5px 0;">⬇</div>
-
     <div style="background-color: #f5f5f5; border: 2px solid #555; padding: 15px; border-radius: 8px; text-align: center;">
         <strong>意識はあるか？</strong>
         <div style="display: flex; gap: 10px; margin-top: 10px;">
@@ -30,20 +27,15 @@
             </div>
         </div>
     </div>
-
     <div style="text-align: center; color: #555; font-size: 20px; margin: 5px 0;">⬇</div>
-
     <div style="background-color: #fff3e0; border: 2px solid #ff9800; padding: 10px; border-radius: 8px; text-align: center; color: #333;">
         📞 <strong>保護者へ連絡</strong>
     </div>
-
     <div style="text-align: center; color: #555; font-size: 20px; margin: 5px 0;">⬇</div>
-
     <div style="background-color: #e3f2fd; border: 2px solid #2196f3; padding: 10px; border-radius: 8px; text-align: center; color: #333;">
         📝 <strong>HC・代表へ報告</strong><br>
         (後日、事故報告書を作成)
     </div>
-
 </div>
 
 <br>
@@ -108,27 +100,53 @@ WBGT（暑さ指数）計を使用し、数値に基づいて活動を制限し�
     <ul style="color: #b71c1c; font-weight: bold;">
         <li>ふらついている</li>
         <li>質問に答えられない（ここはどこ？今日は何日？）</li>
-        <li>「大丈夫」と言っても無理をさせない</li>
+        <li><strong>「吐き気がある・吐いた」</strong> （※危険なサインです）</li>
     </ul>
 </div>
 
 <br>
 
-## 5. 感染症・発熱への対応 (Infectious Diseases)
+## 5. 嘔吐時の対応 (Vomiting Response)
+
+選手が練習中に嘔吐した場合、<strong>「感染症（ノロウイルス等）」</strong> の可能性を考慮し、慎重に処理します。
+※アルコール消毒はノロウイルスには効きません。
+
+### 🆘 1. 選手のケア (Privacy First)
+* <strong>移動:</strong> 吐きそうな場合はトイレまたは屋外へ誘導します。間に合わない場合は、周囲の選手を遠ざけます。
+* <strong>プライバシー:</strong> 子供はショックを受けています。「大丈夫だよ」と声をかけ、他の選手に見られないよう配慮します。
+
+### 🧹 2. 処理手順 (Clean up)
+<strong>絶対に素手で触らないでください。</strong> 救急箱にある「処理キット」を使います。
+
+1.  <strong>防備:</strong> マスクと使い捨て手袋を着用する。
+2.  <strong>覆う:</strong> 嘔吐物をペーパータオルや新聞紙で静かに覆う。
+3.  <strong>消毒:</strong> その上から <strong>「次亜塩素酸ナトリウム（薄めたキッチンハイター）」</strong> をひたひたになるまでかける。
+    * ※アルコールは無効です。
+4.  <strong>廃棄:</strong> ペーパーごとすくい取り、ビニール袋に入れる。袋は二重にして固く縛る。
+5.  <strong>仕上げ:</strong> 床をもう一度消毒液で拭き取り、水拭きする。
+
+### 🏥 3. 参加可否の判断
+* <strong>頭を打った後の嘔吐:</strong> ➡ <strong>緊急事態です。すぐに救急車を呼んでください。</strong>
+* <strong>発熱・下痢がある場合:</strong> ➡ 感染症の疑いがあるため、直ちに帰宅させます。
+* <strong>緊張・食べ過ぎの場合:</strong> ➡ しばらく休憩し、顔色が戻れば軽い運動から再開可としますが、無理はさせません。
+
+<br>
+
+## 6. 感染症・発熱への対応 (Infectious Diseases)
 
 チーム内での感染拡大を防ぐため、<strong>学校保健安全法</strong> の基準に準拠します。
 
-### ① 発熱時のルール (Fever)
+### ① 発熱時のルール
 <div style="background-color: #e0f7fa; border-left: 5px solid #00acc1; padding: 15px; margin-bottom: 20px;">
     <strong>🌡️ 37.5℃以上は参加禁止</strong>
     <p style="margin-top: 5px;">
         選手本人に発熱（37.5℃以上、または平熱より1℃高い）がある場合は、練習・試合に参加できません。<br>
-        無理に参加させることは、本人の心筋炎リスクを高め、チームメイトへの感染リスクとなります。
+        無理に参加させることは、心筋炎リスクを高め、感染拡大の原因となります。
     </p>
 </div>
 
-### ② 出席停止の基準 (Suspension)
-インフルエンザ等は、熱が下がってもすぐに参加できません。以下の期間は休んでください。
+### ② 出席停止の基準
+インフルエンザ等は、熱が下がってもすぐに参加できません。
 
 <table style="width: 100%; border-collapse: collapse;">
   <tr style="background-color: #eee;">
@@ -159,16 +177,12 @@ WBGT（暑さ指数）計を使用し、数値に基づいて活動を制限し�
 
 <br>
 
-## 6. その他リスク管理 (Allergy & Disaster)
+## 7. 災害・防犯対策 (Disaster & Security)
 
-### 🥜 アレルギー対応
-* <strong>基本方針:</strong> 食物アレルギーを持つ選手は、入部時に必ず申告してください。
-* <strong>エピペン:</strong> アナフィラキシー用補助治療剤（エピペン）を所持している選手は、<strong>保管場所を必ずコーチとお世話係に共有</strong> してください。
+### 🚨 地震発生時
+* 直ちにプレーを中断し、落下物のない体育館中央に集まります。
+* 揺れが収まったら、コーチの指示に従い <strong>校庭（一時避難場所）</strong> へ避難します。
 
-### 🚨 災害・防犯対策
-* <strong>地震発生時:</strong>
-    * 直ちにプレーを中断し、落下物のない体育館中央に集まります。
-    * 揺れが収まったら、コーチの指示に従い <strong>校庭（一時避難場所）</strong> へ避難します。
-* <strong>不審者対応:</strong>
-    * 知らない大人が練習を撮影している、更衣室付近をうろついている等の場合は、直ちにコーチまたは保護者に報告してください。
-    * 警察への通報を躊躇せず行います。
+### 👮‍♂️ 不審者対応
+* 知らない大人が練習を撮影している、更衣室付近をうろついている等の場合は、直ちにコーチまたは保護者に報告してください。
+* 警察への通報を躊躇せず行います。
