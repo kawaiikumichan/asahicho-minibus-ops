@@ -1,15 +1,15 @@
 # 🚑 緊急時対応計画 (EAP)
 
-**「選手の命と安全」** が全ての活動に優先します。
-判断に迷ったときは、**「大げさに対処する（迷ったら救急車）」** ことを原則とします。
+<strong>「選手の命と安全」</strong> が全ての活動に優先します。
+判断に迷ったときは、<strong>「大げさに対処する（迷ったら救急車）」</strong> ことを原則とします。
 
 ## 1. 緊急連絡フロー (Emergency Flow)
 
 事故や大きな怪我が発生した際の動きです。
 
-<div style="max-width: 500px; margin: 0 auto; font-family: sans-serif;">
+<div style="max-width: 600px; margin: 0 auto; font-family: sans-serif;">
     
-    <div style="background-color: #d32f2f; color: white; padding: 15px; border-radius: 8px; text-align: center; font-weight: bold;">
+    <div style="background-color: #d32f2f; color: white; padding: 15px; border-radius: 8px; text-align: center; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
         ⚡ 事故・怪我の発生
     </div>
 
@@ -103,7 +103,7 @@ WBGT（暑さ指数）計を使用し、数値に基づいて活動を制限し�
 <div style="border: 2px solid #d32f2f; background-color: #ffebee; padding: 15px; border-radius: 5px; color: #333;">
     <strong style="font-size: 1.2em; color: #b71c1c;">⛔ 脳振盪（のうしんとう）の疑い</strong>
     <p style="margin-top: 10px;">
-        頭を打った後、以下の様子があれば<strong>即座にプレーを中止し、その日は帰宅させる（復帰させない）。</strong>
+        頭を打った後、以下の様子があれば <strong>即座にプレーを中止し、その日は帰宅させる（復帰させない）。</strong>
     </p>
     <ul style="color: #b71c1c; font-weight: bold;">
         <li>ふらついている</li>
@@ -116,7 +116,7 @@ WBGT（暑さ指数）計を使用し、数値に基づいて活動を制限し�
 
 ## 5. 感染症・発熱への対応 (Infectious Diseases)
 
-チーム内での感染拡大を防ぐため、**学校保健安全法** の基準に準拠します。
+チーム内での感染拡大を防ぐため、<strong>学校保健安全法</strong> の基準に準拠します。
 
 ### ① 発熱時のルール (Fever)
 <div style="background-color: #e0f7fa; border-left: 5px solid #00acc1; padding: 15px; margin-bottom: 20px;">
@@ -156,3 +156,19 @@ WBGT（暑さ指数）計を使用し、数値に基づいて活動を制限し�
     </td>
   </tr>
 </table>
+
+<br>
+
+## 6. その他リスク管理 (Allergy & Disaster)
+
+### 🥜 アレルギー対応
+* <strong>基本方針:</strong> 食物アレルギーを持つ選手は、入部時に必ず申告してください。
+* <strong>エピペン:</strong> アナフィラキシー用補助治療剤（エピペン）を所持している選手は、<strong>保管場所を必ずコーチとお世話係に共有</strong> してください。
+
+### 🚨 災害・防犯対策
+* <strong>地震発生時:</strong>
+    * 直ちにプレーを中断し、落下物のない体育館中央に集まります。
+    * 揺れが収まったら、コーチの指示に従い <strong>校庭（一時避難場所）</strong> へ避難します。
+* <strong>不審者対応:</strong>
+    * 知らない大人が練習を撮影している、更衣室付近をうろついている等の場合は、直ちにコーチまたは保護者に報告してください。
+    * 警察への通報を躊躇せず行います。
