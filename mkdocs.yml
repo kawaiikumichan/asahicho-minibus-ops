@@ -1,38 +1,52 @@
+site_name: 旭町MBC 運営マニュアル
+theme:
+  name: material
+  language: ja
+  palette: 
+    primary: indigo
+    accent: deep orange
+  features:
+    - navigation.tabs           # スマホ上部にタブを表示
+    - navigation.sections       # サイドメニューを構造化
+    - navigation.expand         # 最初から全メニューを展開
+    - navigation.indexes        # フォルダ名をタップ可能にする
+    - navigation.top            # トップへ戻るボタン
+
 nav:
   - Home: index.md
-  - "1. 理念・行動規範":
-      - 00_Philosophy/coaching_code.md
-      - 00_Philosophy/fun_and_gun.md
-  - "2. 育成理論（22歳への逆算）":
-      - "1. LTAD（長期選手育成モデル）": 01_Coaching_Logics/ltad.md
-      - "2. The 5 Cs（育成の5指標）": 01_Coaching_Logics/5cs.md
-      - "3. BPSモデル（生物心理社会モデル）": 01_Coaching_Logics/bps_model.md
-      - "4. 22歳への夢の設計図": 01_Coaching_Logics/dream_blueprint.md
-      - "5. 個人の志とチームの役割": 01_Coaching_Logics/individual_goals.md
-      - "6. ライフスキル（生活の土台）": 01_Coaching_Logics/life_skills.md
-      - "7. 脳の成長とマインドセット": 01_Coaching_Logics/growth_mindset.md
-      - "8. メンタル・フロー": 01_Coaching_Logics/mental_flow.md
-      - "9. 栄養とフィジカル": 01_Coaching_Logics/nutrition.md
-      - "10. 女子選手のコンディショニング": 01_Coaching_Logics/female_athlete.md
-      - "11. 年間育成計画": 01_Coaching_Logics/annual_plan.md
-      - "12. 試合の優先順位・起用方針": 01_Coaching_Logics/game_policy.md
-      - "13. シュート：ワンハンド推奨": 01_Coaching_Logics/shooting_standard.md
-      - "14. 5-Outコンセプト": 01_Coaching_Logics/5out.md
-      - "15. 防御：基本原則": 01_Coaching_Logics/defense_basic.md
-      - "16. 世界標準の定義": 01_Coaching_Logics/world_standards.md
-  - "3. 練習ドリル・計画":
-      - 02_Training_Drills/practice_planning.md
-      - 02_Training_Drills/basics.md
-      - 02_Training_Drills/coordination.md
-      - 02_Training_Drills/5out_basics.md
-  - "4. 管理・運営・安全":
-      - 03_Operations/organization.md
-      - 03_Operations/eap.md
-      - 03_Operations/parents_guide.md
-      - 03_Operations/team_rules_player.md
-      - 03_Operations/team_rules_parent.md
-      - 03_Operations/hosting_practice_match.md
-      - 03_Operations/tournament_duty.md
-      - 03_Operations/away_game_etiquette.md
-      - 03_Operations/to_manual.md
-      - 03_Operations/transport_safety.md
+  - "理念・行動規範":
+      - "・ 指導者行動規範": 00_Philosophy/coaching_code.md
+      - "・ FUN & GUN 哲学": 00_Philosophy/fun_and_gun.md
+  - "育成理論（22歳への逆算）":
+      - "・ LTAD（長期選手育成モデル）": 01_Coaching_Logics/ltad.md
+      - "・ The 5 Cs（育成の5指標）": 01_Coaching_Logics/5cs.md
+      - "・ BPSモデル（生物心理社会モデル）": 01_Coaching_Logics/bps_model.md
+      - "・ 22歳への夢の設計図": 01_Coaching_Logics/dream_blueprint.md
+      - "・ 個人の志とチームの役割": 01_Coaching_Logics/individual_goals.md
+      - "・ ライフスキル（生活の土台）": 01_Coaching_Logics/life_skills.md
+      - "・ 脳の成長とマインドセット": 01_Coaching_Logics/growth_mindset.md
+      - "・ メンタル・フロー": 01_Coaching_Logics/mental_flow.md
+      - "・ 栄養とフィジカル": 01_Coaching_Logics/nutrition.md
+      - "・ 女子選手のコンディショニング": 01_Coaching_Logics/female_athlete.md
+      - "・ 年間育成計画": 01_Coaching_Logics/annual_plan.md
+      - "・ 試合の優先順位・起用方針": 01_Coaching_Logics/game_policy.md
+      - "・ シュート：ワンハンド推奨": 01_Coaching_Logics/shooting_standard.md
+      - "・ 5-Outコンセプト": 01_Coaching_Logics/5out.md
+      - "・ 防御：基本原則": 01_Coaching_Logics/defense_basic.md
+      - "・ 世界標準の定義": 01_Coaching_Logics/world_standards.md
+  - "練習ドリル・計画":
+      - "・ 練習メニューの組み立て方": 02_Training_Drills/practice_planning.md
+      - "・ 基本練習 (Basics)": 02_Training_Drills/basics.md
+      - "・ コーディネーション": 02_Training_Drills/coordination.md
+      - "・ 5アウト基礎ドリル": 02_Training_Drills/5out_basics.md
+  - "管理・運営・安全":
+      - "・ 柏支部 組織体制・理事職務": 03_Operations/organization.md
+      - "・ 緊急時対応(EAP)": 03_Operations/eap.md
+      - "・ 保護者ガイドライン": 03_Operations/parents_guide.md
+      - "・ チームルール（選手）": 03_Operations/team_rules_player.md
+      - "・ チームルール（保護者）": 03_Operations/team_rules_parent.md
+      - "・ 練習試合 主催手順": 03_Operations/hosting_practice_match.md
+      - "・ 大会協力業務": 03_Operations/tournament_duty.md
+      - "・ 遠征先のマナー": 03_Operations/away_game_etiquette.md
+      - "・ TOマニュアル": 03_Operations/to_manual.md
+      - "・ 送迎・移動の安全ルール": 03_Operations/transport_safety.md
