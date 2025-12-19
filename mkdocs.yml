@@ -1,5 +1,4 @@
 site_name: 旭町MBC 運営マニュアル
-site_url: https://kawaiikumichan.github.io/asahicho-minibus-ops/
 theme:
   name: material
   language: ja
@@ -9,54 +8,22 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
-    - navigation.expand
-    - search.suggest
-
-extra_css:
-  - stylesheets/extra.css
 
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
 
-# ▼ ナビゲーション構成
 nav:
   - Home: index.md
-
-  - 1. チーム理念・規範 (Philosophy):
-    - FUN & GUN 哲学: 00_Philosophy/fun_and_gun.md
+  - 1. 理念・行動規範:
     - 指導・行動規範: 00_Philosophy/coaching_code.md
-    - ダブル・ゴール理論: 01_Coaching_Logics/beyond_the_goal.md
-
-  - 2. 選手育成・メンタル (Development):
+    - 個人の志とチームの役割: 01_Coaching_Logics/individual_goals.md
+  - 2. 育成論 (Logics):
     - 22歳への夢の設計図: 01_Coaching_Logics/dream_blueprint.md
-    - 成長マインドセット: 01_Coaching_Logics/growth_mindset.md
-    - ライフスキルと規律: 01_Coaching_Logics/life_skills.md
-    - 年間計画・適期教育(LTAD): 01_Coaching_Logics/annual_plan.md
-    - コンディショニング: 01_Coaching_Logics/nutrition.md
-
-  - 3. 技術・戦術スタンダード (Tactics):
+    - ライフスキル(生活の土台): 01_Coaching_Logics/life_skills.md
     - シュート：ワンハンド推奨: 01_Coaching_Logics/shooting_standard.md
-    - 攻撃：5-Outコンセプト: 01_Coaching_Logics/5out.md
-    - 守備：基本原則と強度: 01_Coaching_Logics/defense_basic.md
-    - 試合の優先順位・起用方針: 01_Coaching_Logics/game_policy.md
-
-  - 4. 練習メニュー (Drills):
-    - 練習メニューの組み立て方: 02_Training_Drills/practice_planning.md
-    - コーディネーション: 02_Training_Drills/coordination.md
-    - 5アウト基礎ドリル: 02_Training_Drills/5out_basics.md
-    - ドリルバンク: 02_Training_Drills/drill_bank.md
-
-  - 5. 組織運営・外部連携 (Management):
+    - 外部スクール等との両立: 03_Operations/school_policy.md
+  - 3. 運営・安全 (Operations):
     - 柏支部 組織体制・理事職務: 03_Operations/organization.md
-    - 対外試合 調整フロー: 03_Operations/match_coordination.md
-    - 練習試合 主催手順: 03_Operations/hosting_practice_match.md
-    - 外部スクール等との両立方針: 03_Operations/school_policy.md
-    - 公式戦 会場協力業務: 03_Operations/tournament_duty.md
-
-  - 6. 安全管理・ルール (Compliance):
     - 緊急時対応(EAP): 03_Operations/eap.md
-    - 送迎・移動の安全ルール: 03_Operations/transport_safety.md
-    - 選手・保護者との約束事: 03_Operations/team_rules_player.md
-    - 遠征先マナー・TO見守り: 03_Operations/away_game_etiquette.md
