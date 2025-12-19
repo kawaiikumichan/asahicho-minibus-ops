@@ -1,65 +1,62 @@
-site_name: 旭町MBC 運営マニュアル
+site_name: 旭町MBC 指導者用運営マニュアル
 site_url: https://kawaiikumichan.github.io/asahicho-minibus-ops/
 theme:
   name: material
   language: ja
   palette: 
-    primary: indigo
-    accent: deep orange
+    primary: deep orange  # コーチの情熱をイメージ
+    accent: indigo
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.expand
     - search.suggest
 
-# ▼ カスタムCSS
 extra_css:
   - stylesheets/extra.css
 
-# ▼ 拡張機能
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.superfences
 
-# ▼ メニュー構成
+# ▼ 指導者専用ナビゲーション
 nav:
   - Home: index.md
 
-  # ▼▼▼ チームの理念 (Backbone) ▼▼▼
-  - 理念 (Philosophy):
-    - FUN & GUN: 00_Philosophy/fun_and_gun.md
-    - コーチ行動指針: 00_Philosophy/coaching_code.md
+  - 1. 指導理念・規範 (Philosophy):
+    - FUN & GUN 哲学: 00_Philosophy/fun_and_gun.md
+    - 指導者 行動規範: 00_Philosophy/coaching_code.md
+    - ダブル・ゴール理論: 01_Coaching_Logics/beyond_the_goal.md
 
-  # ▼▼▼ 育成・戦術論 (Logics) ▼▼▼
-  - 育成・戦術 (Logics):
-    - 年間計画・LTAD: 01_Coaching_Logics/annual_plan.md
-    - 試合の優先順位: 01_Coaching_Logics/game_policy.md
-    - シュート理論: 01_Coaching_Logics/shooting_standard.md
-    - 攻撃戦術(5Out): 01_Coaching_Logics/5out.md
-    - 守備戦術(Basic): 01_Coaching_Logics/defense_basic.md
-    - 生活・規律(Life Skills): 01_Coaching_Logics/life_skills.md
-    - 食育・水分(Nutrition): 01_Coaching_Logics/nutrition.md
-    - 女性アスリート(Health): 01_Coaching_Logics/female_athlete.md
-    - 世界標準(LTAD): 01_Coaching_Logics/ltad.md
-    - 5つの要素(5Cs): 01_Coaching_Logics/5cs.md
-    - 心技体(BPS): 01_Coaching_Logics/bps_model.md
-    - メンタル(Flow): 01_Coaching_Logics/mental_flow.md
-    - 脳の成長(Growth): 01_Coaching_Logics/growth_mindset.md
+  - 2. 選手育成・メンタル (Development):
+    - 22歳への夢の設計図: 01_Coaching_Logics/dream_blueprint.md
+    - 成長マインドセット(脳): 01_Coaching_Logics/growth_mindset.md
+    - ライフスキルと規律: 01_Coaching_Logics/life_skills.md
+    - 年間計画・適期教育(LTAD): 01_Coaching_Logics/annual_plan.md
+    - コンディショニング(食育・女性): 01_Coaching_Logics/nutrition.md
 
-  # ▼▼▼ 練習メニュー (Drills) ▼▼▼
-  - 練習メニュー (Drills):
-    - 基礎ドリル・構成: 02_Training_Drills/basics.md
-    - メニューの作り方: 02_Training_Drills/practice_planning.md
+  - 3. 技術・戦術スタンダード (Tactics):
+    - シュート：ワンハンド推奨: 01_Coaching_Logics/shooting_standard.md
+    - 攻撃：5-Outコンセプト: 01_Coaching_Logics/5out.md
+    - 守備：基本原則と強度: 01_Coaching_Logics/defense_basic.md
+    - 試合の優先順位・起用方針: 01_Coaching_Logics/game_policy.md
 
-  # ▼▼▼ 運営・ルール (Operations & Rules) ▼▼▼
-  - 運営・ルール (Operations):
-    - 選手への約束: 03_Operations/team_rules_player.md
-    - 保護者へのお願い: 03_Operations/team_rules_parent.md
-    - TO見守りマニュアル: 03_Operations/to_manual.md
+  - 4. 練習デザイン (Practice):
+    - 練習メニューの組み立て方: 02_Training_Drills/practice_planning.md
+    - コーディネーションドリル: 02_Training_Drills/coordination.md
+    - 5アウト基礎ドリル: 02_Training_Drills/5out_basics.md
+    - ドリルバンク: 02_Training_Drills/drill_bank.md
+
+  - 5. チーム管理・外部連携 (Management):
+    - 柏支部 組織体制・理事職務: 03_Operations/organization.md
+    - 対外試合 調整・承認フロー: 03_Operations/match_coordination.md
+    - 練習試合 主催手順: 03_Operations/hosting_practice_match.md
+    - 外部スクール等との両立方針: 03_Operations/school_policy.md
+    - 公式戦 会場担当・協力業務: 03_Operations/tournament_duty.md
+
+  - 6. 安全管理・コンプライアンス (Compliance):
     - 緊急時対応(EAP): 03_Operations/eap.md
-    - 運営体制・役割: 03_Operations/organization.md
-    - 家庭でのサポート: 03_Operations/parents_guide.md
+    - 送迎・移動の安全ルール: 03_Operations/transport_safety.md
+    - 選手・保護者との約束事: 03_Operations/team_rules_player.md
+    - 遠征先のマナー・TO見守り: 03_Operations/away_game_etiquette.md
