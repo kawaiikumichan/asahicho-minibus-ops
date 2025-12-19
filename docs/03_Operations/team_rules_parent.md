@@ -1,57 +1,55 @@
 # ４．（５） チームルール（保護者編）
 
-旭町MBCは、保護者の皆様との「共育（共に育てる）」によって成り立っています。「今、勝つこと」という幻影に惑わされず、子供たちの未来を支えるサポーターとしての指針です。
+<p style="margin-bottom: 20px;">旭町MBCは、保護者の皆様との「共育」によって成り立っています。子供たちが22歳で自立するための環境作りへのご協力をお願いします。</p>
 
----
+<div style="border-left: 5px solid #3f51b5; background-color: #f5f5f5; padding: 15px; margin-bottom: 20px;">
+    <h2 style="margin-top: 0; color: #3f51b5;">１． 運営・情報共有のルール</h2>
+    
+    <div style="margin-bottom: 15px;">
+        <strong>（１） 連絡体制の確立</strong><br>
+        &nbsp;&nbsp;（Ａ） 指定ツールの利用<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;・ <strong>LINE</strong>および <strong>TeamHub</strong>を必須とします<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;・ 期限内の返信を徹底してください
+    </div>
 
-## １． 運営・情報共有のルール
-（１） 連絡体制の確立
-　（Ａ） 指定ツールの利用
-　　・ **LINE**（グループ参加）および **TeamHub**（アプリ）を必須とします。
-　　・ チームからの連絡に対し、期限内の返信を徹底してください。
-　（Ｂ） 欠席・遅刻の報告
-　　・ 事前にTeamHub/LINEで報告してください。
-　　・ 選手自身からコーチへ報告させることで、自立と責任感を養います。
+    <div>
+        <strong>（２） 安全管理と身支度</strong><br>
+        &nbsp;&nbsp;（Ａ） 怪我予防<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;・ フード付き衣服、金属製ピン、装飾品は事故防止のため禁止です<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;・ 髪はゴムで結ぶようご家庭で指導をお願いします
+    </div>
+</div>
 
-（２） 安全管理と身支度
-　（Ａ） 怪我予防の徹底
-　　・ フード付き衣服は練習中の引っかかり事故防止のため厳禁です。
-　　・ 髪が長い場合はゴムで結び、金属製のピンや装飾品は外してください。
-　（Ｂ） 持ち物と自己管理
-　　・ スマホ・GPSは連絡用のみ許可しますが、練習中の利用は制限します。
-　　・ 忘れ物の確認を親がやりすぎないようにしてください（自立の妨げになります）。
+<div style="border-left: 5px solid #4caf50; background-color: #f1f8e9; padding: 15px; margin-bottom: 20px;">
+    <h2 style="margin-top: 0; color: #2e7d32;">２． 送迎・車出しと会場協力</h2>
+    
+    <div style="margin-bottom: 15px;">
+        <strong>（１） 移動の安全と責任</strong><br>
+        &nbsp;&nbsp;（Ａ） 車出し協力<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;・ 遠征時の車出しに積極的なご協力をお願いします<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;・ 燃料費は規定単価で精算し、特定の家庭に負担を偏らせません
+    </div>
+</div>
 
----
+<div style="border: 2px solid #ff5252; border-radius: 8px; padding: 20px; background-color: #fff9f9; margin-bottom: 20px;">
+    <h2 style="margin-top: 0; color: #d32f2f;">３． 試合観戦と応援のフィロソフィー</h2>
+    
+    <div style="margin-bottom: 15px;">
+        <strong style="font-size: 1.1em; color: #d32f2f;">!!! 指導の越境禁止（ラジコン操作の排除）</strong><br>
+        <strong>（１） 指示出しの禁止</strong><br>
+        &nbsp;&nbsp;（Ａ） 判断力の育成<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;・ 「打て！」「守れ！」等の指示は選手の思考を止めます<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;・ 指示で得た勝利は、将来に繋がらない<strong>「幻影の勝利」</strong>です
+    </div>
 
-## ２． 送迎・車出しと会場協力
-（１） 移動の安全と責任
-　（Ａ） 送迎の基本原則
-　　・ 会場への移動は各家庭の責任とし、全席シートベルト着用を徹底してください。
-　（Ｂ） 遠征時の車出し協力
-　　・ 負担軽減のため「片道のみ」の協力も受け付けています。
-　　・ 燃料費は規定単価で精算し、特定の家庭に負担が偏らないように配慮します。
+    <div>
+        <strong>（２） リスペクトの精神</strong><br>
+        &nbsp;&nbsp;（Ａ） 審判・相手への態度<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;・ クレームや野次は「責任転嫁」を教えることと同じです<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;・ 相手を称え、自チームの「挑戦」を応援してください
+    </div>
+</div>
 
-（２） 会場設営と見守り当番
-　（Ａ） 練習環境の整備
-　　・ 準備（ゴール設営、窓開け）や片付け（清掃）への協力をお願いします。
-　（Ｂ） 選手の安全見守り
-　　・ 怪我時の応急処置や水筒補充など、子供たちがプレーに集中できる環境を支えてください。
-
----
-
-## ３． 試合観戦と応援のフィロソフィー
-（１） 指導の越境禁止（ラジコン操作の排除）
-!!! warning "指示出しはテクニカルファウル対象です"
-    ・ 観戦席から「打て！」「守れ！」と叫ぶのは、子供の「自分で判断する力」を奪う行為です。
-    ・ 指示で得た得点は、将来に繋がらない「幻影の勝利」に過ぎません。
-
-（２） リスペクトの精神
-　（Ａ） 審判・相手への態度
-　　・ 審判へのクレームや野次は、子供に「責任転嫁」を教えることと同じです。
-　　・ 相手チームのミスを喜ぶのではなく、自チームの「良い挑戦」を称賛してください。
-
----
-
-## 🤝 保護者の皆様へ：三位一体の約束
-!!! success "一番のファンであってください"
-    技術的なことはコーチに任せ、家庭では「美味しいご飯」「温かい布団」「ポジティブな応援」をお願いします。 私たちは一丸となって、子供たちが２２歳で輝くための土台を築きます。
+<div style="text-align: center; padding: 15px; background: #3f51b5; color: white; border-radius: 5px;">
+    <strong>「保護者の役割は一番のファンであること」</strong>
+</div>
