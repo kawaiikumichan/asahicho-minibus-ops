@@ -6,7 +6,7 @@ theme:
     primary: indigo
     accent: deep orange
   features:
-    - navigation.tabs           # スマホ上部にタブを表示
+    - navigation.tabs           # スマホ上部にセクションを表示
     - navigation.sections       # サイドメニューを構造化
     - navigation.expand         # 最初から全メニューを展開
     - navigation.indexes        # フォルダ名をタップ可能にする
