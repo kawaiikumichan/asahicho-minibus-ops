@@ -6,11 +6,11 @@ theme:
     primary: indigo
     accent: deep orange
   features:
-    - navigation.tabs           # スマホ上部にセクションを表示
-    - navigation.sections       # サイドメニューを構造化
-    - navigation.expand         # 最初から全メニューを展開
-    - navigation.indexes        # フォルダ名をタップ可能にする
-    - navigation.top            # トップへ戻るボタン
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
 
 nav:
   - Home: index.md
@@ -18,10 +18,11 @@ nav:
       - "・ 指導者行動規範": 00_Philosophy/coaching_code.md
       - "・ FUN & GUN 哲学": 00_Philosophy/fun_and_gun.md
   - "育成理論（22歳への逆算）":
+      - "・ 第2章：育成戦略サマリー": 01_Coaching_Logics/index.md
+      - "・ 22歳への夢の設計図": 01_Coaching_Logics/dream_blueprint.md
       - "・ LTAD（長期選手育成モデル）": 01_Coaching_Logics/ltad.md
       - "・ The 5 Cs（育成の5指標）": 01_Coaching_Logics/5cs.md
       - "・ BPSモデル（生物心理社会モデル）": 01_Coaching_Logics/bps_model.md
-      - "・ 22歳への夢の設計図": 01_Coaching_Logics/dream_blueprint.md
       - "・ 個人の志とチームの役割": 01_Coaching_Logics/individual_goals.md
       - "・ ライフスキル（生活の土台）": 01_Coaching_Logics/life_skills.md
       - "・ 脳の成長とマインドセット": 01_Coaching_Logics/growth_mindset.md
@@ -40,7 +41,7 @@ nav:
       - "・ コーディネーション": 02_Training_Drills/coordination.md
       - "・ 5アウト基礎ドリル": 02_Training_Drills/5out_basics.md
   - "管理・運営・安全":
-      - "・ 柏支部 組織体制・理事職務": 03_Operations/organization.md
+      - "・ 支部組織・理事職務": 03_Operations/organization.md
       - "・ 緊急時対応(EAP)": 03_Operations/eap.md
       - "・ 保護者ガイドライン": 03_Operations/parents_guide.md
       - "・ チームルール（選手）": 03_Operations/team_rules_player.md
@@ -49,4 +50,4 @@ nav:
       - "・ 大会協力業務": 03_Operations/tournament_duty.md
       - "・ 遠征先のマナー": 03_Operations/away_game_etiquette.md
       - "・ TOマニュアル": 03_Operations/to_manual.md
-      - "・ 送迎・移動の安全ルール": 03_Operations/transport_safety.md
+      - "・ 送迎・安全ルール": 03_Operations/transport_safety.md
