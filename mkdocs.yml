@@ -4,22 +4,22 @@ nav:
       - 00_Philosophy/coaching_code.md
       - 00_Philosophy/fun_and_gun.md
   - "2. 育成理論（22歳への逆算）":
-      - 01_Coaching_Logics/dream_blueprint.md
-      - 01_Coaching_Logics/individual_goals.md
-      - 01_Coaching_Logics/life_skills.md
-      - 01_Coaching_Logics/shooting_standard.md
-      - 01_Coaching_Logics/5cs.md
-      - 01_Coaching_Logics/5out.md
-      - 01_Coaching_Logics/annual_plan.md
-      - 01_Coaching_Logics/bps_model.md
-      - 01_Coaching_Logics/defense_basic.md
-      - 01_Coaching_Logics/female_athlete.md
-      - 01_Coaching_Logics/game_policy.md
-      - 01_Coaching_Logics/growth_mindset.md
-      - 01_Coaching_Logics/ltad.md
-      - 01_Coaching_Logics/mental_flow.md
-      - 01_Coaching_Logics/nutrition.md
-      - 01_Coaching_Logics/world_standards.md
+      - "1. LTAD（長期選手育成モデル）": 01_Coaching_Logics/ltad.md
+      - "2. The 5 Cs（育成の5指標）": 01_Coaching_Logics/5cs.md
+      - "3. BPSモデル（生物心理社会モデル）": 01_Coaching_Logics/bps_model.md
+      - "4. 22歳への夢の設計図": 01_Coaching_Logics/dream_blueprint.md
+      - "5. 個人の志とチームの役割": 01_Coaching_Logics/individual_goals.md
+      - "6. ライフスキル（生活の土台）": 01_Coaching_Logics/life_skills.md
+      - "7. 脳の成長とマインドセット": 01_Coaching_Logics/growth_mindset.md
+      - "8. メンタル・フロー": 01_Coaching_Logics/mental_flow.md
+      - "9. 栄養とフィジカル": 01_Coaching_Logics/nutrition.md
+      - "10. 女子選手のコンディショニング": 01_Coaching_Logics/female_athlete.md
+      - "11. 年間育成計画": 01_Coaching_Logics/annual_plan.md
+      - "12. 試合の優先順位・起用方針": 01_Coaching_Logics/game_policy.md
+      - "13. シュート：ワンハンド推奨": 01_Coaching_Logics/shooting_standard.md
+      - "14. 5-Outコンセプト": 01_Coaching_Logics/5out.md
+      - "15. 防御：基本原則": 01_Coaching_Logics/defense_basic.md
+      - "16. 世界標準の定義": 01_Coaching_Logics/world_standards.md
   - "3. 練習ドリル・計画":
       - 02_Training_Drills/practice_planning.md
       - 02_Training_Drills/basics.md
