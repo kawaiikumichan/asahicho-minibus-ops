@@ -1,16 +1,55 @@
-# mkdocs.yml
-
 site_name: 旭町MBC 運営マニュアル
 theme:
   name: material
   language: ja
-  # ▼ ここに追記します ▼
-  logo: assets/logo.png    # 画面左上のロゴに設定
-  favicon: assets/logo.png # ブラウザのタブのアイコンに設定
-  # ▲ ここまで ▲
-  palette:
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  palette: 
     primary: indigo
     accent: deep orange
   features:
     - navigation.tabs
-    # ... (他の設定はそのまま) ...
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - "１． 理念・行動規範":
+      - "（１） 指導者行動規範": 00_Philosophy/coaching_code.md
+      - "（２） FUN & GUN 哲学": 00_Philosophy/fun_and_gun.md
+  - "２． 育成理論（22歳への逆算）":
+      - "（１） 22歳への夢の設計図": 01_Coaching_Logics/dream_blueprint.md
+      - "（２） LTAD（長期選手育成モデル）": 01_Coaching_Logics/ltad.md
+      - "（３） The 5 Cs（育成の５指標）": 01_Coaching_Logics/5cs.md
+      - "（４） BPSモデル（生物心理社会モデル）": 01_Coaching_Logics/bps_model.md
+      - "（５） ライフスキル（生活の土台）": 01_Coaching_Logics/life_skills.md
+      - "（６） 脳の成長とマインドセット": 01_Coaching_Logics/growth_mindset.md
+      - "（７） メンタル・フロー": 01_Coaching_Logics/mental_flow.md
+      - "（８） 栄養・水分・睡眠": 01_Coaching_Logics/nutrition.md
+      - "（９） 女子選手のコンディショニング": 01_Coaching_Logics/female_athlete.md
+      - "（１０） 年間育成計画": 01_Coaching_Logics/annual_plan.md
+      - "（１１） 試合の優先順位・起用方針": 01_Coaching_Logics/game_policy.md
+      - "（１２） シュート：ワンハンド推奨": 01_Coaching_Logics/shooting_standard.md
+      - "（１３） 5-Outコンセプト": 01_Coaching_Logics/5out.md
+      - "（１４） 防御：基本原則": 01_Coaching_Logics/defense_basic.md
+      - "（１５） 個人の志と役割": 01_Coaching_Logics/individual_goals.md
+  - "３． 練習ドリル・計画":
+      - "（１） 練習メニューの組み立て方": 02_Training_Drills/practice_planning.md
+      - "（２） 基本練習 (Basics)": 02_Training_Drills/basics.md
+      - "（３） コーディネーション": 02_Training_Drills/coordination.md
+      - "（４） 5アウト基礎ドリル": 02_Training_Drills/5out_basics.md
+  - "４． 管理・運営・安全":
+      - "（１） 支部組織・理事職務": 03_Operations/organization.md
+      - "（２） 緊急時対応(EAP)": 03_Operations/eap.md
+      - "（３） 保護者ガイド・チームルール": 03_Operations/parents_guide.md
+      - "（４） チームルール（選手）": 03_Operations/team_rules_player.md
+      - "（５） チームルール（保護者）": 03_Operations/team_rules_parent.md
+      - "（６） 練習試合 主催手順": 03_Operations/hosting_practice_match.md
+      - "（７） 大会協力業務": 03_Operations/tournament_duty.md
+      - "（８） 遠征先のマナー": 03_Operations/away_game_etiquette.md
+      - "（９） TOマニュアル": 03_Operations/to_manual.md
