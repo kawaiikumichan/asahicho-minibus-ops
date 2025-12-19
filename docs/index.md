@@ -4,51 +4,52 @@
 
 ---
 
-## 📢 更新情報
-* **2025.12.19:** 「[22歳への夢の設計図](01_Coaching_Logics/dream_blueprint.md)」に対話技術を追記
-* **2025.12.15:** 全体のスマホ表示を最適化
+## 📢 更新情報 (2025.12.19)
+・ 「22歳への夢の設計図」に用語を統一しました。
+・ 第2章（育成戦略）に会議用サマリーを実装しました。
+・ スマホでの「・」の二重表示を解消しました。
 
 ---
 
-## 📖 マニュアル目次
+## 🧭 第2章：育成戦略（会議用サマリー）
+会議で本章を説明する際の3つのポイントです。
+
+**1. 22歳からの逆算**
+12歳の結果を目的化せず、22歳をゴールとする「[22歳への夢の設計図](01_Coaching_Logics/dream_blueprint.md)」に基づいた指導を行います。
+**2. 科学的根拠（LTAD / 5Cs / BPS）**
+脳や身体の成長段階に合わせた長期育成モデルを採用します。
+**3. 生活という土台（ライフスキル）**
+「生活」を1階、「技術」を2階とする「二階建て理論」を徹底します。
+
+---
+
+## 📖 全メニュー一覧
 
 ### 1. 理念・行動規範
-* [・ 指導者行動規範](00_Philosophy/coaching_code.md)
-* [・ FUN & GUN 哲学](00_Philosophy/fun_and_gun.md)
-* [・ 個人の志と役割](01_Coaching_Logics/individual_goals.md)
+[・ 指導者行動規範](00_Philosophy/coaching_code.md)
+[・ FUN & GUN 哲学](00_Philosophy/fun_and_gun.md)
+[・ 個人の志と役割](01_Coaching_Logics/individual_goals.md)
 
 ### 2. 育成理論：22歳への逆算
-* [・ LTAD（長期育成モデル）](01_Coaching_Logics/ltad.md)
-* [・ The 5 Cs（育成の指標）](01_Coaching_Logics/5cs.md)
-* [・ BPSモデル（心理社会）](01_Coaching_Logics/bps_model.md)
-* [・ 22歳への夢の設計図](01_Coaching_Logics/dream_blueprint.md)
-* [・ ライフスキル（土台）](01_Coaching_Logics/life_skills.md)
-* [・ 脳の成長と意識](01_Coaching_Logics/growth_mindset.md)
-* [・ メンタル・フロー](01_Coaching_Logics/mental_flow.md)
-* [・ 栄養とフィジカル](01_Coaching_Logics/nutrition.md)
-* [・ 女子選手の管理](01_Coaching_Logics/female_athlete.md)
-* [・ 年間育成計画](01_Coaching_Logics/annual_plan.md)
-* [・ 試合の起用方針](01_Coaching_Logics/game_policy.md)
-* [・ ワンハンドシュート](01_Coaching_Logics/shooting_standard.md)
-* [・ 5-Outコンセプト](01_Coaching_Logics/5out.md)
-* [・ 防御：基本原則](01_Coaching_Logics/defense_basic.md)
-* [・ 世界標準の定義](01_Coaching_Logics/world_standards.md)
+[・ 第2章：育成戦略サマリー](01_Coaching_Logics/index.md)
+[・ 22歳への夢の設計図](01_Coaching_Logics/dream_blueprint.md)
+[・ LTAD（長期育成モデル）](01_Coaching_Logics/ltad.md)
+[・ The 5 Cs（育成指標）](01_Coaching_Logics/5cs.md)
+[・ BPSモデル（生物心理社会）](01_Coaching_Logics/bps_model.md)
+[・ ライフスキル（生活の土台）](01_Coaching_Logics/life_skills.md)
+[・ 脳の成長と意識](01_Coaching_Logics/growth_mindset.md)
+[・ シュート：ワンハンド推奨](01_Coaching_Logics/shooting_standard.md)
+[・ 5-Outコンセプト](01_Coaching_Logics/5out.md)
 
 ### 3. 練習ドリル・計画
-* [・ メニューの組み立て方](02_Training_Drills/practice_planning.md)
-* [・ 基本練習 (Basics)](02_Training_Drills/basics.md)
-* [・ コーディネーション](02_Training_Drills/coordination.md)
-* [・ 5アウト基礎ドリル](02_Training_Drills/5out_basics.md)
+[・ メニューの組み立て方](02_Training_Drills/practice_planning.md)
+[・ 基本練習 (Basics)](02_Training_Drills/basics.md)
+[・ 5アウト基礎ドリル](02_Training_Drills/5out_basics.md)
 
 ### 4. 管理・運営・安全
-* [・ 支部組織・理事職務](03_Operations/organization.md)
-* [・ 緊急時対応(EAP)](03_Operations/eap.md)
-* [・ 保護者ガイドライン](03_Operations/parents_guide.md)
-* [・ チームルール（選手）](03_Operations/team_rules_player.md)
-* [・ チームルール（保護者）](03_Operations/team_rules_parent.md)
-* [・ 練習試合 主催手順](03_Operations/hosting_practice_match.md)
-* [・ 大会協力業務](03_Operations/tournament_duty.md)
-* [・ 送迎・安全ルール](03_Operations/transport_safety.md)
+[・ 支部組織・理事職務](03_Operations/organization.md)
+[・ 緊急時対応(EAP)](03_Operations/eap.md)
+[・ 送迎・安全ルール](03_Operations/transport_safety.md)
 
 ---
-**管理:** 池田 / **技術:** 高橋HC
+**責任者:** 池田（運営） / 高橋HC（技術）
