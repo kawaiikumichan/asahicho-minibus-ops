@@ -1,25 +1,9 @@
-site_name: 旭町MBC 運営マニュアル
-theme:
-  name: material
-  language: ja
-  palette: 
-    primary: indigo
-    accent: deep orange
-  features:
-    - navigation.tabs           # スマホ上部にセクションを表示
-    - navigation.sections       # サイドメニューを構造化
-    - navigation.expand         # 【重要】スマホで最初から全メニューを展開
-    - navigation.indexes        # フォルダ名をタップ可能にする
-    - navigation.top            # トップへ戻るボタン
-    - search.suggest
-
-# ▼ ここが重要です：全ファイルを網羅するように記述します
 nav:
   - Home: index.md
-  - 1. 理念 (Philosophy):
+  - "1. 理念・行動規範":
       - 00_Philosophy/coaching_code.md
       - 00_Philosophy/fun_and_gun.md
-  - 2. 育成理論 (Logics):
+  - "2. 育成理論（22歳への逆算）":
       - 01_Coaching_Logics/dream_blueprint.md
       - 01_Coaching_Logics/individual_goals.md
       - 01_Coaching_Logics/life_skills.md
@@ -36,12 +20,12 @@ nav:
       - 01_Coaching_Logics/mental_flow.md
       - 01_Coaching_Logics/nutrition.md
       - 01_Coaching_Logics/world_standards.md
-  - 3. 練習ドリル (Drills):
+  - "3. 練習ドリル・計画":
       - 02_Training_Drills/practice_planning.md
       - 02_Training_Drills/basics.md
       - 02_Training_Drills/coordination.md
       - 02_Training_Drills/5out_basics.md
-  - 4. 運営・管理 (Operations):
+  - "4. 管理・運営・安全":
       - 03_Operations/organization.md
       - 03_Operations/eap.md
       - 03_Operations/parents_guide.md
