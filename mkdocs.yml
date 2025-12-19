@@ -6,22 +6,49 @@ theme:
     primary: indigo
     accent: deep orange
   features:
-    - navigation.tabs           # 上部に大きなタブを表示（セクション移動が楽に）
-    - navigation.tabs.sticky    # スクロールしてもタブを固定
-    - navigation.sections       # サイドメニューをセクションごとに区切る
-    - navigation.expand         # 最初からメニューを展開しておく（スマホで探しやすく）
-    - navigation.indexes        # セクション名自体をタップ可能にする
-    - navigation.top            # 「トップへ戻る」ボタンを表示
-    - search.suggest            # 検索のサジェスト機能
-    - search.highlight          # 検索語のハイライト
+    - navigation.tabs           # スマホ上部にセクションを表示
+    - navigation.sections       # サイドメニューを構造化
+    - navigation.expand         # 【重要】スマホで最初から全メニューを展開
+    - navigation.indexes        # フォルダ名をタップ可能にする
+    - navigation.top            # トップへ戻るボタン
+    - search.suggest
 
+# ▼ ここが重要です：全ファイルを網羅するように記述します
 nav:
   - Home: index.md
   - 1. 理念 (Philosophy):
-      - 00_Philosophy/
+      - 00_Philosophy/coaching_code.md
+      - 00_Philosophy/fun_and_gun.md
   - 2. 育成理論 (Logics):
-      - 01_Coaching_Logics/
+      - 01_Coaching_Logics/dream_blueprint.md
+      - 01_Coaching_Logics/individual_goals.md
+      - 01_Coaching_Logics/life_skills.md
+      - 01_Coaching_Logics/shooting_standard.md
+      - 01_Coaching_Logics/5cs.md
+      - 01_Coaching_Logics/5out.md
+      - 01_Coaching_Logics/annual_plan.md
+      - 01_Coaching_Logics/bps_model.md
+      - 01_Coaching_Logics/defense_basic.md
+      - 01_Coaching_Logics/female_athlete.md
+      - 01_Coaching_Logics/game_policy.md
+      - 01_Coaching_Logics/growth_mindset.md
+      - 01_Coaching_Logics/ltad.md
+      - 01_Coaching_Logics/mental_flow.md
+      - 01_Coaching_Logics/nutrition.md
+      - 01_Coaching_Logics/world_standards.md
   - 3. 練習ドリル (Drills):
-      - 02_Training_Drills/
+      - 02_Training_Drills/practice_planning.md
+      - 02_Training_Drills/basics.md
+      - 02_Training_Drills/coordination.md
+      - 02_Training_Drills/5out_basics.md
   - 4. 運営・管理 (Operations):
-      - 03_Operations/
+      - 03_Operations/organization.md
+      - 03_Operations/eap.md
+      - 03_Operations/parents_guide.md
+      - 03_Operations/team_rules_player.md
+      - 03_Operations/team_rules_parent.md
+      - 03_Operations/hosting_practice_match.md
+      - 03_Operations/tournament_duty.md
+      - 03_Operations/away_game_etiquette.md
+      - 03_Operations/to_manual.md
+      - 03_Operations/transport_safety.md
