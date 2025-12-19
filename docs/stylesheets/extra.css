@@ -1,39 +1,15 @@
-/* --- スマホ・モバイル最適化設定 --- */
-
-/* 1. 長い単語やリンクが画面を突き抜けるのを防ぐ */
-.md-typeset {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-    hyphens: auto;
+/* リストの丸ポチ（●）を消して二重表記を防止 */
+.md-nav__list, .md-typeset ul {
+    list-style-type: none !important;
 }
 
-/* 2. 行間を少し広げて、スマホでも読みやすくする */
-.md-typeset p, .md-typeset li {
-    line-height: 1.8;
+/* サイドメニューの余白を調整してスッキリさせる */
+.md-nav__link {
+    padding-left: 0.5rem;
+}
+
+/* スマホでの改行間隔を調整 */
+.md-typeset p {
     margin-bottom: 0.8em;
-}
-
-/* 3. リスト（箇条書き）の間隔を調整 */
-.md-typeset ul li, .md-typeset ol li {
-    margin-bottom: 0.5em;
-    margin-left: 0.2em;
-}
-
-/* 4. 表（テーブル）が崩れないようにスクロールを許可 */
-.md-typeset__scrollwrap {
-    margin: 1em 0;
-}
-.md-typeset table {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    white-space: nowrap; /* 表の中身が勝手に改行されるのを防ぐ */
-}
-
-/* 5. スマホで見出しが大きすぎるのを調整 */
-@media screen and (max-width: 44.9375em) {
-    .md-typeset h1 { font-size: 1.4em; }
-    .md-typeset h2 { font-size: 1.2em; }
-    .md-typeset h3 { font-size: 1.1em; }
+    line-height: 1.6;
 }
