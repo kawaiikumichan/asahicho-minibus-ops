@@ -1,89 +1,40 @@
-# 旭町ミニバスケットボールクラブ チーム運営ガイド 🏀
+# 旭町ミニバスケットボールクラブ 運営マニュアル 🏀
 
-**「FUN & GUN」で未来をつくる。**
-ここは、旭町ミニバスの選手・保護者・コーチ・スタッフ向け運営マニュアル（ナレッジベース）です。
+**「10年後の自分に感謝される成長を」**
 
-<div style="background-color: #082A70; color: white; padding: 20px; border-radius: 8px; margin: 20px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
-    <h2 style="color: white; margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 10px;">🏆 Team Philosophy</h2>
-    <div style="margin-top: 15px;">
-        <strong style="font-size: 1.2em; color: #FF9800;">FUN (育成)</strong><br>
-        「楽（ラク）」ではなく、上達しようともがき、壁を越える瞬間の喜び（Growth Mindset）を共有すること。<br>
-        コーチは「答え」を教えるのではなく、選手が「気づく」のを待ちます。
-    </div>
-    <div style="margin-top: 15px;">
-        <strong style="font-size: 1.2em; color: #FF9800;">GUN (戦術)</strong><br>
-        全員攻撃（Total Offense）。特定のスター選手に頼らず、全員が1on1を仕掛け、全員で走るバスケット（5Out）。
-    </div>
-</div>
+このサイトは、旭町MBCに関わるすべての人がチームの哲学を共有し、一貫した育成と健全な運営を行うためのガイドラインです。
 
 ---
 
-## 📚 目次 (Directory)
+## 🧭 旭町MBCの「三柱」
 
-以下のリンクから各ページにアクセスできます。
+### ① 育成のゴール (The Long-term Goal)
+「全国大会は通過点」です。私たちの真の目的地は、選手が **22〜25歳** で社会に出た際、バスケで培った力を武器に自立して活躍している姿です。
+* [夢の設計図 (22歳への航海図)](01_Coaching_Logics/dream_blueprint.md)
+* [熟達目標とバーンアウトの防止](01_Coaching_Logics/beyond_the_goal.md)
 
-### 00. 理念 (Philosophy)
+### ② 技術の基準 (The Standard)
+世界標準の技術を、神経系が発達するこの時期（ゴールデンエイジ）に習得します。
+* [ワンハンドシュートの推奨](01_Coaching_Logics/shooting_standard.md)
+* [5-Outコンセプト（全員攻撃）の浸透](01_Coaching_Logics/5out.md)
 
-チームの根幹となる考え方です。
-
-* [FUN & GUN の定義](00_Philosophy/fun_and_gun.md)
-* [コーチ行動指針 (Coaching Code)](00_Philosophy/coaching_code.md)
-
-### 01. 育成・戦術 (Logics)
-
-**【ロードマップ & スタンダード】**
-
-* **[年間計画・LTAD (Annual Plan)](01_Coaching_Logics/annual_plan.md)** <span style="color:red; font-size:0.8em;">Important</span>
-    * 全国大会への「勝利の道」と、長期的な「育成の道」の二重構造。
-* [試合の優先順位 (Game Policy)](01_Coaching_Logics/game_policy.md)
-* [シュート理論 (Shooting Standard)](01_Coaching_Logics/shooting_standard.md)
-
-**【戦術 (Tactics)】**
-
-* [攻撃：5アウト・オフェンス](01_Coaching_Logics/5out.md)
-* [守備：攻めるディフェンス](01_Coaching_Logics/defense_basic.md)
-
-**【人間形成・ヘルスケア (Off-Court & Health)】**
-
-* **[生活・規律 (Life Skills)](01_Coaching_Logics/life_skills.md)** <span style="color:red; font-size:0.8em;">New</span>
-    * 挨拶、整理整頓、自立。「2階建ての家」理論。
-* **[食育・水分補給 (Nutrition)](01_Coaching_Logics/nutrition.md)** <span style="color:red; font-size:0.8em;">New</span>
-    * おにぎり推奨と、脱水を防ぐ水分補給ルール。
-* **[女性アスリートの健康 (Female Health)](01_Coaching_Logics/female_athlete.md)** <span style="color:red; font-size:0.8em;">New</span>
-    * ACL（膝の靭帯）損傷予防と、三主徴（貧血等）への対策。
-* [メンタル・フロー (Flow)](01_Coaching_Logics/mental_flow.md)
-* [脳の成長・マインドセット (Growth)](01_Coaching_Logics/growth_mindset.md)
-
-**【基礎理論 (Basics)】**
-
-* [世界標準モデル (LTAD)](01_Coaching_Logics/ltad.md)
-* [5つの要素 (5Cs)](01_Coaching_Logics/5cs.md)
-* [心技体モデル (BPS)](01_Coaching_Logics/bps_model.md)
-
-### 02. 練習メニュー (Drills)
-
-* [基本ドリル・構成 (Basics)](02_Training_Drills/basics.md)
-* [練習メニューの作り方 (Practice Planning)](02_Training_Drills/practice_planning.md)
-
-### 03. 運営・ルール (Operations & Rules)
-
-**【チームのお約束】**
-
-* [選手への約束 (Rules for Players)](03_Operations/team_rules_player.md)
-* [保護者へのお願い (Rules for Parents)](03_Operations/team_rules_parent.md)
-
-**【実務マニュアル】**
-
-* **[TO見守りマニュアル (Table Official)](03_Operations/to_manual.md)** <span style="color:red; font-size:0.8em;">Must Read</span>
-    * 保護者の役割は「作業」ではなく「子供の見守り」と「トラブル対応」。
-* **[緊急時対応計画 (EAP)](03_Operations/eap.md)** <span style="color:red; font-size:0.8em;">Important</span>
-    * 怪我、熱中症、脳振盪への対応フロー。
-* [運営体制・役割分担 (Organization)](03_Operations/organization.md)
-* [家庭でできるサポート (Parents Guide)](03_Operations/parents_guide.md)
+### ③ 組織と規律 (Governance)
+**千葉県バスケットボール協会U12カテゴリー部会柏支部**の一員として、地域全体の環境づくりに貢献します。
+* [柏支部の組織体制と理事の役割](03_Operations/organization.md)
+* [安全管理(EAP)と緊急時対応の徹底](03_Operations/eap.md)
 
 ---
 
-## 📢 お知らせ
-* **Update:** 練習メニューを「走り勝つ（GUN）」ための実戦形式にアップデートしました。
-* **New:** 保護者向けの「TO見守りマニュアル」「緊急時対応（EAP）」を追加しました。
-* **New:** 女子選手の健康管理（膝の怪我予防、貧血対策）のページを公開しました。
+## 🏗️ 運営体制について
+
+旭町MBCは、以下の連携によって支えられています。
+
+* **指導スタッフ:** 「選手の最大能力の達成」と「人間的成長」のダブル・ゴールを目指します。
+* **保護者の皆様:** 特定の「保護者会」は置かず、全員が協力者として子供たちの活動をサポートします。
+* **柏支部理事:** チーム代表（コーチ）が各委員会（競技・審判・会場・式典・MC・事務局）に所属し、支部運営を担います。
+
+---
+
+## 👨‍🏫 合言葉
+> 「バスケ『しか』できない人間になるな。<br>
+> バスケ『も』できる素晴らしい人間になろう。」
