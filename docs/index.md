@@ -5,8 +5,8 @@
 ---
 
 ## 📢 更新情報
-（１） １（３）個人の志と役割 を追加しました。  
-（２） ２（１）22歳への夢の設計図 を追加しました。  
+New １．（３）個人の志と役割 を追加  
+New ２．（１）22歳への夢の設計図 を追加  
 
 ---
 
@@ -35,7 +35,7 @@
 ### ４. 管理・運営・安全 (Operations)
 （１） [支部組織・理事職務](03_Operations/organization.md)  
 （２） [緊急時対応(EAP)](03_Operations/eap.md)  
-（３） [チームルール（選手・保護者）](03_Operations/team_rules_player.md)  
+（３） [チームルール](03_Operations/team_rules_player.md)  
 （４） [送迎・安全ルール](03_Operations/transport_safety.md)  
 
 ---
