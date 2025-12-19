@@ -6,24 +6,22 @@ theme:
     primary: indigo
     accent: deep orange
   features:
-    - navigation.tabs
-    - navigation.sections
-
-markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
+    - navigation.tabs           # 上部に大きなタブを表示（セクション移動が楽に）
+    - navigation.tabs.sticky    # スクロールしてもタブを固定
+    - navigation.sections       # サイドメニューをセクションごとに区切る
+    - navigation.expand         # 最初からメニューを展開しておく（スマホで探しやすく）
+    - navigation.indexes        # セクション名自体をタップ可能にする
+    - navigation.top            # 「トップへ戻る」ボタンを表示
+    - search.suggest            # 検索のサジェスト機能
+    - search.highlight          # 検索語のハイライト
 
 nav:
   - Home: index.md
-  - 1. 理念・行動規範:
-    - 指導・行動規範: 00_Philosophy/coaching_code.md
-    - 個人の志とチームの役割: 01_Coaching_Logics/individual_goals.md
-  - 2. 育成論 (Logics):
-    - 22歳への夢の設計図: 01_Coaching_Logics/dream_blueprint.md
-    - ライフスキル(生活の土台): 01_Coaching_Logics/life_skills.md
-    - シュート：ワンハンド推奨: 01_Coaching_Logics/shooting_standard.md
-    - 外部スクール等との両立: 03_Operations/school_policy.md
-  - 3. 運営・安全 (Operations):
-    - 柏支部 組織体制・理事職務: 03_Operations/organization.md
-    - 緊急時対応(EAP): 03_Operations/eap.md
+  - 1. 理念 (Philosophy):
+      - 00_Philosophy/
+  - 2. 育成理論 (Logics):
+      - 01_Coaching_Logics/
+  - 3. 練習ドリル (Drills):
+      - 02_Training_Drills/
+  - 4. 運営・管理 (Operations):
+      - 03_Operations/
