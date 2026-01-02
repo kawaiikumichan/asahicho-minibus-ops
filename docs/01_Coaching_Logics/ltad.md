@@ -1,70 +1,69 @@
 # ２．（２） LTADモデル（長期競技者育成）
 
-<div style="background-color: #e8f5e9; border-left: 5px solid #4caf50; padding: 15px; margin-bottom: 20px;">
-    <strong>「子供は小さな大人ではない」</strong><br>
-    JBAも採用する世界標準の育成ロードマップ。目先の１勝より、１０年後の活躍を見据えた「逆算の指導」を定義します。
+<div style="background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #dee2e6; margin-bottom: 25px;">
+    <h2 style="margin-top: 0; color: #2e7d32;">１． 育成ピラミッドとＵ１２の役割</h2>
+    
+    <p><strong>（１） 段階的アプローチの重要性</strong></p>
+    <div style="padding-left: 20px;">
+        <p>（Ａ） 成長に合わせた７段階のステップ</p>
+        <div style="padding-left: 20px;">
+            ・ 子供は「小さな大人」ではありません。体と脳の発達に合わせた指導が必要です。<br>
+            ・ 私たちが担当するＵ１２世代は、土台となる「基礎を学ぶ」極めて重要な時期です。
+        </div>
+    </div>
+
+    <p style="margin-top: 15px;"><strong>（２） ゴールデンエイジ（即座習得期）</strong></p>
+    <div style="padding-left: 20px;">
+        <p>（Ａ） 一生に一度のチャンス</p>
+        <div style="padding-left: 20px;">
+            ・ 神経系が急激に発達し、見た動きをそのまま習得できる時期です。<br>
+            ・ この時期に特定の型に嵌めず、多様な動きを経験させることが22歳の輝きに繋がります。
+        </div>
+    </div>
 </div>
 
-## １． 育成ピラミッドとＵ１２の役割
-（１） 段階的アプローチの重要性
-　（Ａ） ７段階の成長ステップ
-<table style="width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.9em;">
-    <tr style="background-color: #f5f5f5;"><td style="padding: 8px; border: 1px solid #ddd;">7. 生涯スポーツ (Active for Life)</td></tr>
-    <tr style="background-color: #f5f5f5;"><td style="padding: 8px; border: 1px solid #ddd;">6. 勝つためのトレーニング (Train to Win)</td></tr>
-    <tr style="background-color: #f5f5f5;"><td style="padding: 8px; border: 1px solid #ddd;">5. 競技のためのトレーニング (Train to Compete)</td></tr>
-    <tr style="background-color: #f5f5f5;"><td style="padding: 8px; border: 1px solid #ddd;">4. トレーニング方法を学ぶ (Train to Train)</td></tr>
-    <tr style="background-color: #fff9c4; font-weight: bold;"><td style="padding: 8px; border: 2px solid #fbc02d;">★ 3. 基礎を学ぶ (Learn to Train) 【Ｕ１２世代】</td></tr>
-    <tr style="background-color: #f5f5f5;"><td style="padding: 8px; border: 1px solid #ddd;">2. 楽しむ・動く (FUNdamentals)</td></tr>
-    <tr style="background-color: #f5f5f5;"><td style="padding: 8px; border: 1px solid #ddd;">1. アクティブスタート (Active Start)</td></tr>
-</table>
 
-　（Ｂ） ゴールデンエイジ（即座習得期）の活用
-　　・ Ｕ１２世代は、一生のうちで最も運動神経が発達する時期です。
-　　・ この時期に「特定の形」に嵌めすぎず、多様な動きを経験させることが不可欠です。
 
----
-
-## ２． 科学的根拠：スキャモンの発育曲線
-（１） 身体システムの発達スピード
-　（Ａ） 系統別の特徴と指導への反映
-<table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
-    <tr style="background-color: #3f51b5; color: white;">
-        <th style="padding: 8px; border: 1px solid #ddd;">系統</th>
-        <th style="padding: 8px; border: 1px solid #ddd;">Ｕ１２の状態</th>
-        <th style="padding: 8px; border: 1px solid #ddd;">指導への反映</th>
-    </tr>
-    <tr>
-        <td style="padding: 8px; border: 1px solid #ddd;"><strong>神経型</strong></td>
-        <td style="padding: 8px; border: 1px solid #ddd;">ほぼ100%完成</td>
-        <td style="padding: 8px; border: 1px solid #ddd;">リズム、バランス等の「器用さ」を養う回路作り。</td>
-    </tr>
-    <tr>
-        <td style="padding: 8px; border: 1px solid #ddd;"><strong>一般型</strong></td>
-        <td style="padding: 8px; border: 1px solid #ddd;">まだ未発達</td>
-        <td style="padding: 8px; border: 1px solid #ddd;">激しい筋トレより、自分の体を操る練習。</td>
-    </tr>
-</table>
+<div style="margin-bottom: 25px;">
+    <h2 style="color: #1565c0; border-bottom: 2px solid #1565c0;">２． 科学的根拠：スキャモンの発育曲線</h2>
+    
+    <p>（１） 身体システム別の発達スピード</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 10px 0;">
+        <tr style="background: #e3f2fd;">
+            <th style="border: 1px solid #90caf9; padding: 10px;">系統</th>
+            <th style="border: 1px solid #90caf9; padding: 10px;">特徴</th>
+            <th style="border: 1px solid #90caf9; padding: 10px;">指導のポイント</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #90caf9; padding: 10px;"><strong>神経型</strong></td>
+            <td style="border: 1px solid #90caf9; padding: 10px;">Ｕ１２でほぼ100%完成</td>
+            <td style="border: 1px solid #90caf9; padding: 10px;">器用さ、リズム、バランスを養う。</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #90caf9; padding: 10px;"><strong>一般型</strong></td>
+            <td style="border: 1px solid #90caf9; padding: 10px;">未発達（これから伸びる）</td>
+            <td style="border: 1px solid #90caf9; padding: 10px;">過度な筋トレは避け、身体操作を優先。</td>
+        </tr>
+    </table>
+</div>
 
 
 
----
+<div style="background-color: #fff4f4; padding: 20px; border: 1px solid #ffcdd2; border-radius: 10px; margin-bottom: 25px;">
+    <h2 style="margin-top: 0; color: #c62828;">３． 早期専門化のリスク</h2>
+    
+    <p><strong>（１） 特定ポジション固定の弊害</strong></p>
+    <div style="padding-left: 20px;">
+        <p>（Ａ） 成長の限界（バーンアウト）</p>
+        <div style="padding-left: 20px;">
+            ・ 「やらされるバスケ」は、中学・高校での燃え尽きを招くリスクがあります。<br>
+            ・ 今の１勝のために子供の将来を削る「幻影の勝利」を追ってはいけません。
+        </div>
+    </div>
+</div>
 
-## ３． 早期専門化のリスクと弊害
-（１） 特定ポジション固定の危険性
-　（Ａ） 将来の伸び代（バーンアウト）
-　　・ 「やらされるバスケ」は、中学・高校での燃え尽きを招きます。
-　（Ｂ） 怪我とスキルの偏り
-　　・ 小学生でセンターしかやらなかった子は、将来ドリブルができない選手になります。
-
----
-
-## ４． 旭町ミニバスのアクション指針
-（１） 勝利至上主義からの脱却
-　（Ａ） 具体的な指導転換
-　　・ **ポジションレス**：大きい子もドリブルし、小さい子もポストプレーを経験。
-　　・ **５－Ｏｕｔコンセプト**：全員が広いスペースで判断力を磨く実戦形式。
-
-<div style="border: 2px solid #d32f2f; padding: 15px; background-color: #fff9f9; border-radius: 8px; color: #d32f2f; text-align: center;">
-    <strong>「今、勝てないことを焦らないでください」</strong><br>
-    私たちは将来の高層ビルのための、見えない「土台（基礎）」を打っているのです。
+<div style="background: #3f51b5; color: white; padding: 20px; border-radius: 10px; text-align: center;">
+    <h3 style="margin-top: 0;">旭町ミニバスの約束</h3>
+    <p>「今、勝てないことを焦らないでください」</p>
+    <p>私たちは将来の高層ビルのための、見えない「土台」を打っているのです。</p>
 </div>
