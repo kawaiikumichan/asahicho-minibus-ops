@@ -1,85 +1,70 @@
-# 1. LTADモデル (長期競技者育成)
+# ２．（２） LTADモデル（長期競技者育成）
 
-**「子供は小さな大人ではない」**
-カナダで開発され、JBA（日本バスケットボール協会）も採用する世界標準の育成ロードマップです。
+<div style="background-color: #e8f5e9; border-left: 5px solid #4caf50; padding: 15px; margin-bottom: 20px;">
+    <strong>「子供は小さな大人ではない」</strong><br>
+    JBAも採用する世界標準の育成ロードマップ。目先の１勝より、１０年後の活躍を見据えた「逆算の指導」を定義します。
+</div>
 
-## 📊 育成ピラミッド（下から上へ）
+## １． 育成ピラミッドとＵ１２の役割
+（１） 段階的アプローチの重要性
+　（Ａ） ７段階の成長ステップ
+<table style="width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.9em;">
+    <tr style="background-color: #f5f5f5;"><td style="padding: 8px; border: 1px solid #ddd;">7. 生涯スポーツ (Active for Life)</td></tr>
+    <tr style="background-color: #f5f5f5;"><td style="padding: 8px; border: 1px solid #ddd;">6. 勝つためのトレーニング (Train to Win)</td></tr>
+    <tr style="background-color: #f5f5f5;"><td style="padding: 8px; border: 1px solid #ddd;">5. 競技のためのトレーニング (Train to Compete)</td></tr>
+    <tr style="background-color: #f5f5f5;"><td style="padding: 8px; border: 1px solid #ddd;">4. トレーニング方法を学ぶ (Train to Train)</td></tr>
+    <tr style="background-color: #fff9c4; font-weight: bold;"><td style="padding: 8px; border: 2px solid #fbc02d;">★ 3. 基礎を学ぶ (Learn to Train) 【Ｕ１２世代】</td></tr>
+    <tr style="background-color: #f5f5f5;"><td style="padding: 8px; border: 1px solid #ddd;">2. 楽しむ・動く (FUNdamentals)</td></tr>
+    <tr style="background-color: #f5f5f5;"><td style="padding: 8px; border: 1px solid #ddd;">1. アクティブスタート (Active Start)</td></tr>
+</table>
 
-成長に合わせて段階を踏むことが重要です。
-
-```mermaid
-graph BT
-    %% ノードの定義（下から順に積み上げ）
-    G[1. アクティブスタート<br>Active Start]
-    F[2. 楽しむ・動く<br>FUNdamentals]
-    E[3. 基礎を学ぶ<br>Learn to Train]
-    D[4. トレーニング方法を学ぶ<br>Train to Train]
-    C[5. 競技のためのトレーニング<br>Train to Compete]
-    B[6. 勝つためのトレーニング<br>Train to Win]
-    A[7. 生涯スポーツ<br>Active for Life]
-
-    %% つながり線
-    G --> F
-    F --> E
-    E --> D
-    D --> C
-    C --> B
-    B --> A
-
-    %% 色付け（今ここ！を目立たせる）
-    classDef highlight fill:#f96,stroke:#333,stroke-width:4px,color:white;
-    class E highlight
-```
-<br>
-
-!!! tip "▲ 今ここ！ (U12世代)"
-    私たちが担当するのは、下から3段目の **「3. 基礎を学ぶ」** です。
-    この時期は **「ゴールデンエイジ（即座習得期）」** とも呼ばれ、一生のうちで最も運動神経が発達する時期です。
-
-
-
-## 🧬 科学的根拠：スキャモンの発育曲線
-
-なぜ、U12で「筋トレ」や「持久走」よりも「いろいろな動き」が重要なのでしょうか？
-それは、子供の体のシステムの発達スピードが異なるからです。
-
-| 系統 | 内容 | U12での状態 | 指導への反映 |
-| :--- | :--- | :--- | :--- |
-| **神経型** | 器用さ、リズム、バランス | **ほぼ100%完成する** | 色々な動きを経験させ、脳と体を繋ぐ回路を作るラストチャンス。 |
-| **一般型** | 身長、体重、筋肉、臓器 | **まだ未発達** | 激しい筋トレや過度な走り込みは、関節を壊すだけで効果が薄い。 |
-| **生殖型** | ホルモンバランス | **これから** | 思春期以降に急激に伸びる。パワー練習は中学・高校からで良い。 |
-
-### 結論：U12は何をすべきか？
-* ✅ **多種多様な動き**（バスケ以外の動きも含める）
-* ✅ **アジリティ・コーディネーション**（ラダー、鬼ごっこ）
-* ✅ **状況判断の伴うスキル**（1on1、3on3）
+　（Ｂ） ゴールデンエイジ（即座習得期）の活用
+　　・ Ｕ１２世代は、一生のうちで最も運動神経が発達する時期です。
+　　・ この時期に「特定の形」に嵌めすぎず、多様な動きを経験させることが不可欠です。
 
 ---
 
-## ⚠️ 最大のリスク：「早期専門化」の弊害
+## ２． 科学的根拠：スキャモンの発育曲線
+（１） 身体システムの発達スピード
+　（Ａ） 系統別の特徴と指導への反映
+<table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+    <tr style="background-color: #3f51b5; color: white;">
+        <th style="padding: 8px; border: 1px solid #ddd;">系統</th>
+        <th style="padding: 8px; border: 1px solid #ddd;">Ｕ１２の状態</th>
+        <th style="padding: 8px; border: 1px solid #ddd;">指導への反映</th>
+    </tr>
+    <tr>
+        <td style="padding: 8px; border: 1px solid #ddd;"><strong>神経型</strong></td>
+        <td style="padding: 8px; border: 1px solid #ddd;">ほぼ100%完成</td>
+        <td style="padding: 8px; border: 1px solid #ddd;">リズム、バランス等の「器用さ」を養う回路作り。</td>
+    </tr>
+    <tr>
+        <td style="padding: 8px; border: 1px solid #ddd;"><strong>一般型</strong></td>
+        <td style="padding: 8px; border: 1px solid #ddd;">まだ未発達</td>
+        <td style="padding: 8px; border: 1px solid #ddd;">激しい筋トレより、自分の体を操る練習。</td>
+    </tr>
+</table>
 
-「小学生のうちから特定のポジション（センターなど）に固定し、勝つためのパターン戦術だけを反復させること」を**早期専門化**と呼び、世界的に警鐘が鳴らされています。
 
-### 早期専門化が招く3つのマイナス
-1.  **バーンアウト（燃え尽き）**
-    * 「やらされるバスケ」になり、中学・高校で競技を辞めてしまう確率が高まる。
-2.  **怪我（オーバーユース）**
-    * 同じ動きばかり繰り返すため、膝や腰の特定箇所に負担が集中する。
-3.  **伸び悩み**
-    * 小学生で「センター」しかやらなかった子は、身長の伸びが止まった時に「ドリブルもパスもできない選手」になってしまう。
 
 ---
 
-## 🏀 旭町ミニバスのアクション
+## ３． 早期専門化のリスクと弊害
+（１） 特定ポジション固定の危険性
+　（Ａ） 将来の伸び代（バーンアウト）
+　　・ 「やらされるバスケ」は、中学・高校での燃え尽きを招きます。
+　（Ｂ） 怪我とスキルの偏り
+　　・ 小学生でセンターしかやらなかった子は、将来ドリブルができない選手になります。
 
-私たちはLTAD理論に基づき、目先の「1勝」よりも「10年後の活躍」を選びます。
+---
 
-| 一般的な勝利至上主義 | 旭町ミニバス (LTAD準拠) |
-| :--- | :--- |
-| **ポジション固定**<br>大きい子はゴール下、小さい子は運び。 | **ポジションレス**<br>大きい子もドリブルする。小さい子もポストプレーをする。 |
-| **パターン戦術**<br>コーチの指示通り動くロボット化。 | **5Out & 1on1**<br>全員が広いスペースで判断し、個の力で打開する。 |
-| **反復ドリル中心**<br>ひたすら列に並んでシュート練習。 | **ゲームライク**<br>常にDFがいる実戦形式で「判断」を磨く。 |
+## ４． 旭町ミニバスのアクション指針
+（１） 勝利至上主義からの脱却
+　（Ａ） 具体的な指導転換
+　　・ **ポジションレス**：大きい子もドリブルし、小さい子もポストプレーを経験。
+　　・ **５－Ｏｕｔコンセプト**：全員が広いスペースで判断力を磨く実戦形式。
 
-> **コーチからのメッセージ**
-> 「今、試合に勝てないこと」を焦らないでください。
-> 私たちは今、勝つための家（プレハブ）を建てているのではなく、将来の高層ビルのための**「見えない土台（基礎）」**を打っている期間なのです。
+<div style="border: 2px solid #d32f2f; padding: 15px; background-color: #fff9f9; border-radius: 8px; color: #d32f2f; text-align: center;">
+    <strong>「今、勝てないことを焦らないでください」</strong><br>
+    私たちは将来の高層ビルのための、見えない「土台（基礎）」を打っているのです。
+</div>
