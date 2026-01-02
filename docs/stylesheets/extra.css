@@ -13,3 +13,17 @@
     margin-bottom: 0.8em;
     line-height: 1.6;
 }
+/* リスト（箇条書き）の行間を広げて、改行しなくても読みやすくする */
+.md-typeset li {
+    margin-bottom: 0.5em; /* 行の間に少し隙間を作る */
+}
+
+/* （１）や（Ａ）のインデントを深くして、スマホでも階層を分かりやすくする */
+.md-typeset ul ul {
+    margin-left: 1.5em;
+}
+
+/* 強調ボックス（アドモニション）の中の文字が詰まらないようにする */
+.md-typeset .admonition, .md-typeset details {
+    line-height: 1.8;
+}
