@@ -1,29 +1,36 @@
-/* リストの丸ポチ（●）を消して二重表記を防止 */
-.md-nav__list, .md-typeset ul {
+/* 1. 二重表記の防止：リストの丸ポチ（●）を消す */
+.md-nav__list, .md-content ul {
     list-style-type: none !important;
 }
 
-/* サイドメニューの余白を調整してスッキリさせる */
+/* 2. インデント調整：階層を深くしてもスマホで見やすくする */
+.md-content ul ul {
+    margin-left: 1.2em; /* 字下げを少し浅くして横幅を確保 */
+    padding-left: 0;
+}
+
+/* 3. 改行の魔法：エディタで改行した場所をそのまま画面に反映させる */
+/* これが「改行がうまくいかない」を解決する核心部です */
+.md-content p, .md-content li {
+    white-space: pre-wrap !important;
+    margin-bottom: 0.5em;
+    line-height: 1.7;
+}
+
+/* 4. サイドメニューの微調整 */
 .md-nav__link {
     padding-left: 0.5rem;
 }
 
-/* スマホでの改行間隔を調整 */
-.md-typeset p {
-    margin-bottom: 0.8em;
-    line-height: 1.6;
-}
-/* リスト（箇条書き）の行間を広げて、改行しなくても読みやすくする */
-.md-typeset li {
-    margin-bottom: 0.5em; /* 行の間に少し隙間を作る */
-}
-
-/* （１）や（Ａ）のインデントを深くして、スマホでも階層を分かりやすくする */
-.md-typeset ul ul {
-    margin-left: 1.5em;
-}
-
-/* 強調ボックス（アドモニション）の中の文字が詰まらないようにする */
+/* 5. 強調ボックス（アドモニション）の余白 */
 .md-typeset .admonition, .md-typeset details {
     line-height: 1.8;
+    margin-bottom: 1.5em;
+}
+
+/* 6. 表（テーブル）をスマホで横スクロール可能にする */
+.md-typeset table {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
 }
