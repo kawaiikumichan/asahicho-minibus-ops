@@ -1,72 +1,79 @@
-<div style="font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif; line-height: 1.8; color: #333;">
+<div style="font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif; line-height: 1.8; color: #333;">
 
-    <h1 style="color: #1a237e; border-bottom: 3px solid #1a237e; padding-bottom: 10px;">２．（２） LTADモデル（長期競技者育成）</h1>
+    <h2 style="color: #1565c0; border-left: 5px solid #1565c0; padding-left: 10px; margin-top: 30px;">２．（２） 付録：神経型と一般型の違いと指導指針</h2>
 
-    <div style="background-color: #e8eaf6; padding: 15px; border-radius: 8px; margin-bottom: 25px; border-left: 5px solid #1a237e;">
-        <strong>「子供は小さな大人ではない」</strong><br>
-        22歳での自立した姿を逆算して指導するための世界標準のロードマップ。目先の１勝よりも、将来の輝きを優先する「逆算の指導」を定義します。
-    </div>
+    <p>育成現場で「今、何を優先すべきか」を判断するための基準です。</p>
 
-    <h2 style="color: #2e7d32; border-left: 5px solid #2e7d32; padding-left: 10px; margin-top: 30px;">１． 育成ピラミッド：成長の７段階</h2>
-    
-    <p><strong>（１） 段階的アプローチの重要性</strong></p>
-    <div style="padding-left: 20px;">
-        <p>（Ａ） 下から積み上げる７つのステップ</p>
+    <div style="background-color: #e3f2fd; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+        <h3 style="margin-top: 0; color: #0d47a1;">１． 神経型（脳と神経のネットワーク）</h3>
+        <p><strong>【定義】体の動かし方を司る「ソフトウェア」の構築</strong></p>
         <div style="padding-left: 20px;">
-            ・ １．アクティブスタート (Active Start)<br>
-            ・ ２．楽しむ・動く (FUNdamentals)<br>
-            ・ <strong>３．基礎を学ぶ (Learn to Train) 【★Ｕ１２世代】</strong><br>
-            ・ ４．トレーニング方法を学ぶ (Train to Train)<br>
-            ・ ５．競技のためのトレーニング (Train to Compete)<br>
-            ・ ６．勝つためのトレーニング (Train to Win)<br>
-            ・ ７．生涯スポーツ (Active for Life)
+            <p>（１） 含まれる要素</p>
+            <div style="padding-left: 20px;">
+                ・ 器用さ、リズム感、バランス感覚、反応速度<br>
+                ・ 空間把握能力（パスコースを見つける、距離感を掴む）
+            </div>
+            <p>（２） Ｕ１２での特徴</p>
+            <div style="padding-left: 20px;">
+                ・ １２歳までに成人の約９０％〜１００％が完成します。<br>
+                ・ <strong>「即座習得」</strong>が可能。一度覚えた動きは一生忘れません。
+            </div>
+            <p>（３） 指導アクション（例）</p>
+            <div style="padding-left: 20px;">
+                ・ 多様なステップワーク、コーディネーショントレーニング<br>
+                ・ 状況判断を伴う対人練習（「見て」から「動く」）
+            </div>
         </div>
     </div>
 
-    
-
-    <h2 style="color: #1565c0; border-left: 5px solid #1565c0; padding-left: 10px; margin-top: 30px;">２． 科学的根拠：スキャモンの発育曲線</h2>
-    
-    <p><strong>（１） 身体システム別の発達スピード</strong></p>
-    <div style="padding-left: 20px;">
-        <p>（Ａ） Ｕ１２で取り組むべき具体アクション</p>
-        <table style="width: 100%; border-collapse: collapse; margin: 15px 0; background: white;">
-            <tr style="background: #e3f2fd;">
-                <th style="border: 1px solid #90caf9; padding: 10px; text-align: center;">系統</th>
-                <th style="border: 1px solid #90caf9; padding: 10px; text-align: center;">Ｕ１２の状態</th>
-                <th style="border: 1px solid #90caf9; padding: 10px; text-align: center;">指導への反映</th>
-            </tr>
-            <tr>
-                <td style="border: 1px solid #90caf9; padding: 10px; text-align: center;"><strong>神経型</strong></td>
-                <td style="border: 1px solid #90caf9; padding: 10px; text-align: center;">ほぼ100%完成</td>
-                <td style="border: 1px solid #90caf9; padding: 10px;">器用さ、リズム、バランス。脳と体を繋ぐ回路作り。</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid #90caf9; padding: 10px; text-align: center;"><strong>一般型</strong></td>
-                <td style="border: 1px solid #90caf9; padding: 10px; text-align: center;">未発達</td>
-                <td style="border: 1px solid #90caf9; padding: 10px;">激しい筋トレより、身体操作（アジリティ）を優先。</td>
-            </tr>
-        </table>
-    </div>
-
-    
-
-    <h2 style="color: #c62828; border-left: 5px solid #c62828; padding-left: 10px; margin-top: 30px;">３． 最大のリスク：早期専門化の弊害</h2>
-    
-    <p><strong>（１） 特定ポジション・戦術への固定</strong></p>
-    <div style="padding-left: 20px;">
-        <p>（Ａ） 早期専門化が招く３つのマイナス</p>
+    <div style="background-color: #fff3e0; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+        <h3 style="margin-top: 0; color: #e65100;">２． 一般型（骨・筋肉・内臓）</h3>
+        <p><strong>【定義】体の出力や耐久性を司る「ハードウェア」の成長</strong></p>
         <div style="padding-left: 20px;">
-            ・ <strong>バーンアウト（燃え尽き）</strong>：「やらされるバスケ」による早期離脱。<br>
-            ・ <strong>怪我（オーバーユース）</strong>：特定箇所への過度な負担によるスポーツ障害。<br>
-            ・ <strong>伸び悩み</strong>：小学生でのポジション固定が、将来の可能性を狭める。
+            <p>（１） 含まれる要素</p>
+            <div style="padding-left: 20px;">
+                ・ 身長、体重、骨格、筋力、心肺機能（スタミナ）
+            </div>
+            <p>（２） Ｕ１２での特徴</p>
+            <div style="padding-left: 20px;">
+                ・ Ｕ１２時点では、まだ成長の「準備段階」です。<br>
+                ・ <strong>「成長の個人差（早熟・晩成）」</strong>が最も大きく出る部分です。
+            </div>
+            <p>（３） 指導アクション（例）</p>
+            <div style="padding-left: 20px;">
+                ・ 重りを使わない自重での体幹トレーニング<br>
+                ・ 柔軟性の確保（ストレッチ）、正しい食事と睡眠（リカバリー）
+            </div>
         </div>
     </div>
 
-    <div style="background-color: #3f51b5; color: white; padding: 25px; border-radius: 12px; text-align: center; margin-top: 40px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-        <h3 style="margin-top: 0;">旭町ミニバスの約束</h3>
-        <p style="font-size: 1.1em;">私たちは将来の高層ビルのための、見えない「土台」を打っている期間なのです。</p>
-        <p style="font-size: 0.9em; opacity: 0.9;">「今、勝てないこと」を焦らないでください。</p>
+    <h3 style="color: #333;">（３） Ｕ１２における優先順位の考え方</h3>
+    <table style="width: 100%; border-collapse: collapse; margin-top: 10px; background: white;">
+        <tr style="background-color: #f5f5f5;">
+            <th style="border: 1px solid #ddd; padding: 12px; width: 30%;">項目</th>
+            <th style="border: 1px solid #ddd; padding: 12px;">神経型（優先度：高）</th>
+            <th style="border: 1px solid #ddd; padding: 12px;">一般型（優先度：中）</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #ddd; padding: 12px; font-weight: bold;">目的</td>
+            <td style="border: 1px solid #ddd; padding: 12px;">思い通りに体を操る</td>
+            <td style="border: 1px solid #ddd; padding: 12px;">怪我をしない体を作る</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #ddd; padding: 12px; font-weight: bold;">ＮＧ指導</td>
+            <td style="border: 1px solid #ddd; padding: 12px;">特定の形を押し付ける</td>
+            <td style="border: 1px solid #ddd; padding: 12px;">過度な走り込み・筋トレ</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #ddd; padding: 12px; font-weight: bold;">合言葉</td>
+            <td style="border: 1px solid #ddd; padding: 12px;">「賢い体」を作る</td>
+            <td style="border: 1px solid #ddd; padding: 12px;">「強い器」の準備をする</td>
+        </tr>
+    </table>
+
+    <div style="margin-top: 25px; padding: 15px; border: 1px dashed #666; font-size: 0.9em;">
+        <strong>池田さんのための現場判断メモ：</strong><br>
+        「練習中、動きがギクシャクしている」時は<strong>神経型</strong>（回路不足）へのアプローチが必要です。「すぐに疲れる、当たり負けする」時は<strong>一般型</strong>（器の未発達）ですが、Ｕ１２では無理に鍛えず、成長を待つ（＝栄養と睡眠を促す）のが正解です。
     </div>
 
 </div>
