@@ -2,8 +2,8 @@ site_name: 旭町MBC 運営マニュアル
 theme:
   name: material
   language: ja
-  logo: assets/loga.jpg
-  favicon: assets/loga.jpg
+  logo: assets/logo.jpg
+  favicon: assets/logo.jpg
   palette: 
     primary: indigo
     accent: deep orange
