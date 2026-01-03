@@ -79,7 +79,7 @@
     </div>
 
     <div style="text-align: center; margin: 30px 0;">
-        <img src="../assets/scammon_graph.png" alt="スキャモンの発育曲線グラフ" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 2px 2px 8px rgba(0,0,0,0.1);">
+        <img src="../assets/scammon_graph.jpg" alt="スキャモンの発育曲線グラフ" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 2px 2px 8px rgba(0,0,0,0.1);">
         <p style="font-size: 0.85em; color: #666; margin-top: 10px; line-height: 1.4;">
             <strong>図：スキャモンの発育曲線</strong><br>
             一番上の「神経型」は12歳で完成するが、「一般型（体格）」の成長はこれからであることが分かる。
