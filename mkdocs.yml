@@ -55,3 +55,16 @@ nav:
       - "（７） 大会協力業務": 03_Operations/tournament_duty.md
       - "（８） 遠征先のマナー": 03_Operations/away_game_etiquette.md
       - "（９） TOマニュアル": 03_Operations/to_manual.md
+  - "５． システム・アーキテクチャ (PRR)":
+      - "アーキテクチャ意思決定記録 (ADR)": 04_System_Architecture/architecture_decision_records.md
+      - "アーキテクチャ・ガバナンス": 04_System_Architecture/architecture_governance.md
+      - "アーキテクチャ健康診断": 04_System_Architecture/architecture_health_score.md
+      - "システム構成図": 04_System_Architecture/system_architecture_diagram.md
+      - "運用マニュアル": 04_System_Architecture/operations_manual.md
+      - "運用リスク管理 (Risk Register)": 04_System_Architecture/operational_risk_register.md
+      - "実装計画 (Blocker解消)": 04_System_Architecture/implementation_plan.md
+      - "エビデンス・検証記録": 04_System_Architecture/walkthrough.md
+      - "Evidence: RSK-001": 04_System_Architecture/evidence/RSK-001-correlation-id.md
+      - "Evidence: RSK-003": 04_System_Architecture/evidence/RSK-003-secret-rotation.md
+      - "Evidence: RSK-004": 04_System_Architecture/evidence/RSK-004-restore-drill.md
+      - "Go-Live チェックリスト": 04_System_Architecture/production_go_live_checklist.md
