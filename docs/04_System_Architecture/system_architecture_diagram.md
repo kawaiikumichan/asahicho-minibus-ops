@@ -1,10 +1,15 @@
-﻿# ASAHI Coach App - System Architecture Diagram (Production Readiness Review)
+# ASAHI Coach App - System Architecture Diagram (Production Readiness Review)
 
-譛ｬ繧｢繝ｼ繧ｭ繝・け繝√Ε蝗ｳ縺ｯ縲、SAHI Coach App 縺ｮ譛ｬ逡ｪ驕狗畑蟇ｩ譟ｻ・・roduction Readiness Review・峨↓蜷代￠縺溷・蠑上す繧ｹ繝・Β讒区・蝗ｳ縺ｧ縺吶・ 
-繧ｯ繝ｩ繧､繧｢繝ｳ繝医√い繝励Μ繧ｱ繝ｼ繧ｷ繝ｧ繝ｳ縲√ラ繝｡繧､繝ｳ蠅・阜縲√う繝ｳ繝輔Λ繧ｹ繝医Λ繧ｯ繝√Ε縲√♀繧医・繧ｻ繧ｭ繝･繝ｪ繝・ぅ繝舌え繝ｳ繝繝ｪ・・rust Boundary・峨・蜈ｨ菴灘ワ繧堤ｶｲ鄒・＠縺ｦ縺・∪縺吶・
+本アーキテクチャ図は、ASAHI Coach App の本番運用審査（Production Readiness Review）に向けた公式システム構成図です。  
+クライアント、アプリケーション、ドメイン境界、インフラストラクチャ、およびセキュリティバウンダリ（Trust Boundary）の全体像を網羅しています。
+
 > [!TIP]
-> **SVG / PNG / draw.io 蠖｢蠑上〒縺ｮ蜃ｺ蜉帶婿豕・*
-> 譛ｬ蝗ｳ縺ｯ Mermaid.js 險俶ｳ輔〒菴懈・縺輔ｌ縺ｦ縺・∪縺吶ゆｻ･荳九・謇矩・〒隕∵ｱゅ＆繧後◆蜈ｨ繝輔か繝ｼ繝槭ャ繝医∈縺ｮ螟画鋤繝ｻ菫晏ｭ倥′蜿ｯ閭ｽ縺ｧ縺吶・> 1. **Draw.io 縺ｸ縺ｮ繧､繝ｳ繝昴・繝・*: Draw.io (`app.diagrams.net`) 繧帝幕縺阪√Γ繝九Η繝ｼ縺九ｉ `[Arrange] -> [Insert] -> [Advanced] -> [Mermaid]` 繧帝∈謚槭＠縲∽ｻ･荳九・繧ｳ繝ｼ繝峨ヶ繝ｭ繝・け繧定ｲｼ繧贋ｻ倥￠縺ｦ [Insert] 繧呈款縺励∪縺吶・> 2. **繝輔ぃ繧､繝ｫ菫晏ｭ・*: 縺昴・縺ｾ縺ｾ `.drawio` 蠖｢蠑上〒菫晏ｭ倥〒縺阪∪縺吶・> 3. **逕ｻ蜒上お繧ｯ繧ｹ繝昴・繝・*: 繝｡繝九Η繝ｼ縺ｮ `[File] -> [Export as]` 縺九ｉ `SVG` 縺ｾ縺溘・ `PNG` 蠖｢蠑上ｒ驕ｸ謚槭＠縺ｦ蜃ｺ蜉帙＠縺ｦ縺上□縺輔＞縲・
+> **SVG / PNG / draw.io 形式での出力方法**
+> 本図は Mermaid.js 記法で作成されています。以下の手順で要求された全フォーマットへの変換・保存が可能です。
+> 1. **Draw.io へのインポート**: Draw.io (`app.diagrams.net`) を開き、メニューから `[Arrange] -> [Insert] -> [Advanced] -> [Mermaid]` を選択し、以下のコードブロックを貼り付けて [Insert] を押します。
+> 2. **ファイル保存**: そのまま `.drawio` 形式で保存できます。
+> 3. **画像エクスポート**: メニューの `[File] -> [Export as]` から `SVG` または `PNG` 形式を選択して出力してください。
+
 ```mermaid
 flowchart TB
     %% Styling Definitions
@@ -21,7 +26,7 @@ flowchart TB
     %% ==========================================
     %% 1. Trust Boundary: Internet / Client Layer
     %% ==========================================
-    subgraph Boundary_Internet [倹 Trust Boundary: Internet / Client Layer]
+    subgraph Boundary_Internet [🌐 Trust Boundary: Internet / Client Layer]
         direction LR
         Client_Parent(Parent App):::clientLayer
         Client_Coach(Coach App):::clientLayer
@@ -31,7 +36,7 @@ flowchart TB
     %% ==========================================
     %% 2. Trust Boundary: Application Layer
     %% ==========================================
-    subgraph Boundary_Application [箕・・Trust Boundary: Application Layer - Next.js]
+    subgraph Boundary_Application [🖥️ Trust Boundary: Application Layer - Next.js]
         direction TB
         App_UI[UI Components]:::appLayer
         App_API[API Routes / Server Actions]:::appLayer
@@ -53,7 +58,7 @@ flowchart TB
     %% ==========================================
     %% 3. Trust Boundary: Domain Layer (DDD)
     %% ==========================================
-    subgraph Boundary_Domain [女・・Domain Layer - DDD Aggregates & Accounting Flow]
+    subgraph Boundary_Domain [🏗️ Domain Layer - DDD Aggregates & Accounting Flow]
         direction TB
         
         %% Core Entities
@@ -88,12 +93,12 @@ flowchart TB
     %% ==========================================
     %% 4. Trust Boundary: Cloud Infrastructure
     %% ==========================================
-    subgraph Boundary_Cloud [笘・ｸ・Trust Boundary: Cloud Infrastructure & Observability]
+    subgraph Boundary_Cloud [☁️ Trust Boundary: Cloud Infrastructure & Observability]
         direction LR
         
         subgraph GCP_Core [Google Cloud Platform]
             direction TB
-            SecretMgr[Google Secret Manager<br/>笞・・Only layer holding Secrets]:::securityLayer
+            SecretMgr["Google Secret Manager<br/>⚠️ Only layer holding Secrets"]:::securityLayer
             
             %% Observability (RSK-001)
             subgraph GCP_Observability [Observability & Monitoring]
@@ -133,7 +138,7 @@ flowchart TB
     %% ==========================================
     %% 5. Trust Boundary: External Providers
     %% ==========================================
-    subgraph Boundary_External [訣 Trust Boundary: External Providers]
+    subgraph Boundary_External [🌍 Trust Boundary: External Providers]
         direction LR
         Ext_Stripe[Stripe]:::externalLayer
         Ext_GMO[GMO Aozora]:::externalLayer
@@ -158,4 +163,3 @@ flowchart TB
     %% ==========================================
     RunbookNote>Mapped Runbooks: IR-001, IR-002, MO-001, MO-002, DR-001, DR-002, RM-001]:::runbook
 ```
-

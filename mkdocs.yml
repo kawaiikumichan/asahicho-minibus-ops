@@ -1,4 +1,4 @@
-﻿site_name: 譌ｭ逕ｺMBC 驕句霧繝槭ル繝･繧｢繝ｫ
+site_name: 旭町MBC 運営マニュアル
 theme:
   name: material
   language: ja
@@ -19,53 +19,54 @@ extra_css:
 
 nav:
   - Home: index.md
-  - "・托ｼ・逅・ｿｵ繝ｻ陦悟虚隕冗ｯ・:
-      - "・茨ｼ托ｼ・謖・ｰ手・｡悟虚隕冗ｯ・: 00_Philosophy/coaching_code.md
-      - "・茨ｼ抵ｼ・FUN & GUN 蜩ｲ蟄ｦ": 00_Philosophy/fun_and_gun.md
-  - "・抵ｼ・閧ｲ謌千炊隲厄ｼ・2豁ｳ縺ｸ縺ｮ騾・ｮ暦ｼ・:
-      - "・茨ｼ托ｼ・22豁ｳ縺ｸ縺ｮ螟｢縺ｮ險ｭ險亥峙": 01_Coaching_Logics/dream_blueprint.md
-      - "・茨ｼ抵ｼ・LTAD・磯聞譛滄∈謇玖ご謌舌Δ繝・Ν・・: 01_Coaching_Logics/ltad.md
-      - "・茨ｼ難ｼ・The 5 Cs・郁ご謌舌・・墓欠讓呻ｼ・: 01_Coaching_Logics/5cs.md
-      - "・茨ｼ費ｼ・BPS繝｢繝・Ν・育函迚ｩ蠢・炊遉ｾ莨壹Δ繝・Ν・・: 01_Coaching_Logics/bps_model.md
-      - "・茨ｼ包ｼ・繝ｩ繧､繝輔せ繧ｭ繝ｫ・育函豢ｻ縺ｮ蝨溷床・・: 01_Coaching_Logics/life_skills.md
-      - "・茨ｼ厄ｼ・閼ｳ縺ｮ謌宣聞縺ｨ繝槭う繝ｳ繝峨そ繝・ヨ": 01_Coaching_Logics/growth_mindset.md
-      - "・茨ｼ暦ｼ・繝｡繝ｳ繧ｿ繝ｫ繝ｻ繝輔Ο繝ｼ": 01_Coaching_Logics/mental_flow.md
-      - "・茨ｼ假ｼ・譬・､翫・豌ｴ蛻・・逹｡逵": 01_Coaching_Logics/nutrition.md
-      - "・茨ｼ呻ｼ・螂ｳ蟄宣∈謇九・繧ｳ繝ｳ繝・ぅ繧ｷ繝ｧ繝九Φ繧ｰ": 01_Coaching_Logics/female_athlete.md
-      - "・茨ｼ托ｼ撰ｼ・蟷ｴ髢楢ご謌占ｨ育判": 01_Coaching_Logics/annual_plan.md
-      - "・茨ｼ托ｼ托ｼ・隧ｦ蜷医・蜆ｪ蜈磯・ｽ阪・襍ｷ逕ｨ譁ｹ驥・: 01_Coaching_Logics/game_policy.md
-      - "・茨ｼ托ｼ抵ｼ・繧ｷ繝･繝ｼ繝茨ｼ壹Ρ繝ｳ繝上Φ繝画耳螂ｨ": 01_Coaching_Logics/shooting_standard.md
-      - "・茨ｼ托ｼ難ｼ・5-Out繧ｳ繝ｳ繧ｻ繝励ヨ": 01_Coaching_Logics/5out.md
-      - "・茨ｼ托ｼ費ｼ・髦ｲ蠕｡・壼渕譛ｬ蜴溷援": 01_Coaching_Logics/defense_basic.md
-      - "・茨ｼ托ｼ包ｼ・蛟倶ｺｺ縺ｮ蠢励→蠖ｹ蜑ｲ": 01_Coaching_Logics/individual_goals.md
-  - "・難ｼ・邱ｴ鄙偵ラ繝ｪ繝ｫ繝ｻ險育判":
-      - "・茨ｼ托ｼ・邱ｴ鄙偵Γ繝九Η繝ｼ縺ｮ邨・∩遶九※譁ｹ": 02_Training_Drills/practice_planning.md
-      - "・茨ｼ抵ｼ・蝓ｺ譛ｬ邱ｴ鄙・(Basics)": 02_Training_Drills/basics.md
-      - "・茨ｼ難ｼ・繧ｳ繝ｼ繝・ぅ繝阪・繧ｷ繝ｧ繝ｳ": 02_Training_Drills/coordination.md
-      - "・茨ｼ費ｼ・5繧｢繧ｦ繝亥渕遉弱ラ繝ｪ繝ｫ": 02_Training_Drills/5out_basics.md
-      - "・茨ｼ包ｼ・繧ｷ繝･繝ｼ繝亥渕遉趣ｼ壹Ρ繝ｳ繝上Φ繝峨・蝙・: 02_Training_Drills/shooting_basics.md
-      - "・茨ｼ厄ｼ・繝代せ蝓ｺ遉趣ｼ壼ｼｷ縺上※騾溘＞繝代せ縺ｮ蝙・: 02_Training_Drills/passing_basics.md
-  - "・費ｼ・邂｡逅・・驕句霧繝ｻ螳牙・":
-      - "・茨ｼ托ｼ・謾ｯ驛ｨ邨・ｹ斐・逅・ｺ玖・蜍・: 03_Operations/organization.md
-      - "・茨ｼ抵ｼ・邱頑･譎ょｯｾ蠢・EAP)": 03_Operations/eap.md
-      - "・茨ｼ難ｼ・菫晁ｭｷ閠・ぎ繧､繝峨・繝√・繝繝ｫ繝ｼ繝ｫ": 03_Operations/parents_guide.md
-      - "・茨ｼ費ｼ・繝√・繝繝ｫ繝ｼ繝ｫ・磯∈謇具ｼ・: 03_Operations/team_rules_player.md
-      - "・茨ｼ包ｼ・繝√・繝繝ｫ繝ｼ繝ｫ・井ｿ晁ｭｷ閠・ｼ・: 03_Operations/team_rules_parent.md
-      - "・茨ｼ厄ｼ・邱ｴ鄙定ｩｦ蜷・荳ｻ蛯ｬ謇矩・: 03_Operations/hosting_practice_match.md
-      - "・茨ｼ暦ｼ・螟ｧ莨壼鵠蜉帶･ｭ蜍・: 03_Operations/tournament_duty.md
-      - "・茨ｼ假ｼ・驕蠕∝・縺ｮ繝槭リ繝ｼ": 03_Operations/away_game_etiquette.md
-      - "・茨ｼ呻ｼ・TO繝槭ル繝･繧｢繝ｫ": 03_Operations/to_manual.md
-  - "・包ｼ・繧ｷ繧ｹ繝・Β繝ｻ繧｢繝ｼ繧ｭ繝・け繝√Ε (PRR)":
-      - "繧｢繝ｼ繧ｭ繝・け繝√Ε諢乗晄ｱｺ螳夊ｨ倬鹸 (ADR)": 04_System_Architecture/architecture_decision_records.md
-      - "繧｢繝ｼ繧ｭ繝・け繝√Ε繝ｻ繧ｬ繝舌リ繝ｳ繧ｹ": 04_System_Architecture/architecture_governance.md
-      - "繧｢繝ｼ繧ｭ繝・け繝√Ε蛛･蠎ｷ險ｺ譁ｭ": 04_System_Architecture/architecture_health_score.md
-      - "繧ｷ繧ｹ繝・Β讒区・蝗ｳ": 04_System_Architecture/system_architecture_diagram.md
-      - "驕狗畑繝槭ル繝･繧｢繝ｫ": 04_System_Architecture/operations_manual.md
-      - "驕狗畑繝ｪ繧ｹ繧ｯ邂｡逅・(Risk Register)": 04_System_Architecture/operational_risk_register.md
-      - "螳溯｣・ｨ育判 (Blocker隗｣豸・": 04_System_Architecture/implementation_plan.md
-      - "繧ｨ繝薙ョ繝ｳ繧ｹ繝ｻ讀懆ｨｼ險倬鹸": 04_System_Architecture/walkthrough.md
+  - "１． 理念・行動規範":
+      - "（１） 指導者行動規範": 00_Philosophy/coaching_code.md
+      - "（２） FUN & GUN 哲学": 00_Philosophy/fun_and_gun.md
+  - "２． 育成理論（22歳への逆算）":
+      - "（１） 22歳への夢の設計図": 01_Coaching_Logics/dream_blueprint.md
+      - "（２） LTAD（長期選手育成モデル）": 01_Coaching_Logics/ltad.md
+      - "（３） The 5 Cs（育成の５指標）": 01_Coaching_Logics/5cs.md
+      - "（４） BPSモデル（生物心理社会モデル）": 01_Coaching_Logics/bps_model.md
+      - "（５） ライフスキル（生活の土台）": 01_Coaching_Logics/life_skills.md
+      - "（６） 脳の成長とマインドセット": 01_Coaching_Logics/growth_mindset.md
+      - "（７） メンタル・フロー": 01_Coaching_Logics/mental_flow.md
+      - "（８） 栄養・水分・睡眠": 01_Coaching_Logics/nutrition.md
+      - "（９） 女子選手のコンディショニング": 01_Coaching_Logics/female_athlete.md
+      - "（１０） 年間育成計画": 01_Coaching_Logics/annual_plan.md
+      - "（１１） 試合の優先順位・起用方針": 01_Coaching_Logics/game_policy.md
+      - "（１２） シュート：ワンハンド推奨": 01_Coaching_Logics/shooting_standard.md
+      - "（１３） 5-Outコンセプト": 01_Coaching_Logics/5out.md
+      - "（１４） 防御：基本原則": 01_Coaching_Logics/defense_basic.md
+      - "（１５） 個人の志と役割": 01_Coaching_Logics/individual_goals.md
+  - "３． 練習ドリル・計画":
+      - "（１） 練習メニューの組み立て方": 02_Training_Drills/practice_planning.md
+      - "（２） 基本練習 (Basics)": 02_Training_Drills/basics.md
+      - "（３） コーディネーション": 02_Training_Drills/coordination.md
+      - "（４） 5アウト基礎ドリル": 02_Training_Drills/5out_basics.md
+      - "（５） シュート基礎：ワンハンドの型": 02_Training_Drills/shooting_basics.md
+      - "（６） パス基礎：強くて速いパスの型": 02_Training_Drills/passing_basics.md
+  - "４． 管理・運営・安全":
+      - "（１） 支部組織・理事職務": 03_Operations/organization.md
+      - "（２） 緊急時対応(EAP)": 03_Operations/eap.md
+      - "（３） 保護者ガイド・チームルール": 03_Operations/parents_guide.md
+      - "（４） チームルール（選手）": 03_Operations/team_rules_player.md
+      - "（５） チームルール（保護者）": 03_Operations/team_rules_parent.md
+      - "（６） 練習試合 主催手順": 03_Operations/hosting_practice_match.md
+      - "（７） 大会協力業務": 03_Operations/tournament_duty.md
+      - "（８） 遠征先のマナー": 03_Operations/away_game_etiquette.md
+      - "（９） TOマニュアル": 03_Operations/to_manual.md
+  - "５． システム・アーキテクチャ (PRR)":
+      - "アーキテクチャ意思決定記録 (ADR)": 04_System_Architecture/architecture_decision_records.md
+      - "アーキテクチャ・ガバナンス": 04_System_Architecture/architecture_governance.md
+      - "アーキテクチャ健康診断": 04_System_Architecture/architecture_health_score.md
+      - "システム構成図": 04_System_Architecture/system_architecture_diagram.md
+      - "物理・デプロイメント構成図 (Deployment)": 04_System_Architecture/deployment_architecture_diagram.md
+      - "データフロー図 (DFD)": 04_System_Architecture/data_flow_diagram.md
+      - "運用マニュアル": 04_System_Architecture/operations_manual.md
+      - "運用リスク管理 (Risk Register)": 04_System_Architecture/operational_risk_register.md
+      - "実装計画 (Blocker解消)": 04_System_Architecture/implementation_plan.md
+      - "エビデンス・検証記録": 04_System_Architecture/walkthrough.md
       - "Evidence: RSK-001": 04_System_Architecture/evidence/RSK-001-correlation-id.md
       - "Evidence: RSK-003": 04_System_Architecture/evidence/RSK-003-secret-rotation.md
       - "Evidence: RSK-004": 04_System_Architecture/evidence/RSK-004-restore-drill.md
-      - "Go-Live 繝√ぉ繝・け繝ｪ繧ｹ繝・: 04_System_Architecture/production_go_live_checklist.md
-
+      - "Go-Live チェックリスト": 04_System_Architecture/production_go_live_checklist.md
