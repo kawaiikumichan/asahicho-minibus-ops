@@ -62,6 +62,8 @@ nav:
       - "システム構成図": 04_System_Architecture/system_architecture_diagram.md
       - "物理・デプロイメント構成図 (Deployment)": 04_System_Architecture/deployment_architecture_diagram.md
       - "データフロー図 (DFD)": 04_System_Architecture/data_flow_diagram.md
+      - "IAM・RBAC 構成図": 04_System_Architecture/iam_rbac_architecture_diagram.md
+      - "決済・会計シーケンス図": 04_System_Architecture/payment_sequence_diagram.md
       - "運用マニュアル": 04_System_Architecture/operations_manual.md
       - "運用リスク管理 (Risk Register)": 04_System_Architecture/operational_risk_register.md
       - "実装計画 (Blocker解消)": 04_System_Architecture/implementation_plan.md
