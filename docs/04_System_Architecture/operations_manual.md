@@ -81,8 +81,8 @@
 - **対応手順:**
   1. Firestore の `JournalEntry` コレクションを確認し、ステータスが `EXPORT_FAILED` または保留状態になっているエントリを特定し、`lastError.failureClass` / `attemptCount` を確認する。
   2. `RETRYABLE_TRANSIENT` の場合のみ、バッチ再処理スクリプト (`npm run tools:retry-export`) を実行し、未送信の JournalEntry を再送する。
-  3. `NON_RETRYABLE_VALIDATION` / `NON_RETRYABLE_BUSINESS`（勘定科目マッビング不整合等）の場合は再送しても必ず失敗するため、IR-003 へ移行し `FreeeJournalMapper` の修正を開発チームへエスカレーションする。
-  4. 再送スクリプトは、失敗したエントリを `EXPORTED` としてもみ消すことなく、失敗件数を戻り値として報告することを確認する（握りつぶしの遘遭防止）。
+  3. `NON_RETRYABLE_VALIDATION` / `NON_RETRYABLE_BUSINESS`（勘定科目マッピング不整合等）の場合は再送しても必ず失敗するため、IR-003 へ移行し `FreeeJournalMapper` の修正を開発チームへエスカレーションする。
+  4. 再送スクリプトは、失敗したエントリを `EXPORTED` としてもみ消すことなく、失敗件数を戻り値として報告することを確認する（握りつぶしの再発防止）。
 - **Success Criteria:**
   - `Pending JournalEntry = 0` (すべて `EXPORTED` に遷移) となっていること。
   - freee 会計上に正しい内容の Deal が生成されていること。
