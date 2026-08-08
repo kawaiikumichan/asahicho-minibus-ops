@@ -16,11 +16,11 @@
 
 Webhook 受信から `JournalEntry` 生成までの全トランザクションを追跡可能にするため、Node.js の `AsyncLocalStorage` を用いたロギング基盤を実装します。
 
-#### [NEW] [club-app/src/lib/logger/AsyncContext.ts](file:///C:/Users/kawai/.gemini/antigravity/brain/dbcc0a2e-0984-421c-ac7e-3715590717a9/club-app/src/lib/logger/AsyncContext.ts)
+#### [NEW] `club-app/src/lib/logger/AsyncContext.ts`
 - `AsyncLocalStorage` を用いて、現在のリクエストスコープに紐づく `correlationId` や `tenantId` (`organizationId`) などのメタデータを保持するコンテキストプロバイダを実装します。引回し（Prop-drilling）なしでどの階層からでもアクセスできるようにします。
 - **Request Entry Point の生成責務**: Webhook 等のエントリーポイントにおいて、ヘッダー (`X-Correlation-ID`) が存在すればそれを再利用し、存在しなければ `UUID v4` を新規生成するロジックを実装します。
 
-#### [NEW] [club-app/src/lib/logger/CloudLogger.ts](file:///C:/Users/kawai/.gemini/antigravity/brain/dbcc0a2e-0984-421c-ac7e-3715590717a9/club-app/src/lib/logger/CloudLogger.ts)
+#### [NEW] `club-app/src/lib/logger/CloudLogger.ts`
 - 構造化 JSON ロガー（Google Cloud Logging 形式準拠: `logging.googleapis.com/trace` など）を実装します。
 - ログ出力時に `AsyncContext` から情報を自動的に抽出し、ペイロードにインジェクトする仕組みを構築します。
 
@@ -30,7 +30,7 @@ Webhook 受信から `JournalEntry` 生成までの全トランザクション�
 
 API Keys (Stripe Webhook Secret 等) をハードコードや `.env` のみに頼らず、Google Cloud Secret Manager から安全に取得し、プロセス再起動なしでローテーション（再読込）できる機構を実装します。
 
-#### [NEW] [club-app/src/lib/secrets/SecretManagerService.ts](file:///C:/Users/kawai/.gemini/antigravity/brain/dbcc0a2e-0984-421c-ac7e-3715590717a9/club-app/src/lib/secrets/SecretManagerService.ts)
+#### [NEW] `club-app/src/lib/secrets/SecretManagerService.ts`
 - Google Cloud Secret Manager API（ローカル環境用シミュレーションフォールバック付き）を呼び出し、最新のシークレットバージョンを取得するサービス。
 - キャッシュ機構（TTL付き）を設け、パフォーマンス低下を防ぎつつ一定時間（例: 5分）ごとにバックグラウンドで再読込を行う「ゼロダウンタイム・ローテーション」を実現します。
 
@@ -48,7 +48,7 @@ API Keys (Stripe Webhook Secret 等) をハードコードや `.env` のみに�
 
 オペレーションマニュアル (DR-002) で定義された厳格なリストア手順「Read Only Validation -> Diff -> Approval -> Verification -> Merge」の安全ゲートを通過するための、SRE 用差分抽出スクリプトを実装します。
 
-#### [NEW] [club-app/scripts/dr/restore-diff-extractor.ts](file:///C:/Users/kawai/.gemini/antigravity/brain/dbcc0a2e-0984-421c-ac7e-3715590717a9/club-app/scripts/dr/restore-diff-extractor.ts)
+#### [NEW] `club-app/scripts/dr/restore-diff-extractor.ts`
 - 本番プロジェクトと復旧用一時プロジェクト（リストア先）のデータを比較検証するスクリプト。
 - ASAHI Coach App のライフサイクル全域（`Attendance` → `Ride` → `WalletLedgerEntry` → `Invoice` → `PaymentRecord` → `JournalEntry` → `AuditLog`）の不変レコードを対象とし、レコード件数・ハッシュ値の突合（Diff）を行います。
 - **Hash Verification**: 突合には `Canonical JSON (RFC8785) -> SHA-256 -> Domain Record Hash` の不変性検証プロセスを用います。
