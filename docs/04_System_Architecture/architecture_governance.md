@@ -116,11 +116,13 @@ This document is the supreme architecture governance specification and common de
 - 各ドキュメントに `schemaVersion`, `updatedAt`, およびバージョン番号（または `etag` / `lastUpdateVersion`）を持たせ、競合検出時は更新をロールバックした上でエラーを返します。
 
 ### 1.22 Retry, DLQ & Compensation Policy (イベント失敗時の回復と補償戦略)
-- コミット後の非同期通知や外部サービス連動が失敗した場合の回復戦略を規定します:
-  - **Retry Policy**: 指数バックオフ (Exponential Backoff) で最大 3 回再試行。
-  - **Dead Letter Queue (DLQ)**: 3 回失敗したメッセージは DLQ に隔離し、手動またはジョブ監視とする。
-  - **Compensation Transaction (補償トランザクション / Saga)**: 配車クレジット付与後に請求バッチが致命的エラーで失敗した場合、自動的に逆仕訳 (`reversal`) を発行して状態を回復する。
-  - **Poison Event Handling**: 不正形式のイベントメッセージは即時処理スキップし管理アラートを発報。
+- コミット後の非同期通知や外部サービス連動が失敗した場合の回復戦略を規定します（失敗分類・可視化義務の詳細は **ADR-022** を参照）:
+  - **Failure Classification (失敗分類の先行義務)**: 再試行するか否かは必ず ADR-022 2.1 の `failureClass` 判定に基づいて決定します。分類不能な失敗を「一時障害」と見なして無限に再試行することを禁じます。
+  - **Retry Policy**: `RETRYABLE_TRANSIENT` / `CONFLICT` に限り、指数バックオフ (Exponential Backoff) で最大 3 回再試行。
+  - **Dead Letter Queue (DLQ)**: 3 回失敗したメッセージ、および再試行不可 (`NON_RETRYABLE_*` / `UNKNOWN`) のメッセージは DLQ に隔離します。**DLQ からのメッセージ破棄を禁止**し、`attemptCount` / `lastError.failureClass` / `lastError.code` / `lastAttemptAt` を必ず永続化します。DLQ 件数が 1 件以上となった時点で管理アラートを発報し、復旧手順は Operations Manual **IR-003** に従います。
+  - **Compensation Transaction (補償トランザクション / Saga)**: 配車クレジット付与後に請求バッチが致命的エラーで失敗した場合、自動的に逆仕訳 (`reversal`) を発行して状態を回復する。補償の発行自体が失敗した場合は、二重補償を避けるため自動再試行せず DLQ 隔離＋会計管理者エスカレーションとします。
+  - **Poison Event Handling**: 不正形式のイベントメッセージは再試行対象外 (`NON_RETRYABLE_VALIDATION`) とし、**破棄・スキップではなく DLQ へ隔離**した上で管理アラートを発報します（サイレントロストの禁止）。
+  - **No Silent Success (成功マスクの禁止)**: 失敗したイベントを `PROCESSED` へ遷移させること、および失敗を既定値・空応答で覆い隠すことを禁じます。
 
 ### 1.23 Domain Event Versioning (イベントスキーマの互換性)
 - すべての Domain Event には **`eventVersion`** (例: `eventVersion: 2`) を必須定義します。

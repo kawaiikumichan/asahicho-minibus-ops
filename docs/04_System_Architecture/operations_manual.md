@@ -36,6 +36,9 @@
 - **DR-xxx**: Disaster Recovery (災害・緊急復旧)
 - **RM-xxx**: Routine Maintenance (定期保守)
 
+**※ エラー取り扱いの大前提 (Error Handling Premise)**
+本マニュアルの全手順は **ADR-022（エラー伝播・失敗可視化原則）** を前提とします。すなわち、失敗は必ず `failureClass` として分類・記録され、未処理のまま成功応答 (2xx) を返すことはなく、再試行上限到達後のメッセージは破棄されず DLQ へ隔離されていることを前提に調査します。したがって「エラーが見当たらないが数字が合わない」場合は、実装側の ADR-022 違反（握りつぶし）を疑い、RCA 対象としてエスカレーションしてください。
+
 ---
 
 ## 1. Incident Response (インシデント対応)
@@ -53,15 +56,17 @@
 - **RACI**: Executor: SRE / Approver: CTO / Notify: Accounting Admin
 - **Prerequisites**: Production Project Viewer, Cloud Logging 閲覧権限, Secret Manager Accessor
 - **Escalation Criteria (P2 → P1)**: 障害が 30 分以上継続、全体の決済失敗率が 10% 超過、または全ユーザーに影響が及ぶ場合。
-- **症状:** Stripe Dashboard または GMO コンソール上で Webhook 配信エラー (5xx/Timeout) が発生している。
-- **原因:** 一時的な Cloud Functions のコールドスタート遅延、または freee API 等のダウンタイムによる同期処理のタイムアウト。
+- **症状:** Stripe Dashboard または GMO コンソール上で Webhook 配信エラー (4xx/5xx/Timeout) が発生している。
+- **原因:** 署名検証失敗（400）、一時的な Cloud Functions のコールドスタート遅延、または受信イベントの耐久化コミット失敗（5xx）。
 - **対応手順:**
-  1. Cloud Logging にて `WebhookSecurityError` (署名不一致/改ざん) か `TimeoutError` かを確認する。
-  2. 署名エラーが多発する場合は、Secret Key の漏洩を疑い、直ちに CTO へエスカレーションし Secret Manager を確認する。
-  3. `TimeoutError` の場合、Idempotency 制御 (ADR-010) が効いているため、決済プロバイダ側から手動で Webhook を再送 (Retry) する。
+  1. Cloud Logging にて `failureClass` を確認し、`SECURITY`（署名不一致/改ざん）か `RETRYABLE_TRANSIENT`（`TimeoutError` 等）かを分類する。
+  2. `SECURITY` が多発する場合は、Secret Key の漏洩を疑い、直ちに CTO へエスカレーションし Secret Manager を確認する。検証失敗は `PaymentEvidence` (`signatureVerificationResult = FAILED`) に記録されているため、該当レコードを件数・発生源とともに抽出する（ADR-020 / ADR-021）。
+  3. `RETRYABLE_TRANSIENT` の場合、未処理の Webhook に対しては 5xx を返す設計（ADR-022 2.3）のためプロバイダ自動再送で回復する。自動再送期限を超えている場合のみ、Idempotency 制御 (ADR-010) を前提に決済プロバイダ側から手動再送 (Retry) する。
+  4. **受信欠落の確認 (必須)**: 上記後、決済プロバイダのイベント一覧と `PaymentEvidence` の `providerEventId` を照合し、**履歴に存在しない（ログにも残っていない）欠落イベント**の有無を ADR-013 対査レポートで最終確認する。
 - **Success Criteria:**
   - `Error Count (Webhook) = 0` に復帰していること。
   - 対象 Invoice のステータスが `PAID` に遷移し、紐づく `JournalEntry` が生成されていること。
+  - 決済プロバイダのイベント件数と `PaymentEvidence` 件数が一致し、欠落 0 件であること。
 - **Post Incident Actions:**
   - Incident Management System (Jira/PagerDuty 等) のチケットを更新・クローズ。
   - （頻発時）RCA の実施および ADR / Risk Register の更新。
@@ -72,14 +77,39 @@
 - **Prerequisites**: Production Project Viewer, Firestore 更新権限
 - **症状:** Invoice が `PAID` になったが、freee 会計側に Deal (取引) / JournalEntry が反映されていない。
 - **原因:** freee API のメンテンスダウン、または一時的な API レート制限への到達。
+- **Detection (検知)**: `JournalEntry.status = EXPORT_FAILED` の滞留が 1 件以上かつ 30 分継続した時点で Cloud Monitoring アラートが発報される（人の目視を検知手段としない / ADR-022 2.5）。
 - **対応手順:**
-  1. Firestore の `JournalEntry` コレクションを確認し、ステータスが `EXPORT_FAILED` または保留状態になっているエントリを特定する。
-  2. バッチ再処理スクリプト (`npm run tools:retry-export`) を実行し、未送信の JournalEntry を再送する。
+  1. Firestore の `JournalEntry` コレクションを確認し、ステータスが `EXPORT_FAILED` または保留状態になっているエントリを特定し、`lastError.failureClass` / `attemptCount` を確認する。
+  2. `RETRYABLE_TRANSIENT` の場合のみ、バッチ再処理スクリプト (`npm run tools:retry-export`) を実行し、未送信の JournalEntry を再送する。
+  3. `NON_RETRYABLE_VALIDATION` / `NON_RETRYABLE_BUSINESS`（勘定科目マッビング不整合等）の場合は再送しても必ず失敗するため、IR-003 へ移行し `FreeeJournalMapper` の修正を開発チームへエスカレーションする。
+  4. 再送スクリプトは、失敗したエントリを `EXPORTED` としてもみ消すことなく、失敗件数を戻り値として報告することを確認する（握りつぶしの遘遭防止）。
 - **Success Criteria:**
   - `Pending JournalEntry = 0` (すべて `EXPORTED` に遷移) となっていること。
   - freee 会計上に正しい内容の Deal が生成されていること。
+  - 未解決のエントリは DLQ または `needsTriage = true` として可視状態にあり、黙示的に消えていないこと。
 - **Post Incident Actions:**
   - Incident Management System のチケットを更新・クローズ。
+
+### IR-003: Outbox / DLQ Stall & Compensation Failure (非同期イベント滞留・補償失敗)
+- **Severity**: P2（会計・決済ドメインのイベントを含む場合は P1）
+- **RACI**: Executor: SRE / Approver: CTO / Notify: Accounting Admin, Development Team Lead
+- **Prerequisites**: Production Project Viewer, Firestore 更新権限, Cloud Logging 閲覧権限
+- **対象リスク**: RSK-008（結果整合性障害からの復旧）
+- **Detection (検知)**: DLQ 件数 > 0、または Outbox の未処理イベント最古齢 (Oldest Unprocessed Age) > 15 分でアラート。
+- **症状:** Invoice は `PAID` なのに Wallet 相殺や仕訳が反映されない、または Ride 完了後に Wallet クレジットが付与されない。
+- **原因:** ワーカー停止・再試行上限到達による DLQ 隔離、Poison Event、または補償仕訳 (`reversal`) 発行の失敗。
+- **対応手順:**
+  1. DLQ 内イベントを `failureClass` で集計し、`RETRYABLE_TRANSIENT`（外部障害回復待ち）と `NON_RETRYABLE_*`（要修正）に仕分ける。
+  2. `RETRYABLE_TRANSIENT`: 外部サービスの復旧を確認した上で Manual Replay を実行する。イベントは `eventId` / `idempotencyKey` を保持しているため、再投入による二重計上は発生しない（ADR-006）。
+  3. `NON_RETRYABLE_*`: Replay しても必ず再失敗する。原因（スキーマ不整合・不変条件違反・締め済期間への書込み）を特定し、開発チームへエスカレーションする。締め済期間に属する場合は ADR-011 に従い補正仕訳で対応する。
+  4. **DLQ イベントの削除は禁止**。業務上不要と判断した場合も、理由・判断者を記録した上で `DISCARDED_BY_APPROVAL` として残す（Approver: CTO）。
+  5. 補償仕訳の失敗時は自動再試行せず、Wallet 残高と確定 Ledger 合計の不変条件 (`INV-WAL-001`) を検査してから手動で逆仕訳を発行する（二重補償防止）。
+- **Success Criteria:**
+  - DLQ 件数 = 0、または残存件のすべてに `needsTriage` チケットが紐づいていること。
+  - Outbox の未処理イベント最古齢 < 5 分に復帰していること。
+  - `INV-WAL-001` / `INV-INV-001` の Doctor 診断がすべて PASS すること。
+- **Post Incident Actions:**
+  - RCA の実施。同一 `failureClass` が再発する場合は ADR-022 の分類定義またはワーカー実装を見直す。
 
 ---
 
@@ -157,11 +187,28 @@
 | Stripe Webhook | Delivery Failure / Timeout Count |
 | freee API | Export Failure / Rate Limit Reached |
 | Secret Manager | Secret Version Rotation Status |
+| Outbox / DLQ | DLQ Depth / Oldest Unprocessed Event Age |
+| RBAC Policy Engine | Fail-Closed 由来 DENY 率 (`deniedBy = FailClosedGuarantee`) |
+| Accounting Export | `EXPORT_FAILED` 滞留件数 |
+
+### Alert Policies (失敗検知のしきい値)
+以下は ADR-022 2.5（失敗の可視化義務）に対応する必須アラートです。いずれも「人がダッシュボードを見に行く」ことを検知手段としないことを原則とします。
+
+| Alert | 条件 | 対応 Runbook |
+|---|---|---|
+| Webhook Signature Failure | 検証失敗 5 件 / 5 分 | IR-001 |
+| Webhook 5xx Rate | 5xx 率 > 1% / 5 分 | IR-001 |
+| Accounting Export Stall | `EXPORT_FAILED` ≥ 1 件が 30 分継続 | IR-002 |
+| DLQ Depth | DLQ 件数 ≥ 1 | IR-003 |
+| Outbox Lag | 未処理イベント最古齢 > 15 分 | IR-003 |
+| Fail-Closed DENY Spike | 障害由来 DENY 率 > 0.5% / 5 分 | IR-001 / 認可基盤調査 |
+| Reconciliation Mismatch | 日次対査の差異 ≥ 1 件 | MO-002 |
 
 ### RM-001: 定期メンテナンスタスク一覧
 | 頻度 | タスク内容 | Success Criteria |
 |---|---|---|
 | **Daily** | Cloud Error Reporting の確認 | `Error Count (未処理 5xx) = 0` |
+| **Daily** | DLQ / Outbox 滞留の確認（IR-003） | DLQ 件数 = 0、未処理イベント最古齢 < 5 分 |
 | **Weekly** | Secret 期限・ローテーション確認 | 30日以内に期限切れとなるシークレット数 = 0 |
 | **Monthly** | Restore Drill (リストア訓練) | 復元から Diff 抽出までの手順完遂時間が 15分以内 |
 | **Quarterly** | RBAC 監査 および Runbook レビュー | 不要権限の削除完了、および本 Runbook のアップデート完了 |

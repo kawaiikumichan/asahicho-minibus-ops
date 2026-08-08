@@ -39,7 +39,7 @@
 |---|---|---|---|---|
 | `☐` | **Structured Logging Active** | Production | JSON 構造化ログが Cloud Logging 上で確認できること。 | 🚨 **Operational Readiness Blocker**: 提出された成果物から設定証跡を確認できず |
 | `☑` | **Correlation ID Injection** | Production | Webhook 受信から JournalEntry まで同一 ID でトランザクションを追跡できること。 | 🚨 **Blocker (RSK-001)**: 提出された Evidence Report により Verified (構造化ログ・SpanID実装済) |
-| `☐` | **Alert Policies Configured** | Production | 5xx エラー急増等の Cloud Error Reporting アラートが設定されていること。 | 🚨 **Operational Readiness Blocker**: 提出された成果物から設定証跡を確認できず |
+| `☐` | **Alert Policies Configured** | Production | 5xx エラー急増等の Cloud Error Reporting アラートが設定されていること。ADR-022 2.5 の必須アラート（署名検証失敗 / DLQ 件数 / Outbox 滞留 / `EXPORT_FAILED` 滞留 / 障害由来 DENY 率）をすべて含むこと。 | 🚨 **Operational Readiness Blocker**: 提出された成果物から設定証跡を確認できず |
 
 ## 5. Reliability & E2E Validation
 
@@ -47,6 +47,8 @@
 |---|---|---|---|---|
 | `☐` | **Cloud Functions Retry Enabled** | Production | 一時エラーに対する Backoff Retry が有効化されていること。 | ⚠ **Evidence Not Verified**: 提出物から設定証跡を確認できず |
 | `☐` | **Full E2E Emulator Pass** | Emulator | Attendance〜Accounting 全シナリオの競合・切断テストがPASSし、重大欠陥が0件であること。 | ⚠ **Evidence Not Verified (RSK-002)**: 提出された成果物から実証記録を確認できず |
+| `☐` | **Ack Boundary Verified (ADR-022)** | Emulator | 耐久化コミット失敗時に Webhook が 5xx を返し、プロバイダ再送で欠落 0 件に回復すること。署名検証失敗が `PaymentEvidence` に `FAILED` として残ること。 | ⚠ **Evidence Not Verified (RSK-010)**: 仕様は ADR-022 で規定済。実証記録は未提示 |
+| `☐` | **DLQ Replay Drill** | UAT | 3 回失敗イベントが破棄されず DLQ に隔離され、IR-003 の Manual Replay で二重計上なく復旧できること。 | ⚠ **Evidence Not Verified (RSK-008)**: IR-003 手順は策定済。実施記録は未提示 |
 
 ---
 
