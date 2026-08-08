@@ -1,4 +1,4 @@
-# Architecture Decision Records (ADR-001 ~ ADR-007)
+# Architecture Decision Records (ADR-001 ~ ADR-022)
 
 本ドキュメントは、「スポーツクラブ運営システム（ASAHI Coach App）」における主要なアーキテクチャ設計判断（ADR: Architecture Decision Records）を文書化したものです。Phase 6（Wallet）から Phase 9（RBAC Enterprise Core Frozen）、および Phase 10（Accounting & Payment Integration）を見据え、数年間にわたり長期保守可能な設計不変事項とガバナンス規律を定義します。
 
@@ -29,6 +29,7 @@
 | **ADR-019** | **Financial Data Retention & Archive Policy (金融・監査データ保存とアーカイブ原則)** | Accepted (Frozen) | 2026-08-01 | Governance | Active(0-24ヶ月)→Archive(25ヶ月-7年)→Legal(7年以上)の不変保存・物理削除禁止原則 |
 | **ADR-020** | **External Integration Boundary Security (外部決済API非信頼ゾーン隔離原則)** | Accepted (Frozen) | 2026-08-01 | Security | 外部決済APIを非信頼ゾーンとし、Verifier→Mapper→DomainEvent経由のみドメイン変更許可 |
 | **ADR-021** | **Payment Evidence Preservation (決済証跡・Webhook検証結果保存原則)** | Accepted (Frozen) | 2026-08-01 | Audit | providerEventId/Timestamp/検証結果/ハッシュを不変保存する決済監査証跡原則 |
+| **ADR-022** | **Error Propagation & Failure Visibility Policy (エラー伝播・失敗可視化原則)** | Accepted | 2026-08-08 | Reliability | 例外の握りつぶし禁止・失敗分類・Ack境界・DLQ隔離・失敗の必達可視化 |
 
 ---
 
@@ -184,6 +185,14 @@ Superseded By: None
 ### 5. Constraints (制約事項)
 - **ポリシー評価器 (`evaluate()`) 内での副作用・DBアクセス・HTTP通信・外部ネットワーク呼び出しを一切禁止**。
 - **ポリシー内部でのシステム時計 (`Date.now()`) の直接取得を禁止**（評価日時 `now` は必ず実行コンテキストから注入）。
+- **Silent DENY の禁止 (Fail-Closed ≠ Fail-Silent)**: `FailClosedGuarantee` による `DENY` は、単に安全側へ倒すだけでは不十分であり、退避の原因を必ず外部から観測可能な形で残さなければならない。`AuthorizationDecision` に以下を保持し、かつ `severity: ERROR` の構造化ログを出力すること（詳細は ADR-022）。
+  ```typescript
+  readonly deniedBy: 'FailClosedGuarantee';
+  readonly failureClass: 'EVALUATION_EXCEPTION' | 'CONTEXT_TIMEOUT' | 'ETAG_CONFLICT';
+  readonly failureCode: string;      // 原因例外の分類コード
+  readonly correlationId: string;    // 業務トランザクション相関ID
+  ```
+  「業務上の正当な拒否 (`DENY` by policy)」と「障害由来の退避 (`DENY` by fail-closed)」を集計上区別できない実装は本 ADR 違反とする。障害由来 DENY 率は SLO 監視対象とする。
 
 ### 6. Consequences (効果と影響)
 - **Pros**: **実測値 21,490 req/sec、平均レイテンシ 46μs** という圧倒的高速評価と、いかなる障害発生時もセキュアなフェイルセーフを確立。
@@ -841,7 +850,7 @@ Stripe、GMOあおぞらネット銀行等の外部決済サービスから通�
 External Webhook / API Response (Untrusted Zone)
         │
         ▼
-[1. Webhook Signature Verifier] ─(HMAC 署名検証失敗時は即時切断・破棄)
+[1. Webhook Signature Verifier] ─(HMAC 署名検証失敗時は処理中断＋証跡記録＋アラート)
         │
         ▼
 [2. Provider Neutral Mapper] ───(Stripe/GMO型を PaymentIntentRecord へ中立正規化)
@@ -852,6 +861,12 @@ External Webhook / API Response (Untrusted Zone)
         ▼
 [4. Aggregate Mutation] ────────(Invoice.reconcileInvoice() による状態遷移)
 ```
+
+- **検証失敗時の取り扱い (Verification Failure Handling)**:
+  署名検証に失敗したリクエストはドメインへ一切伝播させない。ただし **「破棄 = 無記録」ではない**。以下を必須とする（ADR-021 / ADR-022 と一体）。
+  1. `PaymentEvidence` に `signatureVerificationResult: 'FAILED'` と `rawEventHash` を記録する（ペイロード本体および秘匿値は保存しない）。
+  2. 呼出元へ `HTTP 400` を返し、`severity: ERROR` の構造化ログを出力する。
+  3. 単位時間あたりの検証失敗件数がしきい値を超過した場合、鍵漏洩・改ざんの疑いとして即時アラートを発報する（IR-001）。
 
 ---
 
@@ -877,6 +892,97 @@ Domain:        Audit / Compliance / Payment
 6. `adapterVersion`: 使用されたアダプタバージョン識別子
 
 これにより、5年・10年後であっても、「この請求がなぜ PAID に遷移したか」を第三者監査人が技術的に検証・証明可能とする。
+
+---
+
+## ADR-022: Error Propagation & Failure Visibility Policy (エラー伝播・失敗可視化原則)
+
+```
+Status:        Accepted
+Date:          2026-08-08
+Decision-Maker: Enterprise Architecture Team & SRE
+Domain:        Reliability / Observability
+Supersedes:    None
+Superseded By: None
+```
+
+### 1. Context (背景と課題)
+ADR-001〜021 は「不変性」「境界」「べき等性」を極めて厳格に定義しているが、**失敗した処理がどう扱われるか**の規律は各所に断片的に散在しており、以下の欠落が確認された。
+
+1. Webhook / 非同期ワーカーが失敗しても呼出元へ成功応答（`200 OK`）を返した場合、決済プロバイダは再送を行わないため、**業務データが欠落したまま障害が閉じる**（Payment Sequence Diagram には異常系分岐が存在しなかった）。
+2. ADR-020 の「署名検証失敗時は即時切断・破棄」は、ADR-021 が要求する `signatureVerificationResult: 'FAILED'` の保存と矛盾し、攻撃・鍵漏洩の兆候が痕跡なく消える可能性があった。
+3. ADR-004 の Fail-Closed Guarantee は `DENY` へ退避するが、原因例外を記録・分類する義務が明文化されておらず、**認可基盤の障害が「単なる権限不足」として黙殺される**恐れがあった。
+4. Governance 1.22 の Poison Event Handling は「即時処理スキップ」と規定しており、**イベントの黙示的破棄（サイレントロスト）** を許す表現になっていた。
+5. `JournalEntry.status = EXPORT_FAILED`（IR-002）は状態としては存在するが、それを能動的に検知するアラート条件が定義されておらず、人が気付くまで滞留する設計だった。
+
+いずれも「エラーが起きたこと自体が失われる（Silent Failure）」という単一の欠陥に帰着するため、横断ポリシーとして本 ADR で規律化する。
+
+### 2. Decision (決定事項)
+
+#### 2.1 失敗分類 (Failure Taxonomy)
+すべての失敗は捕捉した時点で必ず以下のいずれかに分類し、`failureClass` として構造化ログおよび永続レコードへ記録する。分類不能な失敗は `UNKNOWN` とし、`RETRYABLE` ではなく **`NON_RETRYABLE` かつ要調査 (`needsTriage: true`)** として扱う。
+
+| failureClass | 定義 | 既定のハンドリング |
+|---|---|---|
+| `RETRYABLE_TRANSIENT` | ネットワーク断、5xx、レート制限、コールドスタートタイムアウト | 指数バックオフ再試行（Governance 1.22） |
+| `NON_RETRYABLE_VALIDATION` | 署名不一致、スキーマ不正、必須属性欠落（Poison Event） | 再試行せず DLQ 隔離＋アラート |
+| `NON_RETRYABLE_BUSINESS` | 不変条件違反 (`INV-*`)、締め済期間への書込 (ADR-011) | 再試行せず DLQ 隔離＋会計管理者へ通知 |
+| `CONFLICT` | OCC / ETag 競合（Governance 1.21） | 有限回リトライ後 `RETRYABLE_TRANSIENT` と同一扱い |
+| `SECURITY` | HMAC 検証失敗、テナント境界違反 (ADR-016) | 即時中断・証跡保存・セキュリティアラート |
+| `UNKNOWN` | 上記に分類できない例外 | DLQ 隔離＋`needsTriage: true` ＋アラート |
+
+#### 2.2 禁止事項 (Prohibitions — Silent Failure の全面禁止)
+1. `❌ 空の catch / catch 後の無処理継続`: 例外を捕捉して何も記録せず後続処理を続行すること。
+2. `❌ 失敗の成功化 (Failure Masking)`: 失敗時に既定値・空配列・`null` を返して呼出元に成功と誤認させること（金融・会計・認可ドメインでは絶対禁止）。
+3. `❌ 未処理のまま 2xx を返すこと`: 耐久化コミット前に Webhook / API が成功応答を返すこと（下記 2.3）。
+4. `❌ ログのみで終わる失敗 (Log-and-Forget)`: 状態遷移も DLQ 隔離もアラートも伴わない `console.error` のみの処理。
+5. `❌ 例外メッセージの丸め潰し`: 原因例外 (`cause`) を破棄して再スローすること。ラップする場合は `cause` を必ず保持する。
+6. `❌ ドメイン例外の PII / 秘匿値の混入`: エラーに個人情報・鍵・生ペイロードを含めること（記録するのは `rawEventHash` 等の不可逆値のみ）。
+
+#### 2.3 Ack 境界原則 (Acknowledgement Boundary)
+外部からの受信端点（Webhook / Push Subscription / API Route）は、**「受信事実の耐久化コミットが完了した時点」でのみ 2xx を返す**。
+
+```
+Inbound Request
+      │
+      ▼
+[1. 署名検証]  ── 失敗 ─► 400 + PaymentEvidence(FAILED) + Security Alert   (再送させない)
+      │
+      ▼
+[2. べき等性判定] ── 既処理 ─► 200 (No-Op)                                  (重複は正常終了)
+      │
+      ▼
+[3. 受信イベントの耐久化 (Inbox / Outbox commit)]
+      │            └─ 失敗 ─► 5xx (プロバイダ再送に委ねる)
+      ▼
+[4. 200 Ack を返却]
+      │
+      ▼
+[5. 以降のドメイン処理・会計エクスポートは非同期ワーカーが担当]
+```
+
+- **同期処理の禁止範囲**: 受信端点の同期区間で freee / 外部 GL API を呼び出してはならない（ADR-010 / ADR-015 の再確認）。外部連携の失敗によって決済消込そのものが失われる、あるいは逆に成功応答で失敗が隠れる二重の危険を排除する。
+- **部分成功の禁止**: `Invoice` 消込と `JournalEntry` 生成は同一アトミックトランザクションで行う。分割が必要な場合は Outbox 経由とし、途中失敗は必ず補償仕訳 (ADR-011) を発行する。
+
+#### 2.4 非同期ワーカーの失敗伝播 (Worker Failure Contract)
+- ワーカーはイベントを **成功時のみ** `PROCESSED` に遷移させる。失敗時に `PROCESSED` へ遷移させる実装は本 ADR 違反とする。
+- Outbox / JournalEntry の失敗状態は必ず永続化する: `attemptCount`, `lastError.failureClass`, `lastError.code`, `lastAttemptAt`, `nextRetryAt`。
+- 再試行上限（Governance 1.22: 3 回）到達時は `DLQ` へ隔離し、**メッセージを破棄してはならない**。DLQ からの復旧手順は Operations Manual IR-003 に従う。
+
+#### 2.5 失敗の可視化義務 (Mandatory Failure Visibility)
+以下は「発生したこと」が人間または監視系に必ず到達しなければならない。到達手段のない失敗経路の実装を禁止する。
+
+| 事象 | 記録先 | 通知 |
+|---|---|---|
+| HMAC 署名検証失敗 | `PaymentEvidence` (`FAILED`) | しきい値超過で即時アラート (IR-001) |
+| Fail-Closed による DENY | `rbac-audit-logs` + 構造化ログ (`severity: ERROR`) | 障害由来 DENY 率の SLO アラート |
+| Outbox / DLQ 滞留 | Outbox イベント状態 | DLQ 件数 > 0 で 15 分以内にアラート (IR-003) |
+| `JournalEntry.status = EXPORT_FAILED` | Firestore | 滞留 1 件以上・30 分継続でアラート (IR-002) |
+| 対査乖離 (ADR-013) | Reconciliation Report | 日次バッチ完了時に差異件数を通知 |
+
+### 3. Consequences (効果と影響)
+- **Pros**: 「エラーが黙って消える」経路を設計レベルで排除でき、RSK-008（結果整合性障害からの復旧）および RSK-001（追跡性）の解消要件が具体化される。決済プロバイダの再送機構を正しく利用でき、Webhook 欠落による売上・仕訳の欠損を構造的に防止できる。
+- **Cons**: 受信端点が「受信のみ」を担う 2 段構成（Inbox＋ワーカー）となるため、UI 側の反映遅延通知（ADR-006 Cons と同様）と DLQ 運用当番の整備が必要となる。また、失敗レコードの永続化により Firestore 書込量がわずかに増加する。
 
 
 

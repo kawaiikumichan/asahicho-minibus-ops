@@ -35,8 +35,9 @@
 | **RSK-005** | Open | Performance | **[ADR-011] 月次締め (Month End Close) 時の書込負荷試験証跡未提示**<br>提出物には、月末に全テナントの Invoice が一斉に生成・確定される際のトランザクション限界（約500/秒）を想定した負荷試験の実施を裏付ける証跡が含まれていなかった。 | **Medium** | High | Medium | 月次締め処理をテナントごと・チャンクごとに分散（Sleep挿入など）させる非同期処理へ移行し、1000 Families 規模の実証記録を提示する。 | Backend | Post Go-Live |
 | **RSK-006** | Open | Compliance | **[ADR-019] Cold Archive 自動化の実装証跡未提示**<br>提出物には、25ヶ月経過後の財務データの Storage（Read-only Archive）への退避自動化設定を裏付ける証跡が含まれていなかった。Firestore ストレージコストの増大および監査時エクスポートの遅延リスクがある。 | **Low** | High | Low | 基準日を過ぎたデータを自動的にエクスポートして Storage に保存・Firestore から削除する Lifecycle ロジックを実装し、証跡を提示する。 | SRE | Post Go-Live |
 | **RSK-007** | Open | Compliance / Audit | **[ADR-001/ADR-004] Audit Trail Integrity (監査証跡の完全性検証手順)の実証証跡未確認**<br>Immutable Ledger および RBAC Decision Log の長期監査証跡保持について、改ざん検知および保存期間経過後の検証手順を裏付ける実証証跡が含まれていなかった。 | **High** | Low | Critical | Ledger Entry、AuthorizationDecision、Emergency Override Log に対する Hash Chain または Canonical JSON Hash 検証プロセスを Operations Manual に追加し、監査復元テストを実施する。 | Security | Pre Go-Live |
-| **RSK-008** | Open | Distributed Transaction | **[ADR-006/ADR-007] Eventual Consistency Failure (結果整合性障害)からの復旧運用証跡未確認**<br>Outbox/Saga Compensation により非同期整合性を保証しているが、外部決済・会計システム障害時の補償処理再実行およびDead Letter Queueの運用を裏付ける証跡が含まれていなかった。 | **High** | Medium | High | Outbox Event状態(State Machine)、Retry Policy、DLQ監視、Manual Replay手順をOperations Manual化し、障害復旧テストを実施する。 | SRE | Pre Go-Live |
+| **RSK-008** | Open | Distributed Transaction | **[ADR-006/ADR-007] Eventual Consistency Failure (結果整合性障害)からの復旧運用証跡未確認**<br>Outbox/Saga Compensation により非同期整合性を保証しているが、外部決済・会計システム障害時の補償処理再実行およびDead Letter Queueの運用を裏付ける証跡が含まれていなかった。 | **High** | Medium | High | Outbox Event状態(State Machine)、Retry Policy、DLQ監視、Manual Replay手順をOperations Manual化し（**IR-003 として記述済**、判定規則は **ADR-022**）、障害復旧テストの実証記録を提示する。 | SRE | Pre Go-Live |
 | **RSK-009** | Open | Security | **[ADR-004/ADR-005/ADR-009] RBAC Policy Drift (ポリシー乖離)検証手順の実証証跡未確認**<br>Permission Catalog SSOT と Role Policy の変更時、既存AuthorizationDecisionとの互換性検証手順を裏付ける証跡が含まれていなかった。 | **Medium** | Medium | High | Permission Catalog Versioning、Migration Rule、Regression Test SuiteをCI/CD Gateへ追加する。 | Security | Post Go-Live |
+| **RSK-010** | Mitigated | Reliability / Observability | **[ADR-004/006/020/Payment Sequence] Silent Failure (エラーの握りつぶし) を許す仕様記述**<br>① 決済シーケンスに異常系分岐がなく、下流失敗時も `200 OK` を返す読み取れ方が可能で、プロバイダ再送が働かない。② ADR-020 の署名検証失敗「破棄」が ADR-021 の証跡保存と矛盾。③ Fail-Closed DENY の原因記録義務がない。④ Poison Event が「即時スキップ」とされ破棄を許していた。 | **High** | Medium | High | **ADR-022 (Error Propagation & Failure Visibility Policy) を制定**し、Ack 境界・失敗分類・DLQ 破棄禁止・可視化義務を規定。Payment Sequence Diagram に異常系分岐を明記し、Governance 1.22 / IR-001・IR-002・IR-003 を改訂。今後は Doctor 診断ルールとしての強制検査と、実装側のアラート設定証跡提示を要する。 | Architecture / SRE | Pre Go-Live |
 
 ## 3. Risk Definitions
 - **Critical:** Go-Live 前に必ず解消しなければならない致命的リスク。データ消失、あるいは法的/財務的証跡が追跡不能になるもの。
@@ -70,6 +71,7 @@ Go-Live 判定までに、少なくとも一時的な運用回避策や実証検
 - **RSK-002** Chaos/E2E
 - **RSK-007** Audit Integrity
 - **RSK-008** Saga Recovery
+- **RSK-010** Silent Failure（仕様面は ADR-022 で解消。実装・アラート設定の証跡提示待ち）
 
 ### 🟢 Post Go-Live Hardening（稼働後強化事項）
 Go-Live をブロックしないが、サービススケールや将来的なコンプライアンス維持のために期日を定めて解消すべき事項。
@@ -93,6 +95,9 @@ Go-Live をブロックしないが、サービススケールや将来的なコ
 | [ADR-006 & 007: Outbox / Saga](file:///C:/Users/kawai/.gemini/antigravity/brain/f2d96dc4-9b44-4931-bc19-8f679cf8075a/architecture_decision_records.md) | RSK-008 |
 | [ADR-005: Permission Catalog SSOT](file:///C:/Users/kawai/.gemini/antigravity/brain/f2d96dc4-9b44-4931-bc19-8f679cf8075a/architecture_decision_records.md) | RSK-009 |
 | `run-security-rules-uat.ts` (Security UAT) | RSK-009 |
+| ADR-022: Error Propagation & Failure Visibility Policy (`architecture_decision_records.md`) | RSK-008, RSK-010 |
+| Payment & Accounting Sequence Diagram 異常系分岐 (`payment_sequence_diagram.md`) | RSK-010 |
+| Operations Manual IR-003 / Alert Policies (`operations_manual.md`) | RSK-008, RSK-010 |
 
 ---
 
