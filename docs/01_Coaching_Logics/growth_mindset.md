@@ -7,26 +7,26 @@
 
 人間には、物事に対する2つの考え方（マインドセット）があります。
 
-<div style="display: flex; gap: 10px; margin-bottom: 20px;">
+<div class="doc-grid doc-grid--tight">
   
-  <div style="flex: 1; background-color: #f5f5f5; border-top: 5px solid #9e9e9e; padding: 15px; border-radius: 8px;">
-    <strong style="color: #616161;">🔒 硬直マインドセット<br>(Fixed Mindset)</strong>
+  <div class="doc-card doc-card--top-accent theme-gray">
+    <strong class="doc-card__title">🔒 硬直マインドセット<br>(Fixed Mindset)</strong>
     <p style="font-size: 0.9em; margin-top: 10px; color: #333;">
         「才能は生まれつき決まっている」と考える。
     </p>
-    <ul style="font-size: 0.9em; color: #555; padding-left: 20px;">
+    <ul style="color: #555; padding-left: 20px;">
         <li>失敗を恐れる（才能ないと思われるから）</li>
         <li>他人の成功を妬む</li>
         <li>「無理」「向いてない」が口癖</li>
     </ul>
   </div>
 
-  <div style="flex: 1; background-color: #e8f5e9; border-top: 5px solid #4caf50; padding: 15px; border-radius: 8px;">
-    <strong style="color: #2e7d32;">🌱 しなやかマインドセット<br>(Growth Mindset)</strong>
+  <div class="doc-card doc-card--top-accent theme-green">
+    <strong class="doc-card__title">🌱 しなやかマインドセット<br>(Growth Mindset)</strong>
     <p style="font-size: 0.9em; margin-top: 10px; color: #333;">
         「脳は筋肉のように鍛えられる」と考える。
     </p>
-    <ul style="font-size: 0.9em; color: #555; padding-left: 20px;">
+    <ul style="color: #555; padding-left: 20px;">
         <li>失敗は「学びのチャンス」と喜ぶ</li>
         <li>他人の成功から学ぼうとする</li>
         <li>「どうすればできる？」と考える</li>
@@ -39,7 +39,7 @@
 
 「できない (I can't)」と言って諦めそうな時、後ろに**「まだ (YET)」**をつけるだけで、脳のスイッチが切り替わります。
 
-<div style="background-color: #fff3e0; border: 2px dashed #ff9800; padding: 20px; text-align: center; border-radius: 10px; margin-bottom: 20px;">
+<div class="doc-note doc-note--center theme-orange" style="border-style: dashed; padding: 20px; border-radius: 10px;">
     <p style="font-size: 1.2em; color: #555; margin: 0;">
         ❌ I can't do it.<br>
         （僕にはできない）
@@ -68,7 +68,7 @@
 * 「昨日よりドリブルが低くなったね。練習した成果だね！」
 * **結果:** 子供は「努力すれば見てくれる」と感じ、**もっと練習するようになります。**
 
-<div style="border: 2px solid #2196f3; background-color: #e3f2fd; padding: 15px; border-radius: 5px; color: #0d47a1;">
+<div class="doc-note theme-blue" style="border-radius: 5px; color: #0d47a1; margin-bottom: 0;">
     <strong>💡 チームの合言葉</strong><br>
     「ナイス・トライ！（Nice Try）」<br>
     「ナイス・ミス！（Nice Mistake）」<br>

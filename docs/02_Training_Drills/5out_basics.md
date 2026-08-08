@@ -7,20 +7,20 @@
 
 5アウトの基本である「空いたスペースを埋める（Fill）」動きを習得します。
 
-<div style="background-color: #fff; border: 2px solid #333; padding: 20px; border-radius: 10px; margin-bottom: 20px; text-align: center; max-width: 400px; margin-left: auto; margin-right: auto;">
-    <strong style="display:block; margin-bottom:10px; color: #333;">動きのイメージ</strong>
+<div class="doc-court">
+    <strong class="doc-court__title">動きのイメージ</strong>
     
-    <div style="position: relative; width: 200px; height: 200px; margin: 0 auto; border: 2px dashed #ccc; border-radius: 50%;">
-        <div style="position: absolute; top: -15px; left: 85px; width: 30px; height: 30px; background: orange; border-radius: 50%; color: white; line-height: 30px; font-weight: bold;">1</div>
-        <div style="position: absolute; top: 60px; right: -15px; width: 30px; height: 30px; background: orange; border-radius: 50%; color: white; line-height: 30px; font-weight: bold;">2</div>
-        <div style="position: absolute; bottom: 20px; right: 0px; width: 30px; height: 30px; background: orange; border-radius: 50%; color: white; line-height: 30px; font-weight: bold;">3</div>
-        <div style="position: absolute; bottom: 20px; left: 0px; width: 30px; height: 30px; background: orange; border-radius: 50%; color: white; line-height: 30px; font-weight: bold;">4</div>
-        <div style="position: absolute; top: 60px; left: -15px; width: 30px; height: 30px; background: orange; border-radius: 50%; color: white; line-height: 30px; font-weight: bold;">5</div>
+    <div class="doc-court__ring">
+        <div class="doc-marker" style="top: -15px; left: 85px;">1</div>
+        <div class="doc-marker" style="top: 60px; right: -15px;">2</div>
+        <div class="doc-marker" style="bottom: 20px; right: 0px;">3</div>
+        <div class="doc-marker" style="bottom: 20px; left: 0px;">4</div>
+        <div class="doc-marker" style="top: 60px; left: -15px;">5</div>
         
-        <div style="position: absolute; top: 25px; right: 25px; font-size: 24px; color: #555;">↷</div>
-        <div style="position: absolute; bottom: 25px; right: 25px; font-size: 24px; color: #555;">↷</div>
-        <div style="position: absolute; bottom: 25px; left: 25px; font-size: 24px; color: #555;">↷</div>
-        <div style="position: absolute; top: 25px; left: 25px; font-size: 24px; color: #555;">↷</div>
+        <div class="doc-court__cue" style="top: 25px; right: 25px;">↷</div>
+        <div class="doc-court__cue" style="bottom: 25px; right: 25px;">↷</div>
+        <div class="doc-court__cue" style="bottom: 25px; left: 25px;">↷</div>
+        <div class="doc-court__cue" style="top: 25px; left: 25px;">↷</div>
     </div>
 
     <p style="font-size: 0.9em; margin-top: 15px; color: #333; text-align: left;">
@@ -41,8 +41,8 @@
 
 ディフェンスのズレ（Gap）を見つけて攻める練習です。
 
-<div style="background-color: #e3f2fd; padding: 15px; border-radius: 8px; border-left: 5px solid #2196f3; margin-bottom: 20px;">
-    <strong style="color: #1565c0;">練習のポイント</strong>
+<div class="doc-note doc-note--rail theme-blue" style="--c-accent-dark: #1565c0; border-radius: 8px;">
+    <strong style="color: var(--c-accent-dark);">練習のポイント</strong>
     <ul style="margin-top: 5px; color: #0d47a1;">
         <li><strong>ミート:</strong> ボールをもらう瞬間に勝負を決める（DFが遅れていたら抜き去る）。</li>
         <li><strong>判断:</strong> 
@@ -65,13 +65,13 @@
 
 3人に減らして、実戦形式で行います。
 
-<div style="background-color: white; border: 2px solid #333; padding: 15px; border-radius: 5px; max-width: 400px; margin: 0 auto;">
-    <div style="display:flex; justify-content: space-around; align-items: center; margin-bottom: 10px;">
-        <div style="width: 30px; height: 30px; background: orange; border-radius: 50%; text-align:center; line-height:30px; color:white; font-weight:bold;">1</div>
+<div class="doc-court doc-court--compact" style="margin-bottom: 0;">
+    <div class="doc-court__row">
+        <div class="doc-marker">1</div>
         <div style="font-size: 20px;">➔ パス ➔</div>
-        <div style="width: 30px; height: 30px; background: orange; border-radius: 50%; text-align:center; line-height:30px; color:white; font-weight:bold;">2</div>
+        <div class="doc-marker">2</div>
     </div>
-    <div style="text-align: center; border-top: 1px dashed #ccc; padding-top: 10px;">
+    <div style="border-top: 1px dashed #ccc; padding-top: 10px;">
         <strong style="color: #d32f2f;">パスした 1番 はどうする？</strong><br>
         ⬇<br>
         <strong>即座にゴールへ走る（Cut）</strong><br>

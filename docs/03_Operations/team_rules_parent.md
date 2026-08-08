@@ -2,8 +2,8 @@
 
 <p style="margin-bottom: 20px;">旭町MBCは、保護者の皆様との「共育」によって成り立っています。子供たちが22歳で自立するための環境作りへのご協力をお願いします。</p>
 
-<div style="border-left: 5px solid #3f51b5; background-color: #f5f5f5; padding: 15px; margin-bottom: 20px;">
-    <h2 style="margin-top: 0; color: #3f51b5;">１． 運営・情報共有のルール</h2>
+<div class="doc-note doc-note--rail theme-indigo">
+    <h2 style="margin-top: 0; color: var(--c-accent);">１． 運営・情報共有のルール</h2>
     
     <div style="margin-bottom: 15px;">
         <strong>（１） 連絡体制の確立</strong><br>
@@ -20,8 +20,8 @@
     </div>
 </div>
 
-<div style="border-left: 5px solid #4caf50; background-color: #f1f8e9; padding: 15px; margin-bottom: 20px;">
-    <h2 style="margin-top: 0; color: #2e7d32;">２． 送迎・車出しと会場協力</h2>
+<div class="doc-note doc-note--rail theme-leaf">
+    <h2 style="margin-top: 0; color: var(--c-accent-dark);">２． 送迎・車出しと会場協力</h2>
     
     <div style="margin-bottom: 15px;">
         <strong>（１） 移動の安全と責任</strong><br>
@@ -31,7 +31,7 @@
     </div>
 </div>
 
-<div style="border: 2px solid #ff5252; border-radius: 8px; padding: 20px; background-color: #fff9f9; margin-bottom: 20px;">
+<div class="doc-note theme-red" style="--c-accent: #ff5252; --c-accent-bg: #fff9f9; padding: 20px;">
     <h2 style="margin-top: 0; color: #d32f2f;">３． 試合観戦と応援のフィロソフィー</h2>
     
     <div style="margin-bottom: 15px;">
@@ -50,6 +50,6 @@
     </div>
 </div>
 
-<div style="text-align: center; padding: 15px; background: #3f51b5; color: white; border-radius: 5px;">
+<div class="doc-banner theme-indigo" style="padding: 15px; border-radius: 5px;">
     <strong>「保護者の役割は一番のファンであること」</strong>
 </div>

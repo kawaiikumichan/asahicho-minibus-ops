@@ -13,13 +13,13 @@
 ### ⭕ 私たちが目指す「真のFUN」
 **「上達する喜び（Growth Mindset）」を実感できる場にすること。**
 
-<div style="text-align: center; margin: 20px 0; padding: 15px; background-color: #f8f9fa; border-radius: 8px;">
+<div class="doc-note doc-note--center theme-gray" style="--c-accent-bg: #f8f9fa; border: 0; margin: 20px 0;">
     なんとか上達しようと挑戦する。<br>
-    <span style="font-size: 1.5em; color: #3f51b5;">↓</span><br>
+    <span class="doc-arrow">↓</span><br>
     最初はうまくいかない（失敗・試行錯誤）。<br>
-    <span style="font-size: 1.5em; color: #3f51b5;">↓</span><br>
+    <span class="doc-arrow">↓</span><br>
     それでも頑張っているうちに、ふと出来るようになる。<br>
-    <span style="font-size: 1.5em; color: #3f51b5;">↓</span><br>
+    <span class="doc-arrow">↓</span><br>
     <strong><span style="font-size: 1.2em; color: #e91e63;">「できた！」という強烈な喜び。</span></strong>
 </div>
 

@@ -17,8 +17,8 @@
 ### 🦵 絶対禁止動作：ニーイン・トゥーアウト (Knee-in)
 ジャンプの着地や、ストップ動作において、以下の状態になることを徹底的に矯正します。
 
-<div style="background-color: #ffebee; border: 2px solid #d32f2f; padding: 15px; border-radius: 8px; text-align: center;">
-    <strong style="color: #b71c1c; font-size: 1.2em;">⛔ 危険な着地（Knee-in）</strong>
+<div class="doc-note doc-note--center theme-red" style="--c-accent: #d32f2f; margin-bottom: 0;">
+    <strong class="doc-note__title" style="font-size: 1.2em;">⛔ 危険な着地（Knee-in）</strong>
     <p style="margin: 10px 0; font-weight: bold; color: #333;">
         「つま先は外を向いているのに、膝が内側に入っている状態」
     </p>
@@ -47,8 +47,8 @@
 成長期の女子選手が陥りやすい3つの障害の連鎖です。
 <strong>「痩せたい」「生理が来ないのは楽だ」</strong> という誤った認識を正す必要があります。
 
-<div style="background-color: #e3f2fd; border-left: 5px solid #2196f3; padding: 15px; margin-bottom: 20px;">
-    <h3 style="margin-top: 0; color: #0d47a1;">⚠️ 負の連鎖を断つ</h3>
+<div class="doc-note doc-note--rail theme-blue">
+    <h3 style="margin-top: 0; color: var(--c-accent-dark);">⚠️ 負の連鎖を断つ</h3>
     <ol style="margin-top: 10px; color: #333;">
         <li><strong>利用可能エネルギー不足:</strong> 運動量に対して、食事量が足りていない（無理なダイエットなど）。</li>
         <li><strong>視床下部性無月経:</strong> エネルギー不足により、体が「生殖機能」を停止させる（生理が止まる）。</li>
