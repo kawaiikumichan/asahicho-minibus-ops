@@ -50,8 +50,8 @@
 万が一、事故に遭われた場合も、一人で抱え込む必要はありません。
 まずは身の安全を確保し、落ち着いて以下の手順で頼ってください。
 
-<div style="background-color: #e3f2fd; border: 2px solid #2196f3; padding: 15px; border-radius: 8px;">
-    <strong style="color: #0d47a1; font-size: 1.1em;">🛡️ 安心のための対応フロー</strong>
+<div class="doc-note theme-blue" style="margin-bottom: 0;">
+    <strong class="doc-note__title">🛡️ 安心のための対応フロー</strong>
     <ol style="margin-top: 10px; color: #333;">
         <li><strong>まず警察・救急へ (110 & 119):</strong>
             <ul><li>どんなに小さな接触でも警察を呼んでください。これが保険適用（あなたを守ること）への第一歩です。</li></ul>

@@ -16,6 +16,7 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/components.css
 
 nav:
   - Home: index.md

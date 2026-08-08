@@ -7,12 +7,12 @@
 
 これら5つが揃って初めて「良い選手」とされます。
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 20px;">
-  <div style="background-color: #ff9800; color: white; padding: 10px; border-radius: 8px; width: 45%; text-align: center;">1. Competence<br><small>競技能力</small></div>
-  <div style="background-color: #ff9800; color: white; padding: 10px; border-radius: 8px; width: 45%; text-align: center;">2. Confidence<br><small>自信</small></div>
-  <div style="background-color: #ff9800; color: white; padding: 10px; border-radius: 8px; width: 45%; text-align: center;">3. Connection<br><small>つながり</small></div>
-  <div style="background-color: #ff9800; color: white; padding: 10px; border-radius: 8px; width: 45%; text-align: center;">4. Character<br><small>人間性</small></div>
-  <div style="background-color: #ff9800; color: white; padding: 10px; border-radius: 8px; width: 92%; text-align: center;">5. Creativity<br><small>創造性</small></div>
+<div class="doc-grid doc-grid--tight doc-grid--center theme-orange">
+  <div class="doc-card doc-card--filled doc-card--half">1. Competence<br><small>競技能力</small></div>
+  <div class="doc-card doc-card--filled doc-card--half">2. Confidence<br><small>自信</small></div>
+  <div class="doc-card doc-card--filled doc-card--half">3. Connection<br><small>つながり</small></div>
+  <div class="doc-card doc-card--filled doc-card--half">4. Character<br><small>人間性</small></div>
+  <div class="doc-card doc-card--filled doc-card--wide">5. Creativity<br><small>創造性</small></div>
 </div>
 
 <br>
@@ -31,8 +31,8 @@
 
 これらは独立しているわけではなく、全て繋がっています。
 
-<div style="border: 2px solid #ff9800; background-color: #fff3e0; padding: 15px; border-radius: 5px; color: #333;">
-    <strong style="font-size: 1.2em; color: #e65100;">💡 コーチの視点</strong>
+<div class="doc-note doc-text-dark theme-orange" style="border-radius: 5px; margin-bottom: 0;">
+    <strong class="doc-note__title" style="font-size: 1.2em;">💡 コーチの視点</strong>
     <ul style="margin-top: 10px;">
         <li><strong>Confidence (自信)</strong> があるから ➔ <strong>Creativity (創造性)</strong> が発揮できる</li>
         <li><strong>Character (人格)</strong> があるから ➔ <strong>Connection (良い関係)</strong> が築ける</li>

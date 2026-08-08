@@ -6,29 +6,29 @@
 
 以下の3つの要素がバランス良く整って初めて、最高のパフォーマンスが発揮されます。
 
-<div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-bottom: 30px;">
+<div class="doc-grid doc-grid--center" style="margin-bottom: 30px;">
   
-  <div style="background-color: #e3f2fd; border: 2px solid #2196f3; padding: 15px; border-radius: 10px; width: 30%; min-width: 250px;">
-    <h3 style="color: #1565c0; margin-top: 0; text-align: center;">💪 Bio (身体)</h3>
-    <ul style="font-size: 0.9em;">
+  <div class="doc-card doc-card--tinted doc-card--outlined doc-card--third theme-blue" style="--c-accent-dark: #1565c0; border-radius: 10px;">
+    <h3 class="doc-card__title doc-center">💪 Bio (身体)</h3>
+    <ul>
       <li><strong>栄養:</strong> 練習後の補食</li>
       <li><strong>休養:</strong> 睡眠・怪我のケア</li>
       <li><strong>発育:</strong> 身長の伸び・成長痛</li>
     </ul>
   </div>
 
-  <div style="background-color: #f3e5f5; border: 2px solid #9c27b0; padding: 15px; border-radius: 10px; width: 30%; min-width: 250px;">
-    <h3 style="color: #7b1fa2; margin-top: 0; text-align: center;">🧠 Psycho (心理)</h3>
-    <ul style="font-size: 0.9em;">
+  <div class="doc-card doc-card--tinted doc-card--outlined doc-card--third theme-purple" style="border-radius: 10px;">
+    <h3 class="doc-card__title doc-center">🧠 Psycho (心理)</h3>
+    <ul>
       <li><strong>意欲:</strong> モチベーション</li>
       <li><strong>思考:</strong> 判断力・戦術眼</li>
       <li><strong>感情:</strong> 不安やプレッシャー</li>
     </ul>
   </div>
 
-  <div style="background-color: #e8f5e9; border: 2px solid #4caf50; padding: 15px; border-radius: 10px; width: 30%; min-width: 250px;">
-    <h3 style="color: #2e7d32; margin-top: 0; text-align: center;">🏠 Social (社会)</h3>
-    <ul style="font-size: 0.9em;">
+  <div class="doc-card doc-card--tinted doc-card--outlined doc-card--third theme-green" style="border-radius: 10px;">
+    <h3 class="doc-card__title doc-center">🏠 Social (社会)</h3>
+    <ul>
       <li><strong>家庭:</strong> 親子の会話・食事</li>
       <li><strong>学校:</strong> 学業・友人関係</li>
       <li><strong>環境:</strong> チームの雰囲気</li>
@@ -59,8 +59,8 @@
 
 <br>
 
-<div style="border: 2px solid #f44336; background-color: #ffebee; padding: 15px; border-radius: 5px; color: #333;">
-    <strong style="font-size: 1.2em; color: #d32f2f;">⚠️ コーチの注意点</strong>
+<div class="doc-note doc-text-dark theme-red" style="--c-accent: #f44336; --c-accent-dark: #d32f2f; border-radius: 5px; margin-bottom: 0;">
+    <strong class="doc-note__title" style="font-size: 1.2em;">⚠️ コーチの注意点</strong>
     <p style="margin-top: 10px;">
         「シュートが入らない（技術の問題）」に見えるミスも、実は<strong>「朝ごはんを食べていない（Bio）」</strong>や<strong>「学校で嫌なことがあった（Psycho）」</strong>が原因かもしれません。<br>
         <strong>表面的なプレーだけでなく、その背景（BPS）に目を向けましょう。</strong>

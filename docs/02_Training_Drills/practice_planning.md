@@ -10,7 +10,7 @@
 ### Step 1: テーマを決める (One Day, One Theme)
 欲張ってはいけません。1回の練習で伝えられることは1つだけです。
 
-<div style="background-color: #f1f8e9; border-left: 5px solid #8bc34a; padding: 15px; margin-bottom: 20px;">
+<div class="doc-note doc-note--rail theme-leaf" style="--c-accent: #8bc34a;">
     <strong>✅ テーマの良い例</strong>
     <ul>
         <li>「今日は、ボールをもらう前の準備（ミート）を徹底する」</li>

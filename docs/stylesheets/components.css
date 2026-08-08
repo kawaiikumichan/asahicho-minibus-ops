@@ -1,0 +1,542 @@
+/* =========================================================================
+   共通コンポーネント（Shared components）
+
+   各ページで重複していたインラインスタイル（囲みボックス・カード・表・
+   見出しなど）をここに集約しています。
+   ページ側では class を指定するだけで同じ見た目になります。
+
+   使い方:
+     1) 配色は「テーマ用クラス」で指定します（例: theme-red / theme-blue）。
+        テーマは --c-accent 系の変数をまとめて切り替えます。
+     2) 個別に色を変えたい場合のみ、変数を上書きします。
+        例: <div class="doc-note theme-green" style="--c-accent:#8bc34a">
+   ========================================================================= */
+
+/* ---------- 配色テーマ（Color themes） ---------- */
+:root {
+    --c-accent: #607d8b;
+    --c-accent-dark: #37474f;
+    --c-accent-bg: #f5f5f5;
+    --c-accent-border: #cfd8dc;
+}
+
+.theme-red {
+    --c-accent: #d32f2f;
+    --c-accent-dark: #b71c1c;
+    --c-accent-bg: #ffebee;
+    --c-accent-border: #ffcdd2;
+}
+
+.theme-deep-orange {
+    --c-accent: #d84315;
+    --c-accent-dark: #bf360c;
+    --c-accent-bg: #fbe9e7;
+    --c-accent-border: #ffccbc;
+}
+
+.theme-orange {
+    --c-accent: #ff9800;
+    --c-accent-dark: #e65100;
+    --c-accent-bg: #fff3e0;
+    --c-accent-border: #ffe0b2;
+}
+
+.theme-green {
+    --c-accent: #4caf50;
+    --c-accent-dark: #2e7d32;
+    --c-accent-bg: #e8f5e9;
+    --c-accent-border: #c8e6c9;
+}
+
+/* 若草色の背景（練習計画・守備など） */
+.theme-leaf {
+    --c-accent: #4caf50;
+    --c-accent-dark: #2e7d32;
+    --c-accent-bg: #f1f8e9;
+    --c-accent-border: #dcedc8;
+}
+
+.theme-teal {
+    --c-accent: #00897b;
+    --c-accent-dark: #00695c;
+    --c-accent-bg: #e0f2f1;
+    --c-accent-border: #b2dfdb;
+}
+
+.theme-cyan {
+    --c-accent: #00acc1;
+    --c-accent-dark: #00838f;
+    --c-accent-bg: #e0f7fa;
+    --c-accent-border: #b2ebf2;
+}
+
+.theme-blue {
+    --c-accent: #2196f3;
+    --c-accent-dark: #0d47a1;
+    --c-accent-bg: #e3f2fd;
+    --c-accent-border: #90caf9;
+}
+
+.theme-indigo {
+    --c-accent: #3f51b5;
+    --c-accent-dark: #1a237e;
+    --c-accent-bg: #f5f5f5;
+    --c-accent-border: #c5cae9;
+}
+
+.theme-purple {
+    --c-accent: #9c27b0;
+    --c-accent-dark: #7b1fa2;
+    --c-accent-bg: #f3e5f5;
+    --c-accent-border: #e1bee7;
+}
+
+.theme-gray {
+    --c-accent: #9e9e9e;
+    --c-accent-dark: #616161;
+    --c-accent-bg: #f5f5f5;
+    --c-accent-border: #e0e0e0;
+}
+
+/* ---------- ページ土台・見出し（Page & headings） ---------- */
+.doc-page {
+    line-height: 1.8;
+    color: #333;
+}
+
+.doc-page--sans {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.md-typeset .doc-title {
+    color: var(--c-accent-dark);
+    border-bottom: 3px solid var(--c-accent-dark);
+    padding-bottom: 10px;
+}
+
+.md-typeset .doc-section-title {
+    color: var(--c-accent-dark);
+    border-left: 5px solid var(--c-accent-dark);
+    border-bottom: none;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+/* 小見出し（帯付き） */
+.md-typeset .doc-subhead {
+    background: var(--c-accent-bg);
+    color: var(--c-accent-dark);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.md-typeset .doc-divider {
+    margin: 40px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+/* 階層のぶら下げインデント */
+.doc-indent,
+.md-typeset .doc-indent {
+    padding-left: 20px;
+}
+
+.doc-center {
+    text-align: center;
+}
+
+.doc-text-dark {
+    color: #333;
+}
+
+/* アクセント色の強調テキスト */
+.doc-accent {
+    color: var(--c-accent-dark);
+}
+
+/* 流れを示す矢印（テキスト） */
+.doc-arrow {
+    font-size: 1.5em;
+    color: #3f51b5;
+}
+
+/* ---------- 導入リード文（Lead / intro block） ---------- */
+.doc-lead {
+    background-color: var(--c-accent-bg);
+    border-left: 5px solid var(--c-accent);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* 枠線のみのリード（アクセント帯なし） */
+.doc-lead--outline {
+    border: 1px solid var(--c-accent-border);
+    border-left: 1px solid var(--c-accent-border);
+}
+
+.doc-lead__title {
+    margin-top: 0;
+    font-weight: bold;
+    color: var(--c-accent-dark);
+}
+
+/* ---------- 注意ボックス（Callout / note） ---------- */
+.doc-note {
+    background-color: var(--c-accent-bg);
+    border: 2px solid var(--c-accent);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* 左側だけにアクセント帯を持つ形 */
+.doc-note--rail {
+    border: 0;
+    border-left: 5px solid var(--c-accent);
+    border-radius: 0;
+}
+
+/* 細い枠線（淡い縁取り） */
+.doc-note--thin {
+    border-width: 1px;
+    border-color: var(--c-accent-border);
+}
+
+.doc-note--strong {
+    border-width: 3px;
+    padding: 20px;
+}
+
+.doc-note--center {
+    text-align: center;
+}
+
+.doc-note--plain {
+    background-color: #eeeeee;
+    border: 0;
+}
+
+.doc-note__title {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: var(--c-accent-dark);
+}
+
+/* 見出しをブロック表示にして下に余白を取る */
+.doc-note__title--block {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* ---------- カード並び（Card grid） ---------- */
+.doc-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.doc-grid--tight {
+    gap: 10px;
+}
+
+.doc-grid--center {
+    justify-content: center;
+}
+
+.doc-grid--stack {
+    flex-direction: column;
+}
+
+.doc-card {
+    flex: 1 1 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* 背景をアクセント色で塗るカード */
+.doc-card--tinted {
+    background-color: var(--c-accent-bg);
+    border: 1px solid var(--c-accent-border);
+}
+
+.doc-card--outlined {
+    border: 2px solid var(--c-accent);
+}
+
+/* 上辺にアクセント帯を持つカード */
+.doc-card--top-accent {
+    background-color: var(--c-accent-bg);
+    border: 0;
+    border-top: 5px solid var(--c-accent);
+}
+
+/* アクセント色で塗りつぶすタグ風カード */
+.doc-card--filled {
+    background-color: var(--c-accent);
+    border: 0;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* 幅を固定した並び（伸縮しない） */
+.doc-card--third {
+    flex: 0 1 30%;
+    min-width: 250px;
+}
+
+.doc-card--half {
+    flex: 0 1 45%;
+    min-width: 250px;
+}
+
+.doc-card--wide {
+    flex: 0 1 92%;
+}
+
+/* 余白を広く取った大きめのカード */
+.doc-card--roomy {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.doc-card__title {
+    font-weight: bold;
+    color: var(--c-accent-dark);
+}
+
+.md-typeset .doc-card__title {
+    margin-top: 0;
+}
+
+.doc-card__lead {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.md-typeset .doc-card ul {
+    font-size: 0.9em;
+}
+
+.doc-card-link {
+    flex: 1 1 300px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.doc-card-link > .doc-card {
+    height: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+/* ---------- フロー図（Flow diagram） ---------- */
+.doc-flow {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.doc-flow--narrow {
+    max-width: 500px;
+}
+
+.doc-flow__step {
+    background-color: var(--c-accent-bg);
+    border: 2px solid var(--c-accent);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.doc-flow__step--filled {
+    background-color: var(--c-accent);
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.doc-flow__branch {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.doc-flow__arrow {
+    text-align: center;
+    color: #555;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.doc-flow__inline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+/* ---------- 表（Tables） ---------- */
+/* 狭い画面でも横スクロールで表全体を見られるようにする */
+.doc-table-scroll {
+    margin: 1em 0;
+    overflow-x: auto;
+}
+
+.md-typeset .doc-table {
+    width: 100%;
+    font-size: 0.64rem;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+.md-typeset .doc-table th,
+.md-typeset .doc-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    vertical-align: top;
+}
+
+.md-typeset .doc-table th {
+    background-color: #eee;
+    font-weight: 700;
+    min-width: 5rem;
+}
+
+.md-typeset .doc-table td:first-child {
+    font-weight: bold;
+}
+
+/* アクセント色の罫線を使う表 */
+.md-typeset .doc-table--accent th,
+.md-typeset .doc-table--accent td {
+    border-color: var(--c-accent-border);
+}
+
+.md-typeset .doc-table--accent th {
+    background-color: var(--c-accent-bg);
+}
+
+.doc-nowrap {
+    white-space: nowrap;
+}
+
+/* ---------- コート図（Court diagram） ---------- */
+.doc-court {
+    background: #fff;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.doc-court--compact {
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.doc-court__title {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* 円形のポジション配置図 */
+.doc-court__ring {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border: 2px dashed #ccc;
+    border-radius: 50%;
+}
+
+.doc-court__ring .doc-marker,
+.doc-court__cue {
+    position: absolute;
+}
+
+.doc-court__cue {
+    font-size: 24px;
+    color: #555;
+}
+
+.doc-court__row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* コート図の選手マーカー */
+.doc-marker {
+    width: 30px;
+    height: 30px;
+    background: orange;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+}
+
+/* ---------- 帯バナー（Accent banner） ---------- */
+.doc-banner {
+    background: var(--c-accent);
+    color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.md-typeset .doc-banner h3 {
+    margin-top: 0;
+    color: #fff;
+}
+
+/* ---------- トップページの見出し帯・フッター ---------- */
+.doc-hero {
+    background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%);
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.md-typeset .doc-hero h1 {
+    margin: 0;
+    font-size: 2.2em;
+    border: none;
+    color: #fff;
+}
+
+.doc-hero__badge {
+    display: inline-block;
+    margin-top: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.doc-footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #999;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
