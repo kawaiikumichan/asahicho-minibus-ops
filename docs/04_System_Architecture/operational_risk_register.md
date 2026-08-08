@@ -83,15 +83,15 @@ Go-Live をブロックしないが、サービススケールや将来的なコ
 
 | Evidence / File | Related Risks |
 |---|---|
-| [ADR-021: Traceability](file:///C:/Users/kawai/.gemini/antigravity/brain/f2d96dc4-9b44-4931-bc19-8f679cf8075a/architecture_decision_records.md) | RSK-001 |
-| [Phase 11.3 UAT Reports](file:///C:/Users/kawai/.gemini/antigravity/brain/f2d96dc4-9b44-4931-bc19-8f679cf8075a/walkthrough.md) | RSK-001, RSK-002, RSK-008 |
+| [ADR-021: Traceability](architecture_decision_records.md) | RSK-001 |
+| [Phase 11.3 UAT Reports](walkthrough.md) | RSK-001, RSK-002, RSK-008 |
 | `firebase.json` / `.env.vercel.prod` | RSK-003 |
-| [ADR-019: Data Retention](file:///C:/Users/kawai/.gemini/antigravity/brain/f2d96dc4-9b44-4931-bc19-8f679cf8075a/architecture_decision_records.md) | RSK-004, RSK-006 |
-| [ADR-011: Month End Close](file:///C:/Users/kawai/.gemini/antigravity/brain/f2d96dc4-9b44-4931-bc19-8f679cf8075a/architecture_decision_records.md) | RSK-005 |
-| [ADR-001: Immutable Ledger](file:///C:/Users/kawai/.gemini/antigravity/brain/f2d96dc4-9b44-4931-bc19-8f679cf8075a/architecture_decision_records.md) | RSK-007 |
-| [ADR-004: Canonical JSON Hash](file:///C:/Users/kawai/.gemini/antigravity/brain/f2d96dc4-9b44-4931-bc19-8f679cf8075a/architecture_decision_records.md) | RSK-007, RSK-009 |
-| [ADR-006 & 007: Outbox / Saga](file:///C:/Users/kawai/.gemini/antigravity/brain/f2d96dc4-9b44-4931-bc19-8f679cf8075a/architecture_decision_records.md) | RSK-008 |
-| [ADR-005: Permission Catalog SSOT](file:///C:/Users/kawai/.gemini/antigravity/brain/f2d96dc4-9b44-4931-bc19-8f679cf8075a/architecture_decision_records.md) | RSK-009 |
+| [ADR-019: Data Retention](architecture_decision_records.md) | RSK-004, RSK-006 |
+| [ADR-011: Month End Close](architecture_decision_records.md) | RSK-005 |
+| [ADR-001: Immutable Ledger](architecture_decision_records.md) | RSK-007 |
+| [ADR-004: Canonical JSON Hash](architecture_decision_records.md) | RSK-007, RSK-009 |
+| [ADR-006 & 007: Outbox / Saga](architecture_decision_records.md) | RSK-008 |
+| [ADR-005: Permission Catalog SSOT](architecture_decision_records.md) | RSK-009 |
 | `run-security-rules-uat.ts` (Security UAT) | RSK-009 |
 
 ---
